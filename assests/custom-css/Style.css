@@ -6,7 +6,7 @@
     font-family: 'Lato', sans-serif;
 }
 .Content{
-    background-image: url("/images/Signin-bg.svg");
+    background-image: url("../images/Signin-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
