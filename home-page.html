@@ -4,16 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap 4.0 version css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="Style3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======================= Bootstrap files ===================== -->
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- =========== custome-file css =================================== -->
+    <link rel="stylesheet" href="assests/custom-css/MyStyle.css">
+    
+    
     <title>Talent Tube</title>
   </head>
   <body>
-    <div class="container-fluid header-section">
+    <header class="container-fluid header-section">
         <!-- for mobile view navigation as a  sidebaar -->
         <!-- =========================================================================== -->
       <div class="container-fluid d-lg-none d-xl-none">
@@ -23,8 +25,8 @@
         <input type="checkbox" name="" id="opensidebarmenu">
         <label for="opensidebarmenu" class="sidebaricontoggle">
             <div class="spinner top "></div> 
-        <div class="spinner middle "></div>
-        <div class="spinner bottom "></div>
+            <div class="spinner middle "></div>
+            <div class="spinner bottom "></div>
     </label>
         <div id="sidebarMenu">
             <ul class="menu">
@@ -46,7 +48,7 @@
         <!-- for windows navigation-bar -->
    <div class="window-header d-none d-lg-block"> 
        <nav class="navbar navbar-expand-lg navigation-bar navbar-light bg-transparent">
-      <a class="navbar-brand text-white" href="#"><img class="logo" src="images/frame1.png" alt=""></a>
+      <a class="navbar-brand text-white" href="#"><img class="logo" src="assests/images/frame1.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -73,52 +75,50 @@
       </div>
     </nav>
 </div>
-    <div class="row  header-content flex-column-reverse flex-sm-column-reverse flex-md-row flex-lg-row flex-xlg-row">
-          <div class="col-md-6 headings">
-            <h2>Join The Best</h2>
-            <h3>TALENT MATCHER</h3>
-            <h4><span>in the</span>world.</h4>
-            <div class="row header-buttons d-flex justify-content-start ">
-              <div class="col-md-11 d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xlg-row">
-                <a href="" class=" Interview-button text-center" style="text-decoration: none;"><i class="fas fa-users"></i> Interview concierge</a>
-                <a href="" class=" dashboard-button d-none d-md-block" style="text-decoration: none;"><i class="fas fa-th-large"></i> Dashboard</a>
-              </div>
-              <!-- for window portion -->
-              <div class="col-md-10 d-none d-sm-block    header-form">
-                <form action="" class="flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row justify-content-center align-items-center">
-                 <label for="">I am</label>
-                  <select name="" id="" class="">
-                    <Option>Job seeker</Option>
-                    <Option>Job provider</Option>
-                    <Option>Developer</Option>
-                  </select>
-                  <input type="submit"  value="continue">
-                </form>
-              </div>
-              <!-- form mobile view portion -->
-              <div class="col-md-8  d-block d-sm-none d-flex  flex-column   header-form">
-                <form action="" class="flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row justify-content-center align-items-center">
-                 <div class="col-12 mb-2 d-flex justify-content-center align-items-center"><label for="">I am</label></div>
-                 <div class="col-12 mb-2 d-flex justify-content-center align-items-center form-control" style="background-color:  rgba(0, 50, 111, 1);
-                 ;"><select name="" id="">
-                  <Option >Job seeker</Option>
-                  <Option >Job provider</Option>
-                  <Option >Developer</Option>
-                </select></div>
-                <div class="col-12 mb-2 d-flex justify-content-center align-items-center"><input type="submit"  value="continue" class="form-control"></div>
-                  
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 pt-5 pt-sm-4 pt-md-4 pt-lg-0 pt-xl-0 img d-flex justify-content-center"> 
-            <img src="images/Frame.png"alt="">
-          </div>
+    
     </div>
-    </div>
-  </div>
+  </header>
     <!-- header completes here -->
     <!-- body start from here -->
+
+<!-- ================== banner-section start -->
+<section class="banner-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 headings">
+        <h2>Join The Best</h2>
+        <h3>TALENT MATCHER</h3>
+        <h4><span>in the</span>world.</h4>
+        <div class="row header-buttons ">
+          <div class="dual-button">
+            <a href="" class=" Interview-button text-center" ><i class="fa fa-user"></i> Interview concierge</a>
+            <a href="" class=" dashboard-button"><i class="fa fa-th-large"></i> Dashboard</a>
+          </div>
+          <!-- for window portion -->
+          <div class="header-form">
+            <form action="" class="">
+             <label for="">I am</label>
+              <select name="" id="" class="">
+                <Option>Job seeker</Option>
+                <Option>Job provider</Option>
+                <Option>Developer</Option>
+              </select>
+              <input type="submit"  value="continue">
+            </form>
+          </div>
+         
+          </div>
+        </div>
+      <div class="col-md-6 "> 
+        <i class="banner-icon"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================banner-section-end================== -->
+
+
     <div class="container-fluid">
       <!-- Body text portion starts here -->
     <div class="container">
@@ -130,7 +130,7 @@
       <div class="row d-flex justify-content-around pt-4" >
         <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
           <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="images/icon1.png" alt="">
+            <img width="50" src="assests/images/icon1.png" alt="">
           </div>
           <div class="col-md-9 inner-widjet ">
             <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Search  a Job</h5>
@@ -139,7 +139,7 @@
         </div>
         <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
           <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="images/icon2.png" alt="">
+            <img width="50" src="assests/images/icon2.png" alt="">
           </div>
           <div class="col-md-9 inner-widjet ">
             <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Apply for job</h5>
@@ -148,7 +148,7 @@
         </div>
         <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
           <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="images/icon3.png" alt="">
+            <img width="50" src="assests/images/icon3.png" alt="">
           </div>
           <div class="col-md-9 inner-widjet ">
             <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Get Your job</h5>
@@ -160,7 +160,7 @@
     <!-- large widjets starts here -->
     <div class="row pt-4  large-widjet">
       <div class="col-md-6 py-5 " style="padding-left: 0px !important;">
-         <img src="images/man.png" class="w-100 " alt="">
+         <img src="assests/images/man.png" class="w-100 " alt="">
       </div>
       <div class="col-md-6 d-flex justify-content-start align-items-center" style="padding-left: 0px;">
         <div class="col-md-8"><h3 class="fw-bold">Tired of applying</h3>
@@ -185,14 +185,14 @@
       </div>
       </div>
       <div class="col-md-6 py-5" style="padding-left: 0px!important;">
-         <img src="images/woman.png" class="w-100 " alt="">
+         <img src="assests/images/woman.png" class="w-100 " alt="">
       </div>
     </div>
     <div class="row d-block d-sm-none d-flex justify-content-center align-items-center"><div class="col-10"><hr></div></div>
     <!-- third large widjet -->
     <div class="row pt-4  large-widjet">
       <div class="col-md-6 pt-2" style="padding-left: 0px !important;">
-         <img src="images/lcd.png" class="w-100 " alt="">
+         <img src="assests/images/lcd.png" class="w-100 " alt="">
       </div>
       <div class="col-md-6 d-flex justify-content-start align-items-center">
         <div class="col-md-8"><h3 class="fw-bold">Finding Candidates</h3>
@@ -210,14 +210,14 @@
         <div class="container">
           <div class="row pt-5 d-flex justify-content-center align-items-center">
             <div class="footer-logo d-flex justify-content-center align-items-center d-block d-sm-none">
-              <a href="" class="text-decoration-none"><img src="images/frame1.png" width="120px" alt=""></a>
+              <a href="" class="text-decoration-none"><img src="assests/images/frame1.png" width="120px" alt=""></a>
             </div>
             <div class="col-md-10 d-flex justify-content-center align-items-center">
              <div class="footer-nav d-flex justify-content-center align-items-center">
                <ul class="d-flex justify-content-center flex-row align-items-center list-style-none">
                  <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">Home</a></li>
                  <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">About</a></li>
-                 <li class="px-2 list-style-none d-none d-sm-block"><a href="" class="text-decoration-none"><img src="images/frame1.png" width="140.1px" alt=""></a></li>
+                 <li class="px-2 list-style-none d-none d-sm-block"><a href="" class="text-decoration-none"><img src="assests/images/frame1.png" width="140.1px" alt=""></a></li>
                  <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">Contact</a></li>
                  <li class="px-2 list-style-none text-secondary"><a href="" class="text-decoration-none text-secondary">Blog</a></li>
                </ul>
@@ -244,8 +244,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="assests/bootstrap/js/jquery.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
