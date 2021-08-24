@@ -4,29 +4,29 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- ======================= Bootstrap files ===================== -->
+    <!-- Bootstrap 4.0 version css -->
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css" >
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- =========== custome-file css =================================== -->
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
     <link rel="stylesheet" href="assests/custom-css/MyStyle.css">
-    
-    
     <title>Talent Tube</title>
   </head>
   <body>
     <header class="container-fluid header-section">
         <!-- for mobile view navigation as a  sidebaar -->
         <!-- =========================================================================== -->
-      <div class="container-fluid d-lg-none d-xl-none">
-        <div class="header ps-md-5 ps-lg-5 pt-md-3 pt-lg-3 pt-sm-5 pt-3 ps-sm-0 ">
-            <img src="images/frame1.png" width="121px" alt="">
+     <div class="sidebar-header-section d-block d-lg-none">
+        <div class="container-fluid">
+        <div class="header  ">
+            <img src="assests/images/frame1.png" width="121px" alt="">
         </div>
         <input type="checkbox" name="" id="opensidebarmenu">
         <label for="opensidebarmenu" class="sidebaricontoggle">
             <div class="spinner top "></div> 
-            <div class="spinner middle "></div>
-            <div class="spinner bottom "></div>
+        <div class="spinner middle "></div>
+        <div class="spinner bottom "></div>
     </label>
         <div id="sidebarMenu">
             <ul class="menu">
@@ -41,13 +41,13 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-    </div>
+    </div></div>
     <!-- Mobile view navigation end here -->
           <!-- =========================================================================== -->
 
         <!-- for windows navigation-bar -->
-   <div class="window-header d-none d-lg-block"> 
-       <nav class="navbar navbar-expand-lg navigation-bar navbar-light bg-transparent">
+   <div class="window-header "> 
+       <nav class="navbar navbar-expand-lg d-none d-lg-flex navigation-bar navbar-light bg-transparent">
       <a class="navbar-brand text-white" href="#"><img class="logo" src="assests/images/frame1.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,35 +83,36 @@
 
 <!-- ================== banner-section start -->
 <section class="banner-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 headings">
-        <h2>Join The Best</h2>
-        <h3>TALENT MATCHER</h3>
-        <h4><span>in the</span>world.</h4>
-        <div class="row header-buttons ">
-          <div class="dual-button">
-            <a href="" class=" Interview-button text-center" ><i class="fa fa-user"></i> Interview concierge</a>
-            <a href="" class=" dashboard-button"><i class="fa fa-th-large"></i> Dashboard</a>
-          </div>
-          <!-- for window portion -->
-          <div class="header-form">
-            <form action="" class="">
-             <label for="">I am</label>
-              <select name="" id="" class="">
-                <Option>Job seeker</Option>
-                <Option>Job provider</Option>
-                <Option>Developer</Option>
-              </select>
-              <input type="submit"  value="continue">
-            </form>
-          </div>
-         
-          </div>
-        </div>
-      <div class="col-md-6 "> 
+  <div class="container-fluid ">
+    <div class="row banner-main-section ">
+      <div class="col-md-5 order-md-2 order-sm-1 banner-icon-div "> 
         <i class="banner-icon"></i>
       </div>
+      <div class="col-md-5 headings order-md-1 order-sm-2">
+        <h2>Join The Best</h2>
+        <h3 class="d-none d-sm-block">TALENT MATCHER</h3>
+        <h4 class="d-none d-sm-block"><span >in the</span>world.</h4>
+        <h3 class="d-block d-sm-none">Tallent Matcher in the World.</h3>
+        <div class=" header-buttons ">
+          <div class="dual-button">
+            <a href="" class=" Interview-button text-center" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</a>
+            <a href="" class=" dashboard-button"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</a>
+          </div>
+          <form action="" class="banner-form">
+          <ul >
+            <li class="label">I am</li>
+            <li class="form-buttons"><select  aria-label="Default select example">
+              <option value="1">Job Seeker</option>
+              <option value="2">Developer</option>
+              <option value="3">Programmer</option>
+            </select></li>
+            <li class="form-buttons"><button type="submit">Continue</button>
+            </li>
+          </ul></form>
+
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -122,122 +123,135 @@
     <div class="container-fluid">
       <!-- Body text portion starts here -->
     <div class="container">
-      <div class="row d-flex justify-content-center align-items-center pt-4 ">
-       <div class="col-md-12"> <h3 class="heading-first text-center">Lorem ipsum dolor, sit amet </h3></div>
-       <div class="col-8 f-flex justify-content-center align-items-center"> <p class="text-secondary text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam cum incidunt soluta ipsum, fugit ratione iure reiciendis ea rerum alias, laborum et ipsa dignissimos. Iure ipsa pariatur deleniti veritatis!</p></div>
+      <div class="row">
+       <h3 class="heading-first text-center">Lorem ipsum dolor, sit amet </h3>
+        <p class="text-secondary text-center fist-paragrah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam cum incidunt soluta ipsum, fugit ratione iure reiciendis ea rerum alias, laborum et ipsa dignissimos. Iure ipsa pariatur deleniti veritatis!</p>
       </div>
-      
-      <div class="row d-flex justify-content-around pt-4" >
-        <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
-          <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="assests/images/icon1.png" alt="">
-          </div>
-          <div class="col-md-9 inner-widjet ">
-            <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Search  a Job</h5>
-            <p >Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
-          </div>
+      <!-- ========================Job wrapper's HTML Starts Here======================= -->
+      <div class="row" >
+        <div class="col-md-4 col-lg-4 col-sm-12">
+           <a href="#" class="feature-wrap clearfix">
+             <div class="icon-wraper">
+               <img src="assests/images/icon1.png" alt="icon-1" />
+             </div>
+             <div class="feature-text-wrap">
+               <h2>Search a Job</h2>
+               <p>Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
+             </div>
+            </a>
         </div>
-        <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
-          <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="assests/images/icon2.png" alt="">
-          </div>
-          <div class="col-md-9 inner-widjet ">
-            <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Apply for job</h5>
-            <p >Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 flex-column flex-sm-column flex-md-row flex-lg-row flex-xlg-row job-widjets d-flex justify-content-center align-items-center">
-          <div class="col-md-3 pt-2 d-flex justify-content-center align-items-center">
-            <img width="50" src="assests/images/icon3.png" alt="">
-          </div>
-          <div class="col-md-9 inner-widjet ">
-            <h5 class="text-center  pt-2 fw-bold" style="color: #f48128;">Get Your job</h5>
-            <p >Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- large widjets starts here -->
-    <div class="row pt-4  large-widjet">
-      <div class="col-md-6 py-5 " style="padding-left: 0px !important;">
-         <img src="assests/images/man.png" class="w-100 " alt="">
-      </div>
-      <div class="col-md-6 d-flex justify-content-start align-items-center" style="padding-left: 0px;">
-        <div class="col-md-8"><h3 class="fw-bold">Tired of applying</h3>
-        <h3><span class=" second-heading">with Countless employers</span></h3>
-        <p class="text-secondary" style="margin-bottom: 0px;">uploading the same old documents and answering the same old question?</p> 
-         <p class="text-secondary pt-0" style="margin-bottom: 0px;"> Create a Talent Tube account today and make Employers find you!</p>
-      </div>
-      </div>
-    </div>
-    <div class="row d-block d-sm-none d-flex justify-content-center align-items-center"><div class="col-10"><hr></div></div>
-    <!-- second large widjets -->
-
-    <div class="row pt-4  large-widjet">
-      <div class="col-md-6 d-flex justify-content-start align-items-center">
-        <div class="col-md-8"><h3 class="fw-bold">Watch , Compare &</h3>
-        <h3><span class=" second-heading" style="margin-bottom: 0px;">then decides to get right one</span></h3>
-        <p style="margin-bottom: 0px;">73% of all consumers are more likely to commit to a purchase after watching a video.</p>
-        <p style="margin-bottom: 0px;">Compare that to the 84% who will reject a resume due to lack of personalisation. At Talent Tube,</p>
-         
-        <p style="margin-bottom: 0px;">we believe in bridging the gap between a resume and a job application through video technology,</p> 
-        <p>to increase Job Seekers chances of success.</p>
-      </div>
-      </div>
-      <div class="col-md-6 py-5" style="padding-left: 0px!important;">
-         <img src="assests/images/woman.png" class="w-100 " alt="">
-      </div>
-    </div>
-    <div class="row d-block d-sm-none d-flex justify-content-center align-items-center"><div class="col-10"><hr></div></div>
-    <!-- third large widjet -->
-    <div class="row pt-4  large-widjet">
-      <div class="col-md-6 pt-2" style="padding-left: 0px !important;">
-         <img src="assests/images/lcd.png" class="w-100 " alt="">
-      </div>
-      <div class="col-md-6 d-flex justify-content-start align-items-center">
-        <div class="col-md-8"><h3 class="fw-bold">Finding Candidates</h3>
-        <h3><span class=" second-heading">with the online Presence</span></h3>
-        <p class="text-secondary" style="margin-bottom: 0px;">Over 40% of Employers say they may not interview candidates if they can’t find their online presence. 
-          Create a tailored online job profile that brings your experience to life, highlighting your strengths and outline the opportunities that matter to you</p> 
-      </div>
-      </div>
-    </div>
-    <div class="row d-block d-sm-none d-flex justify-content-center align-items-center"><div class="col-10"><hr></div></div>
-    </div>
-    <!-- Body Section Completes Here -->
-    <!-- Footer Starts here -->
-      <div class="container-fluid bg-light">
-        <div class="container">
-          <div class="row pt-5 d-flex justify-content-center align-items-center">
-            <div class="footer-logo d-flex justify-content-center align-items-center d-block d-sm-none">
-              <a href="" class="text-decoration-none"><img src="assests/images/frame1.png" width="120px" alt=""></a>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+          <a href="#" class="feature-wrap clearfix">
+            <div class="icon-wraper">
+              <img src="assests/images/icon2.png" alt="icon-1" />
             </div>
-            <div class="col-md-10 d-flex justify-content-center align-items-center">
-             <div class="footer-nav d-flex justify-content-center align-items-center">
-               <ul class="d-flex justify-content-center flex-row align-items-center list-style-none">
-                 <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">Home</a></li>
-                 <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">About</a></li>
-                 <li class="px-2 list-style-none d-none d-sm-block"><a href="" class="text-decoration-none"><img src="assests/images/frame1.png" width="140.1px" alt=""></a></li>
-                 <li class="px-2 list-style-none"><a href="" class="text-decoration-none text-secondary">Contact</a></li>
-                 <li class="px-2 list-style-none text-secondary"><a href="" class="text-decoration-none text-secondary">Blog</a></li>
-               </ul>
-               <hr>
+            <div class="feature-text-wrap">
+              <h2>Apply for Job</h2>
+              <p>Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
+            </div>
+          </a>
+       </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+          <a href="#" class="feature-wrap clearfix">
+            <div class="icon-wraper">
+              <img src="assests/images/icon3.png" alt="icon-1" />
+            </div>
+            <div class="feature-text-wrap">
+              <h2>Get your Job</h2>
+              <p>Lorem ipsum dolor sit amet amet amet amet consectetur adipisicing elit.</p>
+            </div>
+          </a>
+       </div>
+      </div>
+    </div>
+    </div> 
+          <!-- ========================Job wrapper's HTML ends Here======================= -->
+
+          <!-- =================== main Section starts here================================-->
+    
+          <section class="first-section">
+           <div class="container">
+            <div class="row ">
+              <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
+               <div class="article"> <h2>Tired of applying</h2>
+                <h3> with Countless employers</h3>
+                <p>uploading the same old documents and answering the same old question?</p>
+                <p>Create a Talent Tube account today and make Employers find you!</p></div>
+              </div>
+            </div>
+           </div>
+          </section>
+
+          
+          <section class="second-section">
+            <div class="container">
+             <div class="row ">
+              <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
+                <div class="article"> <h2>Watch, compare &</h2>
+                 <h3> then decides to get right one</h3>
+                 <p>73% of all consumers are more likely to commit to a purchase after watching a video</p>
+                 <p> Compare that to the 84% who will reject a resume due to lack of personalisation. At Talent Tube,</p>
+                 <p> 
+                  we believe in bridging the gap between a resume and a job application through video technology, 
+                  to increase Job Seekers chances of success.</p></div>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
+               </div>
              </div>
             </div>
-            <div class="col-11 py-1"><hr></div>
-            <div class="col-md-10 d-flex justify-content-center align-items-center pb-5 ">
-              <a href="" class="text-white  fs-3  px-2 mx-2 rounded-circle " style="background-color:rgba(255, 148, 0, 1);"><i class="fab fa-instagram" style="padding-top: 9px; padding-bottom: 9px; "></i></a>
-              <a href="" class="text-white  fs-3  px-2 mx-2 rounded-circle" style="background-color:rgba(255, 148, 0, 1);"><i class="fab fa-twitter" style="padding-top: 9px; padding-bottom: 9px; "></i></a>
-              <a href="" class="text-white  fs-3  px-2 mx-2  rounded-circle" style=" background-color:rgba(255, 148, 0, 1);"><i class="fab fa-youtube" style="padding-top: 9px; padding-bottom: 9px;"></i></a>
-              <a href="" class="text-white  fs-3  px-2 mx-2 rounded-circle" style="padding-top: 5px; padding-bottom: 5px; background-color:rgba(255, 148, 0, 1);"><i class="fab fa-facebook"></i></a>
-              <a href="" style="background-color:rgba(255, 148, 0, 1)
-              ;" class="text-white  fs-3 py-1 px-2 mx-2 rounded-circle"><i class="fab fa-pinterest"></i></a>
+           </section>
+
+           
+          <section class="third-section">
+            <div class="container">
+             <div class="row ">
+               <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
+                <div class="article"> <h2>Finding candidates</h2>
+                 <h3> with the online presence</h3>
+                 <p>Over 40% of Employers say they may not interview candidates if they can’t find their online presence. Create a tailored online job profile that brings your experience to life, highlighting your strengths and outline the opportunities that matter to you</p></div>
+               </div>
+             </div>
+            </div>
+           </section>
+    
+    <!-- =================== main Section ends here================================-->
+    
+    
+    
+    <!--==================== Body Section Completes Here=========================== -->
+    <!-- =====================Footer Starts here====================================== -->
+    <footer><div class="container-fluid bg-light">
+        <div class="container">
+          <div class="row  d-flex justify-content-center align-items-center">
+            <div class="col-md-10 ">
+             <div class="footer-nav ">
+               <a href=""  class="d-block d-sm-none footer-logo-2"><img src="assests/images/frame1.png" alt=""></a>
+               <ul class=" ">
+                 <li class=""><a href="">Home</a></li>
+                 <li ><a href="" >About</a></li>
+                 <li class="d-none d-sm-block" ><a href="" ><img src="assests/images/frame1.png"  alt=""></a></li>
+                 <li ><a href="" >Contact</a></li>
+                 <li ><a href="" >Blog</a></li>
+               </ul>
+             </div>
+            </div>
+            <div class="col-md-10 footer-icon ">
+              <a href=""  ><i class="fab fa-instagram" ></i></a>
+              <a href="" ><i class="fab fa-twitter" ></i></a>
+              <a href="" ><i class="fab fa-youtube" ></i></a>
+              <a href="" ><i class="fab fa-facebook"></i></a>
+              <a href="" ><i class="fab fa-pinterest"></i></a>
           </div>
-          <div class="col-md-10 d-none d-sm-block"><p class="fs-5 text-center fw-bold">CopyRight 2021</p></div>
+          <div class="col-md-10 d-none d-sm-block CopyRight"><p>CopyRight 2021</p></div>
           </div>
         </div>
       </div>
-      <!-- footer ends here -->
+    </footer>  
+      <!--============================= footer ends here================================ -->
 
 
 
