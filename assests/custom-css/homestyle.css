@@ -98,15 +98,10 @@
     color: #202020;
     font-size: 14px;
  }
+ 
 
 /* css for mobile portion sidebar */
 /* ======================================================================================= */
-.header{
-    background-color: transparent;
-    position: absolute;
-    height: 80px;
-    z-index: 10;
-}
 
 
 #sidebarMenu{
@@ -158,7 +153,6 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 12px;
-    font-family: 'Lato', sans-serif;
 }
 .sidebaricontoggle{
     width: 42px;
@@ -211,14 +205,12 @@
     padding-left:13.6rem;
 }
 .navigation-bar ul li{
-    font-family: Lato;
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
 line-height: 20px;
 }
 .Account{
-    font-family: Poppins;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -227,16 +219,12 @@ text-transform: uppercase;
 color: #FFFFFF !important;
 }
 .navigation-bar .signin{
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-right: 137px;
-    border: none !important;
-    border-radius: none !important;
+   border: 1px solid #ff9400;
     color: #FFFFFF;
-    background-color: #ff9400;
-    font-size: 12px;
+    background: #ff9400;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 .header-section{
     background: transparent;
@@ -244,41 +232,35 @@ color: #FFFFFF !important;
     height: 100px;
     display: block;
 }
-.window-header ul li a{
-    font-family: 'Lato', sans-serif;
-}
-.window-header form{
-    position: absolute;
-    right: 0%;
-    top: 55.49%;
+
+.header-section-nav{
+    display: block !important;
+    text-align: left !important;
+    float: right;
 }
 /* ================================= Header css ends here================================ */
 /* ===========================Banner section starts here================================ */
-.banner-main-section .headings ,.banner-main-section .banner-icon-div{
-    margin: auto;
-}
-.banner-section{
+
+.banner-icon-div{
     background-image: url('../images/home-background.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size:  70%;
+    background-size:  100%;
 }
-.banner-icon{
-    background: url(../images/Frame.png) no-repeat;
-    width: 100%;
-    padding-top: 60px;
-    height: 671px;
+.banner-icon {
+    width: 40%;
+    margin: auto;
     display: block;
-    background-size: 62%;
-    background-position: 68% 100%;
+    margin-top: 170px;
+}
+.banner-info-text {
+    float: right;
 }
 .headings{
    margin-top: 250px;
-   text-align:start;
-   padding-left: 51px;
+   padding-left: 50px;
 }
 .headings h2{
-font-family: 'Lato', sans-serif;
 font-size: 38px;
 font-style: normal;
 font-weight: 400;
@@ -287,7 +269,6 @@ letter-spacing: -0.02em;
 text-align: left;
 }
 .headings h3{
- font-family: 'Lato', sans-serif;
 font-size: 45px;
 font-style: normal;
 font-weight: 700;
@@ -295,10 +276,8 @@ line-height: 50px;
 letter-spacing: -0.02em;
 text-align: left;
 padding-top: 9px;
-text-shadow: 0.5px 0.5px 1px;
 }
 .headings h4 span{
-    font-family: 'Lato', sans-serif;
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
@@ -307,17 +286,14 @@ text-shadow: 0.5px 0.5px 1px;
     text-align: left;
     padding-left: 73px;
     padding-right: 7px;
-    text-shadow: 0.5px 0.5px 1px;
 }
 .headings h4{
-    font-family: 'Lato', sans-serif;
     font-size: 65px;
     font-style: normal;
     font-weight:bolder;
     line-height: 5px;
     letter-spacing: -0.02em;
     text-align: left;
-    text-shadow: 0.5px 0.5px 1px;
 }
 .header-buttons {
     padding-top: 69px;
@@ -444,7 +420,7 @@ padding-top: 55px;
     text-align: center;
     float: left;
     padding-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 30%;
 }
 .icon-wraper img{
@@ -472,47 +448,32 @@ padding-top: 55px;
 /* ================================Job wrapper portion ends here====================== */
 
 /* =================================Main Section CSS starts here======================== */
-.first-section{
-    background-image: url("../images/man.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 0px !important;
-    margin-left: 0px !important;
-    padding: 200px 0;
-    background-size: 40%;
+.first-section {
+    margin: 80px 0;
 }
-.second-section{
-    background-image: url("../images/woman.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size:50%;
-    padding-left: 0px !important;
-    margin-left: 0px !important;
-    padding: 150px 0;
+.feature-img-wrap img {
+    width: 100%;
+    display: block;
+    height: 640px;
 }
-.third-section{
-    background-image: url("../images/lcd.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size:45%;
-    padding-left: 0px !important;
-    margin-left: 0px !important;
-    padding: 150px 0;
-}
-.content-wrapper .article {
+.first-section .article {
     width: 67%;
+    padding: 240px 0;
 }
-.content-wrapper .article h2{
+.first-section .article h2{
     font-size: 29px;
     font-weight: 500;
 }
-.content-wrapper .article h3{
+.first-section .article h3{
     font-size: 29px;
     font-weight: 700;
 }
-.content-wrapper .article p{
+.first-section .article p{
      color:  rgba(156, 158, 160, 1);
     margin-bottom: 0px;
+}
+.second-article{
+    float: right;
 }
 /* =================================Main Section CSS Ends here======================== */
 /* =============================Footer Css starts here================================ */
@@ -579,27 +540,9 @@ padding-top: 55px;
 
 /* =============================Media Queries Starts Here========================= */
 @media screen and (max-width: 1200px){
-    .banner-section {
-        background-image: url(../images/home-background.png);
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 73%;
-    }
+    
     .headings{
-        padding-top: 169px;
-    }
-    .headings h2{
-    font-size: 31px;
-    font-weight: 400;
-    line-height: 35px;
-    text-align: left;
-    }
-    .headings h3 {
-        font-size: 38px;
-        line-height: 41px;
-    }
-    .headings h4 {
-        font-size: 58px;
+        padding-top:0;
     }
     .headings h4 span {
         font-size: 32px;
@@ -609,327 +552,163 @@ padding-top: 55px;
     .navigation-bar ul {
         padding-left: 6.8rem;
     }
-    .banner-icon {
-        background: url(../images/Frame.png) no-repeat;
-        width: 100%;
-        padding-top: 60px;
-        height: 631px;
-        display: block;
-        background-size: 61%;
-        background-position: 68% 100%;
-    }
+   
     .header-buttons {
         padding-top: 40px;
-    }
-    .dual-button .Interview-button {
-        background-color: #ff9400;
-        padding: 8px 6px;
-        font-size: 18px;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-decoration: none;
-        border: 1px solid #ff9400;
-    }
-    .dual-button .dashboard-button {
-        background-color: rgba(0, 50, 111, 1);
-        padding: 8px 6px;
-        font-size: 18px;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-left: 24px;
-        border: 2px solid #00326f;
     }
     .banner-form {
     padding-top: 30px;
 }
     .banner-form .form-buttons select {
-        background-color: #00326f;
-        color: #fff;
         padding: 7.5px 4px;
-        text-align: center;
-        border-radius: 5px;
-        border: none;
         font-size: 18px;
     }
     .banner-form .form-buttons button {
-        background-color: #00326f;
-        color: #fff;
         padding: 5px 20px;
-        border: none;
-        border-radius: 5px;
-        border: none;
         font-size: 18px;
     }
-    .icon-wraper {
-        text-align: center;
-        float: left;
-        padding-right: 20px;
-        vertical-align: middle;
-        width: 30%;
-    }
-    /* ================================Banner ends here=========================== */
     .first-section {
-        background-image: url(../images/man.png);
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: 45%;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        padding: 200px 0;
+        margin: 80px 0 0;
     }
+    .headings {
+        margin-top: 150px;
+        padding: 0 0 0 50px;
+    }
+    .dual-button .Interview-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .dual-button .dashboard-button {
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .icon-wraper {
+        margin-top: 28px;
+    }
+    .feature-img-wrap img {
+        height: auto;
+    }
+    .first-section .article {
+        padding: 90px 0;
+    }
+    .bg-light {
+        margin-top: 100px;
+    }
+    .header-section-nav li a {
+        background: #00326f;
+    }
+   
 }
 /* ===============================media query for 990px starts here=================== */
 
 @media screen and (max-width: 991px){
     .headings {
-        margin-top: 200px;
-        text-align: start;
-        padding-left: 0px;
-    }
-    .headings h2 {
-        font-family: 'Lato', sans-serif;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 34px;
-        letter-spacing: -0.02em;
-        text-align: left;
+        margin-top: 100px;
     }
     .headings h3 {
-        font-family: 'Lato', sans-serif;
-        font-size: 31px;
+        font-size: 32px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 36px;
-        letter-spacing: -0.02em;
-        padding-top: 6px;
-    }
-    .headings h4 span {
-        font-family: 'Lato', sans-serif;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 31px;
-        letter-spacing: -0.02em;
-        padding-left: 40px;
-        padding-right: 7px;
     }
     .headings h4 {
-        font-family: 'Lato', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: bolder;
-        line-height: 5px;
-        letter-spacing: -0.02em;
+        font-size: 46px;
     }
-    .banner-icon {
-        background: url(../images/Frame.png) no-repeat;
-        width: 100%;
-        padding-top: 60px;
-        height: 488px;
-        display: block;
-        background-size: 62%;
-        background-position: 68% 100%;
+    .tallent-heading {
+        font-size: 20px !important;
+    }
+    .header-buttons {
+        padding-top: 0;
     }
     .dual-button .Interview-button {
-        background-color: #ff9400;
-        padding: 8px 6px;
-        font-size: 12px;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-decoration: none;
-        border: 1px solid #ff9400;
+        width: 100%;
+        margin-bottom: 15px;
     }
     .dual-button .dashboard-button {
-        background-color: #00326f;
-        padding: 8px 6px;
-        font-size: 12px;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-left: 18px;
-        border: 2px solid #00326f;
-    }
-    .banner-form .form-buttons select {
-        background-color: #00326f;
-        color: #fff;
-        padding: 7.5px 4px;
-        text-align: center;
-        border-radius: 5px;
-        border: none;
-        font-size: 12px;
-    }
-    .banner-form .form-buttons button {
-        background-color: #00326f;
-        color: #fff;
-        padding: 6px 21px;
-        border: none;
-        border-radius: 5px;
-        border: none;
-        font-size: 12px;
-    }
-    .feature-wrap {
-        border: 2px solid #ff9400;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        text-decoration: none;
-        transition: 0.3s all;
-    }
-    .feature-text-wrap {
-        text-align: center;
-        float: none;
+        margin-left: 0;
         width: 100%;
-        
+    }
+    .banner-form ul li {
+        display: block;
+        width: 100%;
+        margin-bottom: 9px;
+        text-align: center;
     }
     .icon-wraper {
-        text-align: center;
-        float: none;
-        padding-right: 0px;
-        margin: 20px auto;
-        width: 40%;
-        padding-left: 5px;
+        width: 30%;
+        margin: 40px auto !important;
     }
-    .first-section {
-        background-image: url(../images/man.png);
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: 40%;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        padding: 89px 0;
-        margin: auto;
+    .first-section .article {
+        width: 86%;
+        padding: 0 !important;
+    }
+    .banner-form {
+        padding-top: 10px;
     }
     .header {
-        background-color: transparent;
-        position: absolute;
-        height: 102px;
-        z-index: 10;
-        padding-top: 36px;
+        margin-top: 15px;
+    }
+    .banner-info-text {
+        margin-top: 50px;
     }
     
-    .second-section {
-        background-image: url(../images/woman.png);
-        background-position: right center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        padding: 89px 0;
-        margin: auto;
-    }
-    .third-section {
-        background-image: url(../images/lcd.png);
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: 45%;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        padding: 76px 0;
-        margin: auto;
-    }
 
   
 }
 @media screen and (max-width: 767px){
-    .header {
-        background-color: transparent;
-        position: absolute;
-        padding-top: 18px;
-    }
-    .banner-icon {
-        width: 100%;
-        padding-top: 60px;
-        height: 525px;
-        display: block;
-        background-size: 40%;
-        background-position: 52% 100%;
-    }
-    .banner-icon-div {
-        text-align: center;
+    .banner-icon-div{
         background-image: url(../images/bg-img.png);
         background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 100%;
+    }
+    .banner-info-text {
+        float: none;
+    }
+    .headings h2 {
+        text-align: center;
+    }
+    .headings h3 {
+        text-align: center;
+    }
+    .headings h4 {
+        text-align: center;
     }
     .headings {
-        padding-top: 51px;
+        padding: 0 15px;
     }
-    .headings h2 ,.headings h3 ,.headings h4  ,.headings h4 span {
-        text-align: center;
-        
-    }
-    .dual-button .Interview-button {
-        padding: 8px 6px;
-        font-size: 14px;
-        display: block;
-        margin: 10px 20px;
-    }
-    .dual-button .dashboard-button {
-        padding: 8px 6px;
-        font-size: 14px;
-        margin-left: 0px;
-        display: block;
-        text-align: center;
-        margin: 10px 20px;
-    }
-    .banner-form ul{
-        margin: 10px 20px;
-    }
-    .banner-form ul li {
-        float: none;
-        display: block;
-        text-align: center;
-        margin: 10px 10px;
-    }
-    .banner-form .form-buttons select{
-        margin: auto;
-    }
-    .banner-form .form-buttons {
-        text-align: center;
-    }
-    .heading-first {
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        text-align: left;
-        padding-top: 55px;
-    }
-    .fist-paragrah {
+    .icon-wraper {
         width: 100%;
-        margin: auto;
-        padding-top: 23px;
-        font-size: 14px;
-        padding-bottom: 58px;
-    }
-    .feature-wrap {
-        margin-bottom: 23px;
+        margin: 40px auto !important;
     }
     .icon-wraper img {
-        width: 40%;
+        width: 20%;
     }
-    .first-section {
-        background-position: top center;
-        background-size: 340px;
-        margin: 90px 0 0 0;
-        padding: 387px 0 50px;
+    .banner-icon {
+        width: 70%;
+        padding-top: 0;
+        height: auto;
     }
-    .second-section {
-        background-position: top center;
-        background-size: 380px;
-        margin: 90px 0 0 0;
-        padding: 340px 0 50px;
+    .headings {
+        margin-top: 40px;
     }
-    .third-section {
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: 380px;
-        margin: 90px 0 0 0;
-        padding: 340px 0 50px;
-    }
-    .content-wrapper .article {
-        text-align: center;
+    .feature-text-wrap {
         width: 100%;
+    }
+    .icon-wraper {
+        width: 100%;
+        margin: 15px auto !important;
+        padding: 0;
+    }
+    .first-section .article {
+        width: 80%;
+        padding: 0 !important;
+        text-align: center;
+        margin:60px auto 0;
+    }
+    .feature-img-wrap img {
+        width: 75%;
+        margin: auto;
+    }
+    .second-article {
+        float: none !important;
     }
     .footer-nav ul li {
         font-size: 10px;
@@ -949,50 +728,42 @@ padding-top: 55px;
         margin-left: 4px;
         width: 14px;
     }
+    .banner-info-text {
+        margin-top: 0;
+    }
 }
-@media screen and (max-width: 480px){
-    .header {
-        background-color: transparent;
-        position: absolute;
-        padding-top: 36px;
-    }
-    .sidebaricontoggle {
-        top: 46px;
-    }
+@media screen and (max-width: 479px){
     .banner-icon {
-        width: 100%;
-        padding-top: 93px;
-        height: 450px;
-        display: block;
-        background-size: 41%;
-        background-position: 52% 70%;
+        width: 50%;
+        margin-top: 150px;
     }
-    .headings {
-        padding-top: 0px;
+    .banner-form .form-buttons {
+        margin-left: 0;
     }
     .heading-first {
-        font-size: 21px;
-        padding-top: 35px;
+        font-size: 20px;
     }
-    .content-wrapper .article h3 {
-        font-size: 17px;
-        font-weight: 500;
-        color: #ff9400;
-        
+    .fist-paragrah {
+        width: 100%;
+        padding-top: 12px;
+        font-size: 14px;
+        padding-bottom: 58px;
     }
-    .first-section {
-        background-position: top center;
-        background-size: 340px;
-        margin: 90px 0 0 0;
-        padding: 384px 0 50px;
+    .feature-img-wrap img {
+        width: 100%;
     }
-    .second-section {
-        background-size: 324px;
+    .first-section .article {
+        width: 100%;
+        margin: 30px auto 0;
     }
-    .content-wrapper .article{
-        padding-bottom: 20px;
+    .first-section .article h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
     }
     .footer-nav ul li{
         padding: 30px 15px;
+    }
+    .header img {
+        width: 90%;
     }
 }

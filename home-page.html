@@ -20,7 +20,7 @@
      <div class="sidebar-header-section d-block d-lg-none">
         <div class="container-fluid">
         <div class="header  ">
-            <img src="assests/images/frame1.png" width="121px" alt="">
+            <img src="assests/images/frame1.png" alt="">
         </div>
         <input type="checkbox" name="" id="opensidebarmenu">
         <label for="opensidebarmenu" class="sidebaricontoggle">
@@ -47,33 +47,40 @@
 
         <!-- for windows navigation-bar -->
    <div class="window-header "> 
-       <nav class="navbar navbar-expand-lg d-none d-lg-flex navigation-bar navbar-light bg-transparent">
-      <a class="navbar-brand text-white" href="#"><img class="logo" src="assests/images/frame1.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Home </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">About </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Contact </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Blog </a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <a href="" class="px-4 Account" style="text-decoration: none;">HAVE AN ACCOUNT?</a>
-         <a href="" class=" text-decoration-none  signin my-sm-0" style="text-decoration: none;">SIGN IN</a>
-        </form>
-      </div>
-    </nav>
+       <nav class="row navbar navbar-expand-lg d-none d-lg-flex navigation-bar navbar-light bg-transparent">
+          <div class="col-md-3 col-sm-9">
+            <a class="navbar-brand text-white" href="#"><img class="logo" src="assests/images/frame1.png" alt=""></a>
+          </div>
+              <div class="col-md-5">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                </button>    
+                <div class="collapse navbar-collapse header-section-nav" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link text-white" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">About </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Contact </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Blog </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+             <div class="col-md-4">
+                <form class="form-inline">
+                  <a href="" class="px-4 Account" style="text-decoration: none;">HAVE AN ACCOUNT?</a>
+                <a href="" class=" text-decoration-none  signin my-sm-0" style="text-decoration: none;">SIGN IN</a>
+                </form>
+             </div>
+       </nav>
 </div>
     
     </div>
@@ -82,21 +89,21 @@
     <!-- body start from here -->
 
 <!-- ================== banner-section start -->
-<section class="banner-section">
-  <div class="container-fluid ">
+<section class="container-fluid banner-section">
     <div class="row banner-main-section ">
-      <div class="col-md-5 order-md-2 order-sm-1 banner-icon-div "> 
-        <i class="banner-icon"></i>
+      <div class="col-lg-7 col-md-7 col-sm-12 order-md-2 order-sm-1 banner-icon-div"> 
+        <img class="banner-icon" src="assests/images/Frame.png" alt="img" />
       </div>
-      <div class="col-md-5 headings order-md-1 order-sm-2">
+      <div class="col-lg-5 col-sm-12 col-md-5 headings order-md-1 order-sm-2">
+       <div class="banner-info-text">
         <h2>Join The Best</h2>
-        <h3 class="d-none d-sm-block">TALENT MATCHER</h3>
-        <h4 class="d-none d-sm-block"><span >in the</span>world.</h4>
-        <h3 class="d-block d-sm-none">Tallent Matcher in the World.</h3>
+        <h3>TALENT MATCHER</h3>
+        <h4><span >in the</span>world.</h4>
+        <h3 class="tallent-heading">Tallent Matcher in the World.</h3>
         <div class=" header-buttons ">
           <div class="dual-button">
-            <a href="" class=" Interview-button text-center" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</a>
-            <a href="" class=" dashboard-button"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</a>
+            <button class="Interview-button text-center" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</button>
+            <button class="dashboard-button"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</button>
           </div>
           <form action="" class="banner-form">
           <ul >
@@ -111,23 +118,22 @@
           </ul></form>
 
         </div>
+       </div>
       </div>
       
     </div>
-  </div>
 </section>
 
 <!-- ===========================banner-section-end================== -->
 
 
     <div class="container-fluid">
-      <!-- Body text portion starts here -->
-    <div class="container">
-      <div class="row">
+      <!-- Body text portion starts here -->    
        <h3 class="heading-first text-center">Lorem ipsum dolor, sit amet </h3>
         <p class="text-secondary text-center fist-paragrah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam cum incidunt soluta ipsum, fugit ratione iure reiciendis ea rerum alias, laborum et ipsa dignissimos. Iure ipsa pariatur deleniti veritatis!</p>
       </div>
       <!-- ========================Job wrapper's HTML Starts Here======================= -->
+     <div class="container">
       <div class="row" >
         <div class="col-md-4 col-lg-4 col-sm-12">
            <a href="#" class="feature-wrap clearfix">
@@ -163,60 +169,67 @@
           </a>
        </div>
       </div>
-    </div>
-    </div> 
+     </div>
+   
           <!-- ========================Job wrapper's HTML ends Here======================= -->
 
           <!-- =================== main Section starts here================================-->
     
-          <section class="first-section">
-           <div class="container">
+          <div class="container-fluid first-section">
             <div class="row ">
-              <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
+              <div class="col-sm-12 col-md-6 col-lg-6">  
+                <div class="feature-img-wrap">
+                  <img src="assests/images/man.png" alt="vector-img" />
+                </div>             
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
-               <div class="article"> <h2>Tired of applying</h2>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+               <div class="article">
+                  <h2>Tired of applying</h2>
                 <h3> with Countless employers</h3>
                 <p>uploading the same old documents and answering the same old question?</p>
                 <p>Create a Talent Tube account today and make Employers find you!</p></div>
               </div>
             </div>
-           </div>
-          </section>
-
-          
-          <section class="second-section">
-            <div class="container">
-             <div class="row ">
-              <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
-                <div class="article"> <h2>Watch, compare &</h2>
-                 <h3> then decides to get right one</h3>
-                 <p>73% of all consumers are more likely to commit to a purchase after watching a video</p>
-                 <p> Compare that to the 84% who will reject a resume due to lack of personalisation. At Talent Tube,</p>
-                 <p> 
-                  we believe in bridging the gap between a resume and a job application through video technology, 
-                  to increase Job Seekers chances of success.</p></div>
-               </div>
-               <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
-               </div>
-             </div>
+          </div>
+          <div class="container-fluid first-section">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6 order-md-2 order-sm-1">  
+                <div class="feature-img-wrap">
+                  <img src="assests/images/woman.png" alt="vector-img" />
+                </div>             
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 order-md-1 order-sm-2">
+               <div class="article second-article">
+                <h2>Watch, compare &</h2>
+                <h3> then decides to get right one</h3>
+                <p>73% of all consumers are more likely to commit to a purchase after watching a video</p>
+                <p> Compare that to the 84% who will reject a resume due to lack of personalisation. At Talent Tube,</p>
+                <p> 
+                 we believe in bridging the gap between a resume and a job application through video technology, 
+                 to increase Job Seekers chances of success.</p>
+                </div>
+              </div>
             </div>
-           </section>
-
-           
-          <section class="third-section">
-            <div class="container">
-             <div class="row ">
-               <div class="col-sm-12 col-md-6 col-lg-6 empty-div">               
-               </div>
-               <div class="col-sm-12 col-md-6 col-lg-6  content-wrapper">
-                <div class="article"> <h2>Finding candidates</h2>
-                 <h3> with the online presence</h3>
-                 <p>Over 40% of Employers say they may not interview candidates if they can’t find their online presence. Create a tailored online job profile that brings your experience to life, highlighting your strengths and outline the opportunities that matter to you</p></div>
-               </div>
-             </div>
+          </div>
+          <div class="container-fluid first-section">
+            <div class="row ">
+              <div class="col-sm-12 col-md-6 col-lg-6">  
+                <div class="feature-img-wrap">
+                  <img src="assests/images/lcd.png" alt="vector-img" />
+                </div>             
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+               <div class="article"> 
+                <h2>Finding candidates</h2>
+                <h3> with the online presence</h3>
+                <p>Over 40% of Employers say they may not interview candidates if they can’t find their online presence. Create a tailored online 
+                  job profile that brings your experience to life, highlighting your strengths and outline the opportunities that matter to you</p>
+              </div>
+              </div>
             </div>
-           </section>
+          </div>
+
+         
     
     <!-- =================== main Section ends here================================-->
     
