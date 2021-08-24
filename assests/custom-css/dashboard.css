@@ -169,12 +169,14 @@ input, textarea, select{
 }
 /* =====================common styling end ================ */
 /* ==============sidebar==================== */
-.sidebar{
+.sidebar {
     background-image: linear-gradient(#14548f 100% , #00326f 100%);
     color: rgb(247, 247, 248);
     min-height: 100%;
-    /* width: 20%; */
- } 
+    padding: 0;
+    position: fixed;
+    width: 315px;
+}
 .sidebar ul li a img{
     width: 100%;
     margin: auto;
@@ -182,27 +184,26 @@ input, textarea, select{
 }
 .sidebar ul li{
     list-style: none;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-bottom: 19px;
-    padding-top: 18px;
     border-bottom: 1px solid gray;
 }
-.sidebar ul li a{
+.sidebar ul li a {
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 19.2px;
- color: rgb(247, 247, 248);
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s;
+    padding: 15px;
 }
-.sidebar .active{
-    background-color: #FF9400;
-    padding-top:15px;
-    padding-bottom: 15px;
-    margin-right: 0px;
-    margin-right: -10px;
+.sidebar ul li .sidebar-text-view:hover {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    padding: 15px;
+    transition: all 0.3s;
+    background: #FF9400;
+    text-decoration: none;
+}
+.sidebar li a.active{
+    background: #FF9400;
 }
 .sidebar li a span {
     color: #ffffff;
@@ -247,9 +248,10 @@ input, textarea, select{
 .sign-btn i{
     padding-right: 10px;
 }
-.main-content{
+.main-content {
     background-color: #F7F7F8;
     padding-bottom: 80px;
+    margin-left: 315px;
 }
 .tab-circle-cross{
     display: none;
@@ -1112,33 +1114,26 @@ span.remove:before {
     padding-bottom: 25px;
     width: 100%;
 }
-#sidebarMenu ul li{
-    list-style: none;
-    margin-left: -10px;
-    /* margin-right: -10px; */
-    padding-bottom: 19px;
-    padding-top: 18px;
+#sidebarMenu ul li{   
     border-bottom: 1px solid gray;
 }
-#sidebarMenu ul li a{
+#sidebarMenu ul li a {
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 19.2px;
- color: rgb(247, 247, 248);
-
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    transition: all 0.3s;
 }
-#sidebarMenu .active{
-    background-color: #FF9400;
-    padding-top:15px;
-    padding-bottom: 15px;
-    margin-right: 0px;  
+#sidebarMenu li a.active{
+    background-color: #FF9400; 
+}
+#sidebarMenu ul li .sidebar-text:hover {
+    transition: all 0.3s;
+    text-decoration: none;
+    background-color: #FF9400; 
 }
 #sidebarMenu ul li a i{
-    padding-left: 18px;
-    padding-right: 20px;
+  padding: 0 10px;
 }
 .sidebaricontoggle{
     width: 32px;
@@ -1318,9 +1313,6 @@ span.remove:before {
     .sidebar-menu li a span {
         color: #ffffff;
     }
-    .sidebar-menu li a {
-        padding: 0 10px !important;
-    }
     .sign-btn i {
         padding-right: 1px;
     }
@@ -1342,6 +1334,13 @@ span.remove:before {
     }
     .additional-sidebar button span {
         width: 76%;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .sidebar {
+        position: initial;
+        width: 0;
     }
 }
 @media (max-width:767px){
