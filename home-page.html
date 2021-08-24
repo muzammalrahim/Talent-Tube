@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+    <link rel="stylesheet" href="assests/custom-css/common.css">
     <link rel="stylesheet" href="assests/custom-css/homestyle.css">
     <title>Talent Tube</title>
   </head>
@@ -76,8 +76,8 @@
               </div>
              <div class="col-md-4">
                 <form class="form-inline">
-                  <a href="" class="px-4 Account" style="text-decoration: none;">HAVE AN ACCOUNT?</a>
-                <a href="" class=" text-decoration-none  signin my-sm-0" style="text-decoration: none;">SIGN IN</a>
+                  <a href="" class="Account">HAVE AN ACCOUNT?</a>
+                <a href="" class="orange_btn signin" >SIGN IN</a>
                 </form>
              </div>
        </nav>
@@ -90,38 +90,40 @@
 
 <!-- ================== banner-section start -->
 <section class="container-fluid banner-section">
+  <form action="" class="">
     <div class="row banner-main-section ">
       <div class="col-lg-7 col-md-7 col-sm-12 order-md-2 order-sm-1 banner-icon-div"> 
         <img class="banner-icon" src="assests/images/Frame.png" alt="img" />
       </div>
       <div class="col-lg-5 col-sm-12 col-md-5 headings order-md-1 order-sm-2">
        <div class="banner-info-text">
-        <h2>Join The Best</h2>
-        <h3>TALENT MATCHER</h3>
-        <h4><span >in the</span>world.</h4>
-        <h3 class="tallent-heading">Tallent Matcher in the World.</h3>
+        <h1>Join The Best</h1>
+        <h2>TALENT MATCHER<span >in the<strong>world.</strong></span></h2>        
         <div class=" header-buttons ">
           <div class="dual-button">
-            <button class="Interview-button text-center" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</button>
-            <button class="dashboard-button"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</button>
-          </div>
-          <form action="" class="banner-form">
-          <ul >
-            <li class="label">I am</li>
-            <li class="form-buttons"><select  aria-label="Default select example">
+            <button class="orange_btn" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</button>
+            <button class="blue_btn"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</button>
+          </div>          
+          <ul class="btn-infomation">
+            <li><label>I am</label></li>
+            <li class="form-buttons">
+              <select  aria-label="" class="blue_btn">
               <option value="1">Job Seeker</option>
               <option value="2">Developer</option>
               <option value="3">Programmer</option>
             </select></li>
-            <li class="form-buttons"><button type="submit">Continue</button>
+            <li class="form-buttons">
+              <button type="submit" class="blue_btn">Continue</button>
             </li>
-          </ul></form>
+          </ul>
+        
 
         </div>
        </div>
       </div>
       
     </div>
+  </form>
 </section>
 
 <!-- ===========================banner-section-end================== -->
@@ -176,7 +178,7 @@
           <!-- =================== main Section starts here================================-->
     
           <div class="container-fluid first-section">
-            <div class="row ">
+            <div class="row">
               <div class="col-sm-12 col-md-6 col-lg-6">  
                 <div class="feature-img-wrap">
                   <img src="assests/images/man.svg" alt="vector-img" />
@@ -185,9 +187,10 @@
               <div class="col-sm-12 col-md-6 col-lg-6">
                <div class="article">
                   <h2>Tired of applying</h2>
-                <h3> with Countless employers</h3>
+                 <h3> with Countless employers</h3>
                 <p>uploading the same old documents and answering the same old question?</p>
-                <p>Create a Talent Tube account today and make Employers find you!</p></div>
+                <p>Create a Talent Tube account today and make Employers find you!</p>
+              </div>
               </div>
             </div>
           </div>
@@ -253,13 +256,15 @@
              </div>
             </div>
             <div class="col-md-10 footer-icon ">
-              <a href=""  ><i class="fab fa-instagram" ></i></a>
-              <a href="" ><i class="fab fa-twitter" ></i></a>
-              <a href="" ><i class="fab fa-youtube" ></i></a>
-              <a href="" ><i class="fab fa-facebook"></i></a>
-              <a href="" ><i class="fab fa-pinterest"></i></a>
+              <ul>
+                <li><a href="#"  ><i class="fab fa-instagram" ></i></a></li>
+                <li> <a href="#" ><i class="fab fa-twitter" ></i></a> </li>
+                <li><a href="#" ><i class="fab fa-youtube" ></i></a> </li>
+                <li><a href="#" ><i class="fab fa-facebook"></i></a></li>
+                 <li> <a href="#" ><i class="fab fa-pinterest"></i></a></li>
+              </ul>
           </div>
-          <div class="col-md-10 d-none d-sm-block CopyRight"><p>CopyRight 2021</p></div>
+          <div class="col-md-12 CopyRight"><p>CopyRight 2021</p></div>
           </div>
         </div>
       </div>
