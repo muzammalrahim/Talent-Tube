@@ -149,8 +149,9 @@ margin-right: 15px;
     margin-left: 10px;
     font-size: 62px;
 }
-.dual-button button {
+.dual-button a {
     margin-right: 15px;
+    display: inline-block;
 }
 
 .banner-icon-div{
@@ -384,7 +385,7 @@ footer {
     .header-section-nav li a {
         background: #00326f;
     }
-    .dual-button button {
+    .dual-button a {
         margin-right: 2px;
     }
     .banner-info-text h1 {
@@ -581,12 +582,12 @@ footer {
     .header img {
         width: 40%;
     }
-    .dual-button button {
+    .dual-button a {
         width: 100%;
         font-size: 16px !important;
         margin-bottom: 10px;
     }
-    .dual-button button:last-child {
+    .dual-button a:last-child {
         margin-bottom:0;
     }
     .btn-infomation li {
