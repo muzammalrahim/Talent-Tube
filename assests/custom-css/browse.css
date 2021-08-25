@@ -105,14 +105,15 @@
 .custom-checkbox input[type='checkbox']:checked:after{
     display: flex;
     background: #F48128 !important;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     align-items: center;
     justify-content: center;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 .custom-checkbox label{
     padding-left: 10px;
+    cursor: pointer;
 }
 
 /*-------------------------------checkboxes---------------------------- */
@@ -144,6 +145,9 @@
 .bj-modal .close{
     background: none !important;
     border: none !important;
+}
+.bj-modal button:focus{
+    outline: none !important;
 }
 
 .modal-backdrop.fade{
@@ -188,6 +192,7 @@ opacity: 1 !important;
     right: 30px;
     top: 11px;
     width: 20px;
+    height: 20px;
 }
 .loc-modal iframe{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
