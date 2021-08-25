@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* --------------------------Custom select filter----------------------- */
+/* ================================= start Browse job ============================= */
+
+/* -------------------------- Custom select filter----------------------- */
 .b-filter-row{
     background: #f8f8ff;
     padding: 10px 0;
@@ -23,9 +25,7 @@
   .b-filter-row .custom-select select {
     display: none; /*hide original SELECT element:*/
   }
-  .b-filter-row input{
-    background: #ffffff !important;
-}
+ 
   
  /*style the arrow inside the select element:*/
   .b-filter-row .select-selected:after {
@@ -177,12 +177,16 @@ opacity: 1 !important;
 }
 /* -----------------modal Job Filters--------------------- */
 
-
+/* ================================= end Browse job ============================= */
 
 
 /* --------------------media Quries--------------------------- */
   @media (max-width:767px){
+
+    /* ================================= start Browse job ============================= */
   .browse-mp{
       padding-bottom: 15px;
   }
+
+  /* ================================= end Browse job ============================= */
 }
