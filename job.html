@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ======================= Bootstrap files ===================== -->
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- =========== custome-file css =================================== -->
+    <link rel="stylesheet" href="assests/custom-css/common.css">
+    <link rel="stylesheet" href="assests/custom-css/dashboard.css">
+    
+    <title>Talent Tube</title>
+  </head>
+  <body>
+ 
+
+<div class="main-body">
+  <div class="container-fluid">
+    <div class="row">
+        <div class=" col-lg-2 sidebar d-none d-lg-block d-xl-block ">
+          <ul>
+            <li class="logo-design"><a href="home-page.html"><img src="assests/images/frame1.png"  alt=""></a></li> 
+            <li><a href="dashboard.html" class="sidebar-text-view"><i class="fas fa-user"></i><span> Profile</span></a></li>
+            <li><a href="job.html" class="active sidebar-text-view"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
+            <li><a href="concerge.html" class="sidebar-text-view"><i class="far fa-address-book"></i><span> Concerge</span></a></li>
+            <li><a href="interview.html" class="sidebar-text-view"><i class="fas fa-envelope-open-text"></i><span>Interview Invitations</span></a></li>
+            <li><a href="cross.html" class="sidebar-text-view"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
+            <li><a href="browser.html" class="sidebar-text-view"><i class="fas fa-search"></i><span>Browse Jobs</span></a></li>
+            <li><a href="employers.html" class="sidebar-text-view"><i class="fas fa-users"></i><span>Employers</span></a></li>
+            <li><a href="testing.html" class="sidebar-text-view"><i class="fas fa-clipboard-list"></i><span>Testing</span></a></li>
+            <li><a href="block.html" class="sidebar-text-view"><i class="fas fa-user-lock"></i><span>Block Users</span></a></li>
+            <li><a href="user.html" class="sidebar-text-view"><i class="fas fa-thumbs-up"></i><span>Like Users</span></a></li>
+            <li><a href="talent.html" class="sidebar-text-view"><i class="fas fa-hand-holding-usd"></i><span>Talent Matcher</span></a></li>
+          </ul>
+        </div>
+        <div class="main-content col-lg-10 col-md-12 col-sm-12">
+           
+      <!--================== Mobile view sidebar ========================================================= -->
+      <div class="container-fluid d-lg-none d-xl-none">
+        <input type="checkbox" class="sidebar-toggle" name="" id="opensidebarmenu" style="background-color: #00326f;">
+        <label for="opensidebarmenu" class="sidebaricontoggle">
+            <div class="spinner top "></div> 
+        <div class="spinner middle "></div>
+        <div class="spinner bottom "></div>
+    </label>
+        <div id="sidebarMenu">
+          <div class="row">
+            <ul class="sidebar-menu">
+              <li><a href="home-page.html"><img src="assests/images/frame1.png"  alt=""></a></li> 
+                <li><a href="dashboard.html" class="sidebar-text"><i class="fas fa-user"></i><span> Profile</span></a></li>
+                <li><a href="job.html" class="sidebar-text"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
+                <li><a href="concerge.html" class="sidebar-text"><i class="far fa-address-book"></i><span> Concerge</span></a></li>
+                <li><a href="interview.html" class="sidebar-text"><i class="fas fa-envelope-open-text"></i><span>Interview Invitations</span></a></li>
+                <li><a href="cross.html" class="sidebar-text"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
+                <li><a href="browser.html" class="active sidebar-text"><i class="fas fa-search"></i><span>Browse Jobs</span></a></li>
+                <li><a href="employers.html" class="sidebar-text"><i class="fas fa-users"></i><span>Employers</span></a></li>
+                <li><a href="testing.html" class="sidebar-text"><i class="fas fa-clipboard-list"></i><span>Testing</span></a></li>
+                <li><a href="block.html" class="sidebar-text"><i class="fas fa-user-lock"></i><span>Block Users</span></a></li>
+                <li><a href="user.html" class="sidebar-text"><i class="fas fa-thumbs-up"></i><span>Like Users</span></a></li>
+                <li><a href="talent.html" class="sidebar-text"><i class="fas fa-hand-holding-usd"></i><span>Talent Matcher</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- Mobile view navigation end here -->
+         
+
+          <nav class="row top-nav-header">
+            <div class="col-md-10 nav nav-tabs body-tab-btn clearfix" id="nav-tab" role="tablist">
+              <button class="nav-link blue_btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" 
+              role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i>Premium Account</button>
+
+              <button class="nav-link active orange_btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" 
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-user"></i> Profile</button>
+
+              <button class="nav-link orange_btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" 
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-clipboard-list"></i> Update</button>
+
+            </div>
+            <div class="col-md-2 sign-btn">
+              <button class="orange_btn signout" type="button"><i class="fas fa-sign-out-alt"></i>Sign Out</button>
+            </div>
+           
+          </nav>
+
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            </div>
+            
+            <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <section class="row">
+                <div class="col-md-12">
+                  <div class="profile profile-section">
+                    <h2>Photos</h2>
+                    
+                    <!-- Top Filter Row -->
+                    <div class="row b-filter-row" style="align-items: center;">
+
+                      <div class="col-md-4">
+                        <div class="row browse-mp" style="align-items: center;">
+                          <div class="col-lg-3 col-md-12 col-sm-12">
+                            <h5 class="browse-heading">Keyword:</h5>
+                          </div>
+                          <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="input-group">
+                              <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="" 
+                              aria-label="Recipient's username"
+                              >
+                            </div>
+                          </div>
+                          <div class="col-sm-1"></div>
+                        </div> 
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="row browse-mp" style="align-items: center;">
+                          <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h5 class="browse-heading">Salary Range:</h5>
+                          </div>
+                          <div class="col-lg-7 col-md-12 col-sm-12">
+                            <form action="">
+                              <div class="form-group">
+                                <div class="custom-select" style="">
+                                  <select>
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                  </select>
+                                </div>
+                                
+                              </div>
+                            </form>
+                          </div>
+                          <div class="col-sm-1"></div>
+                        </div>  
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="row browse-mp" style="align-items: center;">
+                          <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h5 class="browse-heading">Job Type:</h5>
+                          </div>
+                          <div class="col-lg-8 col-md-12 col-sm-12">
+                            <form action="">
+                              <div class="form-group">
+                                <div class="custom-select" style="">
+                                  <select>
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- Top Filter Row -->
+
+
+                    <!-- Adress + Location -->
+                    <div class="row b-filter-row mt-3" style="align-items: center;">
+                      <div class="col-md-6">
+                        <div class="row" style="align-items: center;">
+                          <div class="col-sm-3">
+                            <h5 class="browse-heading">Filter by Industry:</h5>
+                          </div>
+                          <div class="col-sm-9">
+                            <!-- Button trigger modal -->
+                            <a data-toggle="modal" data-target="#myModal"> 
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="9 Industry Selected">
+                                <div class="input-group-append">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                              </div>
+                            </a>
+                            <!-- Button trigger modal -->
+
+                            <!-- Modal -->
+                            <div class="bj-modal">
+                              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="m-header">
+                                        <h4 class="modal-title" id="myModalLabel">
+                                          <img src="assests/images/filter.png" alt="img" class="">
+                                          Filter by Industry
+                                        </h4>
+                                      </div>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true"><img src="assests/images/close.png" alt="img"></span>
+                                    </button>
+                                    
+                                      
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="m-inner-main">
+                                        
+                                        <div class="form-check custom-checkbox">
+                                          <input 
+                                          class="form-check-input styled-checkbox custom-control-input" 
+                                          id="customCheckBox1"
+                                          type="checkbox" value="" id="flexCheckDefault">
+                                          <label class="form-check-label custom-control-label" for="flexCheckDefault">
+                                            A viation
+                                          </label> 
+                                        </div>
+
+                                        <div class="form-check custom-checkbox">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Accounting and Finance
+                                          </label>
+                                        </div>
+
+                                        <div class="form-check custom-checkbox">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Accounting and Finance
+                                          </label>
+                                        </div>
+
+                                        <div class="form-check custom-checkbox">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Accounting and Finance
+                                          </label>
+                                        </div>
+
+                                        <div class="form-check custom-checkbox">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Accounting and Finance
+                                          </label>
+                                        </div>
+                                        
+                                        <div class="form-check custom-checkbox">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Accounting and Finance
+                                          </label>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary bs-btn">
+                                        <img src="assests/images/search-modal.png" alt="img" class="">
+                                        <span class="fb-text">
+                                          Search
+                                        </span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          <!-- Modal -->
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="row" style="align-items: center;">
+                          <div class="col-sm-3">
+                            <h5 class="browse-heading">Filter by Location:</h5>
+                          </div>
+                          <div class="col-sm-9">
+                            <!-- Button trigger modal -->
+                            <a data-toggle="modal" data-target="#myModal2"> 
+                            <div class="input-group location-filter" style="position: relative;">
+                              <input type="text" class="form-control" placeholder="Sydney, New South Wales, Australia">
+                              <div class="loc-icon">
+                                  <img src="assests/images/location.png" alt="">
+                              </div>
+                            </div>
+                          </a>
+                          <!-- Button trigger modal -->
+                           <!-- Modal -->
+                           <div class="bj-modal">
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <div class="m-header">
+                                      <h4 class="modal-title" id="myModalLabel">
+                                        Location
+                                      </h4>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="assests/images/close.png" alt="img"></span>
+                                  </button>
+                                  
+                                    
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="m-inner-main">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Accounting and Finance
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary bs-btn">
+                                      <img src="assests/images/search-modal.png" alt="img" class="">
+                                      <span class="fb-text">
+                                        Search
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <!-- Modal -->
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                                        
+
+                      <!-- jQuery first, then Bootstrap JS. -->
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
+                    <!-- Adress + Location -->
+                  </div>
+                </div>
+                 
+              </section>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+
+
+
+
+
+           <!-- ============== top buttons end =========================== -->
+
+      
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assests/bootstrap/js/jquery.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assests/bootstrap/js/jquery.min.js"></script>
+    <script src="assests/custom-js/custom.js"></script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordionone");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+      <!-- select dropdown -->
+      <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          ll = selElmnt.length;
+          /*for each element, create a new DIV that will act as the selected item:*/
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          /*for each element, create a new DIV that will contain the option list:*/
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < ll; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    yl = y.length;
+                    for (k = 0; k < yl; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          /*a function that will close all select boxes in the document,
+          except the current select box:*/
+          var x, y, i, xl, yl, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          xl = x.length;
+          yl = y.length;
+          for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+        </script>
+        <!-- select dropdown -->
+
+    </body>
+</html>

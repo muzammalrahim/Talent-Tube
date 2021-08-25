@@ -177,6 +177,7 @@ input, textarea, select{
     color: rgb(247, 247, 248);
     min-height: 100%;
     padding: 0;
+    height: 100vh;
     
 }
 .sidebar ul li a img{
@@ -318,6 +319,10 @@ input, textarea, select{
     margin-top: -19px;
 }
 /* Mobile Sidebar portion end here */
+
+
+
+
 
 
 
