@@ -115,7 +115,7 @@
             <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
               <section class="row">                
                 <div class="col-md-4 order-md-2 order-sm-1 profile-data-info">
-                 <div class="profile-section profile-information">
+                 <div class="profile-information">
                   <div class="profile-img-wrapper">
                     <img src="assests/images/user.png" width="150" alt="profile">
                   </div>
@@ -880,25 +880,10 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assests/bootstrap/js/jquery.js"></script>
     <script src="assests/bootstrap/js/bootstrap.js"></script>
-    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
     <script src="assests/bootstrap/js/jquery.min.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
+    
     <script src="assests/custom-js/custom.js"></script>
 
-    <script>
-      var acc = document.getElementsByClassName("accordionone");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
     </body>
 </html>
