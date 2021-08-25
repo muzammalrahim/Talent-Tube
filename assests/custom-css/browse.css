@@ -169,6 +169,7 @@ opacity: 1 !important;
     padding-left: 5px;
     color: #ffffff;
 }
+
 .bj-modal .modal-footer .bs-btn img{
     width: 13px;
 }
@@ -176,6 +177,50 @@ opacity: 1 !important;
     border-top: 0 !important;
 }
 /* -----------------modal Job Filters--------------------- */
+
+/* -------------------location modal---------------------- */
+.main-input::placeholder{
+    color: #B2B2B2;
+    font-size: 14px;
+}
+.bs-img{
+    position: relative;
+    right: 30px;
+    top: 11px;
+    width: 20px;
+}
+.loc-modal iframe{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.location-filter-m input{
+    background: #f6f6f6;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+}
+.location-filter-m input::placeholder{
+    font-size: 14px;
+    color: #000000;
+    background: #f6f6f6;
+}
+.ls-m .select-selected{
+    font-size: 14px;
+    color: #000000;
+    background: #f6f6f6;
+}
+.loc-m-row{
+    padding-bottom: 20px;
+}
+.loc-modal .modal-dialog {
+    max-width: 760px !important;
+}
+.gl-btn{
+    background: #009D10;
+    border: none;
+}
+.gl-text{
+    color: #ffffff;
+}
+/* -------------------location modal---------------------- */
 
 /* ================================= end Browse job ============================= */
 
@@ -189,4 +234,20 @@ opacity: 1 !important;
   }
 
   /* ================================= end Browse job ============================= */
+}
+
+@media (max-width:479px){
+    /* ================================= start Browse job ============================= */
+    .bj-modal .modal-header button{
+        width: unset !important;
+    }
+    .b-m-btn{
+        position: relative;
+        top: 13px;
+    }
+    .bj-modal .modal-footer .bs-btn {
+        justify-content: center;
+    }
+
+    /* ================================= start Browse job ============================= */
 }
