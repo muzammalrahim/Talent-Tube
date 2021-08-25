@@ -196,11 +196,8 @@
     margin-right: 2px;
 }
 .send-refrance a{
-    text-decoration: none;
-    
-    margin-top: 25px !important;
-    margin-bottom: 35px !important;
-    padding: 11px 44px 12px 44px !important;
+    margin: 25px 0 !important;
+    padding:4px 30px !important;
 }
 
 .send-refrance a i{

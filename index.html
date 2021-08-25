@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- =============== custom files -->
     <link rel="stylesheet" href="assests/custom-css/common.css">
     <link rel="stylesheet" href="assests/custom-css/homestyle.css">
     <title>Talent Tube</title>
@@ -31,11 +32,11 @@
         <div id="sidebarMenu">
             <ul class="menu">
                 <li><a href="#"><i class="fas fa-user "></i> Profile</a></li>
-                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
-                <li><a href="#">Have an Account?</a></li>
+                <li><a href="signin.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                <!-- <li><a href="#">Have an Account?</a></li> -->
             </ul>
             <ul class="menu2">
-                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">Home</a></li> -->
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Blog</a></li>
@@ -50,7 +51,7 @@
 
        <nav class="row navbar navbar-expand-lg d-none d-lg-flex navigation-bar navbar-light bg-transparent">
           <div class="col-md-3 col-sm-9">
-            <a class="navbar-brand text-white" href="#"><img class="logo" src="assests/images/frame1.png" alt=""></a>
+            <a class="navbar-brand text-white" href="index.html"><img class="logo" src="assests/images/frame1.png" alt=""></a>
           </div>
               <div class="col-md-5">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
@@ -59,9 +60,9 @@
                 </button>    
                 <div class="collapse navbar-collapse header-section-nav" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                       <a class="nav-link text-white" href="#">Home </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#">About </a>
                     </li>
@@ -77,8 +78,8 @@
               </div>
              <div class="col-md-4">
                 <form class="form-inline">
-                  <a href="" class="Account">HAVE AN ACCOUNT?</a>
-                <a href="" class="orange_btn signin" >SIGN IN</a>
+                  <span class="Account">HAVE AN ACCOUNT?</span>
+                <a href="signin.html" class="orange_btn signin" >SIGN IN</a>
                 </form>
              </div>
        </nav>
@@ -102,18 +103,15 @@
         <h2>TALENT MATCHER<span >in the<strong>world.</strong></span></h2>        
         <div class=" header-buttons ">
           <div class="dual-button">
-
-            <button class="orange_btn" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</button>
-            <button class="blue_btn"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</button>
+            <a href="#" class="orange_btn" ><img src="assests/images/Interview-icon.svg"  alt=""> Interview concierge</a>
+            <a href="dashboard.html" class="blue_btn"><img src="assests/images/Dashboard-icon.svg"  alt=""> Dashboard</a>
           </div>          
           <ul class="btn-infomation">
             <li><label>I am</label></li>
             <li class="form-buttons">
               <select  aria-label="" class="blue_btn">
-
               <option value="1">Job Seeker</option>
-              <option value="2">Developer</option>
-              <option value="3">Programmer</option>
+              <option value="2">Employee</option>
             </select></li>
             <li class="form-buttons">
               <button type="submit" class="blue_btn">Continue</button>
