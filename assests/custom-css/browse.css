@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* --------------------------Custom select filter----------------------- */
+.b-filter-row{
+    background: #f8f8ff;
+    padding: 10px 0;
+}
+.browse-heading{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.b-filter-row select{
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.b-filter-row .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .b-filter-row .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  .b-filter-row input{
+    background: #ffffff !important;
+}
+  
+ /*style the arrow inside the select element:*/
+  .b-filter-row .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .b-filter-row .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .b-filter-row .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background: #ffffff;
+    
+  }
+  
+  /*style items (options):*/
+  .b-filter-row .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .b-filter-row .select-hide {
+    display: none;
+  }
+  
+  .b-filter-row .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+/* --------------------------Custom select filter----------------------- */
+
+/*-------------------------------checkboxes---------------------------- */
+.form-check{
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox input[type='checkbox']{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #ffffff !important;
+    border: 1px solid #F48128 !important;
+    cursor: pointer;
+}
+.custom-checkbox input[type='checkbox']:after{
+    content: "\f00c";
+    font-family: "fontawesome";
+    display: none;
+    width: 10px;
+    color: #fff;
+    font-size: 11px;
+}
+.custom-checkbox input[type='checkbox']:hover{
+    background: #000;
+}
+.custom-checkbox input[type='checkbox']:checked:after{
+    display: flex;
+    background: #F48128 !important;
+    width: 14px;
+    height: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.custom-checkbox label{
+    padding-left: 10px;
+}
+
+/*-------------------------------checkboxes---------------------------- */
+
+
+  .loc-icon img{
+      position: absolute;
+      right: 10px;
+      top: 12px;
+  }
+
+
+
+/* -----------------modal Job Filters--------------------- */
+.bj-modal .modal-header{
+    background: #2672AB;
+}
+.modal-title img{
+    position: relative;
+    top: 5px;
+}
+.bj-modal .modal-header{
+    padding: 0 0 0 15px !important;
+}
+.bj-modal .modal-header h4{
+    color: #ffffff;
+    font-size: 16px;
+}
+.bj-modal .close{
+    background: none !important;
+    border: none !important;
+}
+
+.modal-backdrop.fade{
+    opacity: 0.5 !important;
+}
+.bj-modal .modal.fade:not(.show) {
+opacity: 1 !important;
+}
+.bj-modal .modal-dialog{
+    top: 25% !important;
+} 
+.bj-modal .modal-footer .bs-btn{
+    background: #00326F;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    border-radius: 2px;
+}
+.fb-text{
+    padding-left: 5px;
+    color: #ffffff;
+}
+.bj-modal .modal-footer .bs-btn img{
+    width: 13px;
+}
+.bj-modal .modal-footer{
+    border-top: 0 !important;
+}
+/* -----------------modal Job Filters--------------------- */
+
+
+
+
+/* --------------------media Quries--------------------------- */
+  @media (max-width:767px){
+  .browse-mp{
+      padding-bottom: 15px;
+  }
+}
