@@ -32,24 +32,76 @@
 }
 .input-group-text {
     color:  rgba(136, 136, 136, 1);
-    ;
+    
 }
 .password a{
  position: relative;
  margin-left: 240px;
  color: #2672ab;
 }
-.form-check-input{
-    border: 1px solid rgb(244 129 40);
+.Content .signin .form-check-input{
+    border: 1px solid rgb(244 129 40) !important;
 }
-.form-check-input:checked {
-    background-color: rgb(244 129 40);
-    border-color: rgb(244 129 40);
+.Content .signin .form-check-input:checked {
+    background-color: rgb(244 129 40) ;
+    border-color: #fff !important;
 }
-button{
+/* ==================================================== */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #f48128;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #f48128;
+    position: absolute;
+    top: 3.2px;
+    left: 3.2px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/* ======================================================= */
+.submit button{
     width: 300px;
     display: block;
-    margin: auto
+    margin: auto;
  
 }
 .submit button:hover{
@@ -186,7 +238,7 @@ button{
     padding-top: 25px;
 }
 .update-info-buttons .buttons-group{
-    /* margin-left: 10px; */
+
     float: right;
 }
 .update-info-buttons .buttons-group li{
@@ -204,7 +256,7 @@ button{
 .update-info-buttons .buttons-group .btn-second{
     background-color: #f48128;
 }
-.update-info-buttons .buttons-group .btn-first a , .update-info-buttons .buttons-group .btn-second a , .update-info-buttons .buttons-group .btn-third a {
+.update-info-buttons .buttons-group .btn-first a , .update-info-buttons .buttons-group .btn-second a , .update-info-buttons .buttons-group .btn-third a ,.update-info-buttons .buttons-group .btn-four a{
     color: #fff;
     text-decoration: none;
     padding: 15px 15px;
@@ -213,7 +265,40 @@ button{
 .update-info-buttons .buttons-group .btn-third{
     background-color:#e20000;
 }
-
+/* =======================Employee Seeker form css starts here========================= */
+.Search-portion{
+    position: relative;
+    border-radius: 5px;
+}
+.Search-portion input:checked{
+    border: transparent !important;
+}
+.Search-btn{
+    position: absolute;
+    width: 100px !important;
+    right: 0;
+    height: 45px;
+    border-radius: 5px !important;
+    background-color: #009D10;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 10;
+}
+.Search-btn i{
+    padding: 0px 7px 0px 0px;
+}
+.update-info-buttons .buttons-group .btn-four{
+    background-color: #242424;
+}
+/* ===================================job application form css============================= */
+.seeker-title{
+    /* display: block; */
+    justify-content: space-between;
+    align-items: center;
+}
+.age-limit{
+    color: #f48128;
+}
 @media screen and (max-width:450px){
     .Content .logo img{
         width: 150px;
@@ -277,6 +362,9 @@ button{
     .update-info{
         margin: 0px;
     }
+    .update-info h4{
+        text-align: center;
+    }
     .update-info-buttons{
         padding-right: 0px !important;
     }
@@ -297,4 +385,20 @@ button{
     .update-buttons-2{
         padding: 0px;
     }
+    /* ====================================employee form css starts here================ */
+    .Search-portion{
+        position: relative;
+        border-radius: 5px;
+    }
+    .Search-btn{
+        position: initial;
+        width: 100% !important;
+        right: 0;
+        border-radius: 5px !important;
+        display: block;
+        background-color: #009D10;
+        margin: 16px 0px 0px;
+        color: #fff;
+    }
+ 
 }
