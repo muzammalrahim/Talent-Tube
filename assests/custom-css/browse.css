@@ -169,6 +169,7 @@ opacity: 1 !important;
     padding-left: 5px;
     color: #ffffff;
 }
+
 .bj-modal .modal-footer .bs-btn img{
     width: 13px;
 }
@@ -176,6 +177,18 @@ opacity: 1 !important;
     border-top: 0 !important;
 }
 /* -----------------modal Job Filters--------------------- */
+
+/* -------------------location modal---------------------- */
+.loc-modal .modal-dialog {
+    max-width: 760px !important;
+}
+.gl-btn{
+    background: #009D10;
+}
+.gl-text{
+    color: #ffffff;
+}
+/* -------------------location modal---------------------- */
 
 /* ================================= end Browse job ============================= */
 
