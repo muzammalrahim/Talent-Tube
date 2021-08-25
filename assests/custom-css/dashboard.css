@@ -967,6 +967,19 @@ span.remove:before {
     padding-bottom: 20px;
 }
 
+/* ======================interview============ */
+.dual-tags .interview-tag {
+    float: left;
+}
+.dual-tags{
+    margin:0 15px 20px;
+}
+.interview-box .text-info-detail label {
+    width: 40%;
+}
+.interview-box  .text-info-detail span {
+    width: 60%;
+}
 
 
 
@@ -1422,6 +1435,15 @@ span.remove:before {
         width: 70px !important;
         float: left;
     }
+
+    /* ======================interview============ */
+.interview-box .text-info-detail label {
+    width: 100% !important;
+}
+.interview-box  .text-info-detail span {
+    width: 100% !important;
+}
+
 }
 
 
