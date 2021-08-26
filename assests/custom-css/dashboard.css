@@ -974,8 +974,6 @@ span.remove:before {
 }
 .user-images{
     display: block;
-    
-    /* flex-direction: column; */
 }
 .block-user-img{
     border: 1px solid #FFD6B6;
@@ -1099,7 +1097,46 @@ span.remove:before {
     color: #f44336;
     padding: 1px 6px !important;
 }
-
+/* ===============================Like users page css starts here ====================*/
+.block2-progrees-ratio ul li{
+    list-style-type:none;
+    color: #242424;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 12px ;
+    line-height: 14.4px;
+}
+.block2-progrees-ratio ul li span{
+    padding: 0px 4px;
+}
+.block-box .box-footer .block-btn{
+    background-color:#E00f00 ;
+    color: #fff;
+    border: 1px solid #E00f00;
+   float: right;
+   padding: 5px 10px;
+   margin: 10px 3px;
+   border-radius: 5px;
+}
+.block-box .box-footer .block-btn a{
+  color: #fff;
+  font-size: 14px;
+}
+.block-box .box-footer .unlike-btn{
+    background-color: #009d10;
+    color: #fff;
+    border: 1px solid #009d10;
+   float: right;
+   padding: 5px 12px;
+   margin: 10px 13px 0px 3px;
+   border-radius: 5px;
+}
+.block-box .box-footer .unlike-btn a{
+  color: #fff;
+  font-size: 14px;
+}
 
 
 
@@ -1226,6 +1263,20 @@ span.remove:before {
     .additional-sidebar .profile .nav-link {
         padding: 15px 5px;
     }
+    /* ============================like user page css========================== */
+    .block-progrees-ratio {
+        display: block;
+        margin: 0px 0px;
+        padding: 2px;
+        position: absolute;
+        left: auto;
+        top: 4px;
+    }
+    .user-page-footer ul li{
+        float: none !important;
+        padding: 5px 0px !important;
+        margin: 0px;
+    }
 }
 @media (max-width: 991px){
     body{
@@ -1267,7 +1318,18 @@ span.remove:before {
         display: block;
         width: 100%;
     }
-  
+ /* =============================like user page css================================= */
+
+ .block-progrees-ratio ul li{
+    list-style-type:none;
+    color: #242424;
+    float: left;
+    margin-right: 3px;
+    margin-left:0px;
+    text-align: center;
+    font-size: 12px ;
+    line-height: 14.4px;
+}
 }
 @media (max-width:767px){
     .body-tab-btn {
@@ -1495,6 +1557,7 @@ span.remove:before {
    .user-images{
     display: flex;
     flex-direction: row;
+    padding: 0px 0px;
 }
 .block-user-img{
     border: 1px solid #FFD6B6;
@@ -1503,6 +1566,7 @@ span.remove:before {
     align-items: center;
     border-radius: 5px;
     margin-right: 15px;
+    height: 100%;
 }
 .block-user-img img{
     width: 100%;
@@ -1515,6 +1579,7 @@ span.remove:before {
     border: 1px solid #FFD6B6;
     padding: 5px;
     border-radius: 5px;
+    height: 100%;
 }
 .block-user-progress .progress-img img{
    width: 100%;
@@ -1533,13 +1598,10 @@ span.remove:before {
 }
 .block-progrees-ratio{
     display: block;
-    margin: auto 0px;
-    padding-bottom: 30px;
-    position: relative;
-    
+    margin: 10px 0px 0px 0px;
+    /* padding-bottom: 30px; */
+    position: relative;  
 }
-
-
 .block-progrees-ratio ul li{
     float: none;
     margin: 0px;
@@ -1629,8 +1691,16 @@ span.remove:before {
         color: #ffffff;
         margin: 0px 20px;
     }
+    .unlike-btn-group{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
     .block-box .box-footer .unblock-btn {
         margin: 10px 0px;
+    }
+    .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn  {
+        margin: 5px 5px;
     }
 }
 
