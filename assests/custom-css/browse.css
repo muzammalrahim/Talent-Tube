@@ -2,6 +2,62 @@
 
 /* ================================= start Browse job ============================= */
 
+.bj-main{
+    padding-bottom: 20px;
+}
+.bj-tr-btn .used-tag{
+    float: unset;
+}
+.bj-tr-btn{
+    display: grid;
+    grid-template-columns: 8% 8%;
+    grid-gap: 10px;
+    padding: 20px 0;
+    justify-content: end;
+}
+.bj-tr-btn .used-tag {
+    padding: 7px 10px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.b-card-btn{
+    text-align: right;
+}
+.b-card-btn .orange_btn{
+    margin-right: 10px;
+}
+.bc-footer {
+    background: #BFC9D1;
+    padding: 15px 10px; 
+}
+.bc-footer h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.bc-footer span{
+    text-align: center;
+}
+.bc-footer .used-tag{
+    float: unset;
+    border: 1px solid #e6e6e6; 
+}
+.bc-footer .orange_btn{
+    padding: 6px 18px !important;
+    height: unset !important;
+    font-size: 16px;
+}
+.bc-footer .used-tag {
+    padding: 9px 27px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin: 0 !important;
+}
+
 /* -------------------------- Custom select filter----------------------- */
 .b-filter-row{
     background: #f8f8ff;
@@ -231,13 +287,37 @@ opacity: 1 !important;
 
 
 /* --------------------media Quries--------------------------- */
+@media (max-width:1499px){
+    .bj-tr-btn {
+        grid-template-columns: 11% 11%;
+    }    
+}
+@media (max-width:1100px){
+    .bj-tr-btn {
+        grid-template-columns: 20% 20%;
+    }    
+}
+@media (max-width:991px){
+    /* =================================  start Browse job ============================= */
+    .b-card-btn{
+       display: grid;
+       grid-template-columns: 50% 50%;
+       padding-top: 15px;
+    }
+    .bj-tr-btn {
+        grid-template-columns: 50% 50%;
+    }
+    .bj-tr-btn button{
+        margin-bottom: 0;
+    }
+   /* ================================= end Browse job ============================= */
+}
   @media (max-width:767px){
 
     /* ================================= start Browse job ============================= */
   .browse-mp{
       padding-bottom: 15px;
   }
-
   /* ================================= end Browse job ============================= */
 }
 
@@ -253,6 +333,9 @@ opacity: 1 !important;
     .bj-modal .modal-footer .bs-btn {
         justify-content: center;
     }
+    .bc-footer .used-tag {
+        padding: 4px 27px;
+     }
 
     /* ================================= start Browse job ============================= */
 }
