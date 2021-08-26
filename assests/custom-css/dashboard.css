@@ -1097,6 +1097,7 @@ span.remove:before {
     color: #f44336;
     padding: 1px 6px !important;
 }
+
 /* ===============================Like users page css starts here ====================*/
 .block2-progrees-ratio ul li{
     list-style-type:none;
@@ -1136,6 +1137,21 @@ span.remove:before {
 .block-box .box-footer .unlike-btn a{
   color: #fff;
   font-size: 14px;
+
+
+/* ======================interview============ */
+.dual-tags .interview-tag {
+    float: left;
+}
+.dual-tags{
+    margin:0 15px 20px;
+}
+.interview-box .text-info-detail label {
+    width: 40%;
+}
+.interview-box  .text-info-detail span {
+    width: 60%;
+
 }
 
 
@@ -1679,6 +1695,7 @@ span.remove:before {
         width: 70px !important;
         float: left;
     }
+
     /* =====================================Block User page css===================== */
     .block-user-img {
         padding: 5px;
@@ -1701,7 +1718,18 @@ span.remove:before {
     }
     .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn  {
         margin: 5px 5px;
-    }
+  }
+
+
+    /* ======================interview============ */
+.interview-box .text-info-detail label {
+    width: 100% !important;
+}
+.interview-box  .text-info-detail span {
+    width: 100% !important;
+}
+
+
 }
 
 

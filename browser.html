@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- ======================= Bootstrap files ===================== -->
-    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css" >
+    <!-- <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css" > -->
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -114,11 +114,12 @@
             
             <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
               <section class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 browse-job-main">
                   <div class="profile profile-section">
                     <h2>Browse Jobs</h2>
-                    
-                    <!-- Top Filter Row -->
+
+                    <div class="bj-main">
+                      <!-- Top Filter Row -->
                     <div class="row b-filter-row" style="align-items: center;">
 
                       <div class="col-md-4">
@@ -150,20 +151,11 @@
                             <form action="">
                               <div class="form-group">
                                 <div class="custom-select" style="">
-                                  <select>
-                                    <option value="0">Select car:</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
+                                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
                                   </select>
                                 </div>
                                 
@@ -249,12 +241,13 @@
                                       <div class="m-inner-main">
                                         
                                         <div class="form-check custom-checkbox">
-                                          <input 
-                                          class="form-check-input styled-checkbox custom-control-input" 
-                                          id="customCheckBox1"
-                                          type="checkbox" value="" id="flexCheckDefault">
+                                         
                                           <label class="form-check-label custom-control-label" for="flexCheckDefault">
                                             A viation
+                                            <input 
+                                            class="form-check-input styled-checkbox custom-control-input" 
+                                            id="customCheckBox1"
+                                            type="checkbox" value="" id="flexCheckDefault">
                                           </label> 
                                         </div>
 
@@ -266,29 +259,29 @@
                                         </div>
 
                                         <div class="form-check custom-checkbox">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                          <label class="form-check-label" for="flexCheckChecked">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                                          <label class="form-check-label" for="flexCheckChecked1">
                                             Accounting and Finance
                                           </label>
                                         </div>
 
                                         <div class="form-check custom-checkbox">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                          <label class="form-check-label" for="flexCheckChecked">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                                          <label class="form-check-label" for="flexCheckChecked2">
                                             Accounting and Finance
                                           </label>
                                         </div>
 
                                         <div class="form-check custom-checkbox">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                          <label class="form-check-label" for="flexCheckChecked">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                                          <label class="form-check-label" for="flexCheckChecked3">
                                             Accounting and Finance
                                           </label>
                                         </div>
                                         
                                         <div class="form-check custom-checkbox">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                          <label class="form-check-label" for="flexCheckChecked">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
+                                          <label class="form-check-label" for="flexCheckChecked4">
                                             Accounting and Finance
                                           </label>
                                         </div>
@@ -361,13 +354,10 @@
                                             <div class="location-filter ls-m" style="position: relative;">
                                               <form action="">
                                                 <div class="form-group">
-                                                  <div class="custom-select" style="">
-                                                    <select class="w-100">
-                                                      <option value="0">5 KM</option>
-                                                      <option value="1">2 KM</option>
-                                                      <option value="2">3 KM</option>
-                                                    </select>
-                                                  </div>
+                                                  <select class="selectpicker">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
                                                 </div>
                                               </form> 
                                             </div>
@@ -407,18 +397,159 @@
                         </div>
                        </div>
                     </div>
-                    
-                                        
-
-                      <!-- jQuery first, then Bootstrap JS. -->
-                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-
                     <!-- Adress + Location -->
+
+                    <!-- buttons -->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="bj-tr-btn">
+                          <button class="nav-link orange_btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <img src="assests/images/reset.png">
+                            Rest
+                          </button>
+                          <span class="interview-tag used-tag">
+                            <img src="assests/images/done.png">
+                            Submit
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- buttons -->
+                    </div>
+                    
+                    <!-- Job Detail Area -->
+                
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                       <div class="job-box-info">
+                         <div class="box-head">
+                           <h4>
+                             Social Media Officer (remote role)
+                           </h4>
+                           <!-- <label>Location:<span> Alexandria, New South Wales, Australia</span></label> -->
+                           <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
+                         </div>
+                         <div class="job-box-text clearfix">
+                            <div class="text-info-detail clearfix">
+                              <label>Job Type:</label>
+                              <span>Senior Designer</span>
+                            </div>
+                            <div class="text-info-detail clearfix">
+                             <label>Job Experience:</label>
+                             <span>3 year</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Job Salary:</label>
+                             <span>$500/-</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Submitted:</label>
+                             <span>20-12-2012</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Job Detailed:</label>
+                             <p>
+                              Looking for someone to make posts and respond to enquiries to the 
+                              Rapid Print Facebook, Twitter & Instagram pages. I like someone 
+                              in Western Sydney, but it can realistically be done anywhere remotely. 
+                              Work your own hours, as long as you report to every customer within 
+                              24 hours, and make 10 posts on each of channel a week. Pay works 
+                              out to 60k base for a full timer, this role is realistically 
+                              done in about 12 hours a week.
+                             </p>
+                           </div>
+                           
+                         </div>
+                         <div class="bc-footer">
+                           <div class="row">
+                             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                              <div class="b-heading">
+                                <h4>
+                                 Code: 941813
+                                </h4>
+                              </div>
+                             </div>
+                             <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                               <div class="b-card-btn">
+                                <span class="orange_btn">
+                                  <img src="assests/images/detail.png" alt="">
+                                  Detail
+                                </span>
+                                <span class="interview-tag used-tag">
+                                  <img src="assests/images/apply.png" alt="">
+                                  Apply
+                                </span>
+                               </div>
+                             </div>
+                           </div>
+                       </div> 
+                       </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                       <div class="job-box-info">
+                         <div class="box-head">
+                           <h4>
+                             Social Media Officer (remote role)
+                            </h4>
+                           <!-- <label>Location:<span> Alexandria, New South Wales, Australia</span></label> -->
+                           <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
+                         </div>
+                         <div class="job-box-text clearfix">
+                            <div class="text-info-detail clearfix">
+                              <label>Job Type:</label>
+                              <span>Senior Designer</span>
+                            </div>
+                            <div class="text-info-detail clearfix">
+                             <label>Job Experience:</label>
+                             <span>3 year</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Job Salary:</label>
+                             <span>$500/-</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Submitted:</label>
+                             <span>20-12-2012</span>
+                           </div>
+                           <div class="text-info-detail clearfix">
+                             <label>Job Detailed:</label>
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                               Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry. </p>
+                           </div>
+                         </div>
+                         <div class="bc-footer">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                             <div class="b-heading">
+                               <h4>
+                                Code: 941813
+                               </h4>
+                             </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                              <div class="b-card-btn">
+                               <span class="orange_btn">
+                                 <img src="assests/images/detail.png" alt="">
+                                 Detail
+                               </span>
+                               <span class="interview-tag used-tag">
+                                 <img src="assests/images/apply.png" alt="">
+                                 Apply
+                               </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                       </div>
+                      </div>
+                    </div>
+              <!-- Job Detail Area -->
                   </div>
                 </div>
                  
               </section>
+
+              
             </div>
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
               <div class="profile-section update-information">
@@ -499,93 +630,17 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assests/bootstrap/js/jquery.js"></script>
     <script src="assests/bootstrap/js/bootstrap.js"></script>
-    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
     <script src="assests/bootstrap/js/jquery.min.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.min.js"></script>
+  
     <script src="assests/custom-js/custom.js"></script>
 
-
-      <!-- select dropdown -->
-      <script>
-        var x, i, j, l, ll, selElmnt, a, b, c;
-        /*look for any elements with the class "custom-select":*/
-        x = document.getElementsByClassName("custom-select");
-        l = x.length;
-        for (i = 0; i < l; i++) {
-          selElmnt = x[i].getElementsByTagName("select")[0];
-          ll = selElmnt.length;
-          /*for each element, create a new DIV that will act as the selected item:*/
-          a = document.createElement("DIV");
-          a.setAttribute("class", "select-selected");
-          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-          x[i].appendChild(a);
-          /*for each element, create a new DIV that will contain the option list:*/
-          b = document.createElement("DIV");
-          b.setAttribute("class", "select-items select-hide");
-          for (j = 1; j < ll; j++) {
-            /*for each option in the original select element,
-            create a new DIV that will act as an option item:*/
-            c = document.createElement("DIV");
-            c.innerHTML = selElmnt.options[j].innerHTML;
-            c.addEventListener("click", function(e) {
-                /*when an item is clicked, update the original select box,
-                and the selected item:*/
-                var y, i, k, s, h, sl, yl;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                sl = s.length;
-                h = this.parentNode.previousSibling;
-                for (i = 0; i < sl; i++) {
-                  if (s.options[i].innerHTML == this.innerHTML) {
-                    s.selectedIndex = i;
-                    h.innerHTML = this.innerHTML;
-                    y = this.parentNode.getElementsByClassName("same-as-selected");
-                    yl = y.length;
-                    for (k = 0; k < yl; k++) {
-                      y[k].removeAttribute("class");
-                    }
-                    this.setAttribute("class", "same-as-selected");
-                    break;
-                  }
-                }
-                h.click();
-            });
-            b.appendChild(c);
-          }
-          x[i].appendChild(b);
-          a.addEventListener("click", function(e) {
-              /*when the select box is clicked, close any other select boxes,
-              and open/close the current select box:*/
-              e.stopPropagation();
-              closeAllSelect(this);
-              this.nextSibling.classList.toggle("select-hide");
-              this.classList.toggle("select-arrow-active");
-            });
-        }
-        function closeAllSelect(elmnt) {
-          /*a function that will close all select boxes in the document,
-          except the current select box:*/
-          var x, y, i, xl, yl, arrNo = [];
-          x = document.getElementsByClassName("select-items");
-          y = document.getElementsByClassName("select-selected");
-          xl = x.length;
-          yl = y.length;
-          for (i = 0; i < yl; i++) {
-            if (elmnt == y[i]) {
-              arrNo.push(i)
-            } else {
-              y[i].classList.remove("select-arrow-active");
-            }
-          }
-          for (i = 0; i < xl; i++) {
-            if (arrNo.indexOf(i)) {
-              x[i].classList.add("select-hide");
-            }
-          }
-        }
-        /*if the user clicks anywhere outside the select box,
-        then close all select boxes:*/
-        document.addEventListener("click", closeAllSelect);
-        </script>
-        <!-- select dropdown -->
+    <script type="text/javascript">
+      $( function() {
+         $('.selectpicker').selectpicker();
+      })
+  </script>
+      
 
     </body>
 </html>
