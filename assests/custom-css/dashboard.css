@@ -1100,6 +1100,19 @@ span.remove:before {
     padding: 1px 6px !important;
 }
 
+/* ======================interview============ */
+.dual-tags .interview-tag {
+    float: left;
+}
+.dual-tags{
+    margin:0 15px 20px;
+}
+.interview-box .text-info-detail label {
+    width: 40%;
+}
+.interview-box  .text-info-detail span {
+    width: 60%;
+}
 
 
 
@@ -1617,21 +1630,17 @@ span.remove:before {
         width: 70px !important;
         float: left;
     }
-    /* =====================================Block User page css===================== */
-    .block-user-img {
-        padding: 5px;
-        margin-right: 10px;
-    }
-    .block-box .box-footer {
-        background: transparent;
-        border-radius: 2px 2px 0 0;
-        position: relative;
-        color: #ffffff;
-        margin: 0px 20px;
-    }
-    .block-box .box-footer .unblock-btn {
-        margin: 10px 0px;
-    }
+
+
+    /* ======================interview============ */
+.interview-box .text-info-detail label {
+    width: 100% !important;
+}
+.interview-box  .text-info-detail span {
+    width: 100% !important;
+}
+
+
 }
 
 
