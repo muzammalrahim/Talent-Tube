@@ -26,10 +26,10 @@
           <ul>
             <li class="logo-design"><a href="index.html"><img src="assests/images/frame1.png"  alt=""></a></li> 
             <li><a href="dashboard.html" class="sidebar-text-view"><i class="fas fa-user"></i><span> Profile</span></a></li>
-            <li><a href="job.html" class="active sidebar-text-view"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
+            <li><a href="job.html" class="sidebar-text-view"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
             <li><a href="concerge.html" class="sidebar-text-view"><i class="far fa-address-book"></i><span> Concerge</span></a></li>
             <li><a href="interview.html" class="sidebar-text-view"><i class="fas fa-envelope-open-text"></i><span>Interview Invitations</span></a></li>
-            <li><a href="cross.html" class="sidebar-text-view"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
+            <li><a href="cross.html" class="active sidebar-text-view"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
             <li><a href="browser.html" class="sidebar-text-view"><i class="fas fa-search"></i><span>Browse Jobs</span></a></li>
             <li><a href="employers.html" class="sidebar-text-view"><i class="fas fa-users"></i><span>Employers</span></a></li>
             <li><a href="testing.html" class="sidebar-text-view"><i class="fas fa-clipboard-list"></i><span>Testing</span></a></li>
@@ -53,10 +53,10 @@
             <ul class="sidebar-menu">
               <li><a href="index.html"><img src="assests/images/frame1.png"  alt=""></a></li> 
                 <li><a href="dashboard.html" class="sidebar-text"><i class="fas fa-user"></i><span> Profile</span></a></li>
-                <li><a href="job.html" class="active sidebar-text"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
+                <li><a href="job.html" class="sidebar-text"><i class="fas fa-briefcase"></i><span> Job Applications</span></a></li>
                 <li><a href="concerge.html" class="sidebar-text"><i class="far fa-address-book"></i><span> Concerge</span></a></li>
                 <li><a href="interview.html" class="sidebar-text"><i class="fas fa-envelope-open-text"></i><span>Interview Invitations</span></a></li>
-                <li><a href="cross.html" class="sidebar-text"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
+                <li><a href="cross.html" class="active sidebar-text"><i class="fas fa-link"></i><span>Cross Refrance</span></a></li>
                 <li><a href="browser.html" class="sidebar-text"><i class="fas fa-search"></i><span>Browse Jobs</span></a></li>
                 <li><a href="employers.html" class="sidebar-text"><i class="fas fa-users"></i><span>Employers</span></a></li>
                 <li><a href="testing.html" class="sidebar-text"><i class="fas fa-clipboard-list"></i><span>Testing</span></a></li>
@@ -115,169 +115,79 @@
             <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
               <section class="row">
                 <div class="col-md-12">
-                  <div class="profile profile-section">
-                    <h2>Jobs I Have Applied</h2>
+                  <div class="profile profile-section cross-ref">
+                    <h2>Cross References</h2>
                      <div class="row">
-                       <div class="col-sm-12 col-md-6">
-                        <div class="job-box-info">
-                          <div class="box-head">
-                            <h4>This is test</h4>
-                            <label>Location:<span> Alexandria, New South Wales, Australia</span></label>
-                            <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
-                          </div>
-                          <div class="job-box-text clearfix">
-                             <div class="text-info-detail clearfix">
-                               <label>Job Type:</label>
-                               <span>Senior Designer</span>
-                             </div>
-                             <div class="text-info-detail clearfix">
-                              <label>Job Experience:</label>
-                              <span>3 year</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Salary:</label>
-                              <span>$500/-</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Submitted:</label>
-                              <span>20-12-2012</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Detailed:</label>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry. </p>
-                            </div>
-                            <span class="inreview-tag used-tag">In Review</span>
-                          </div>
+                        
+                     <div class="col-sm-12 col-md-6">
+                      <div class="job-box-info interview-box clearfix">
+                        <div class="box-head">
+                          <h4>1: Interview from TalentTube Admin</h4>                          
                         </div>
-                       </div>
-                       <div class="col-sm-12 col-md-6">
-                        <div class="job-box-info">
-                          <div class="box-head">
-                            <h4>This is test</h4>
-                            <label>Location:<span> Alexandria, New South Wales, Australia</span></label>
-                            <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
+                           <ul class="job-box-text clearfix">
+                              <li class="text-info-detail clearfix">
+                                <label>Select Status:</label>
+                                <span>
+                                    <select class="form-control" style="background: #fff !important;">
+                                      <option>Select Status</option>
+                                      <option>Select Status</option>
+                                      <option>Select Status</option>
+                                    </select>
+                                </span>
+                              </li>
+                              <li class="text-info-detail clearfix">
+                               <label>Template Name:</label>
+                               <span>Data Integrity Confirmation</span>
+                              </li>
+                             <li class="text-info-detail clearfix">
+                               <label>Interview Type:</label>
+                               <span>Correspondence</span>
+                             </li>
+                          </ul>
+                          <div class="dual-tags clearfix">
+                            <span class="interview-tag used-tag pull-left">Respond Interview</span>
+                            <span class="pendinginterview-tag used-tag pull-right">Pending Interview</span>
                           </div>
-                          <div class="job-box-text clearfix">
-                             <div class="text-info-detail clearfix">
-                               <label>Job Type:</label>
-                               <span>Senior Designer</span>
-                             </div>
-                             <div class="text-info-detail clearfix">
-                              <label>Job Experience:</label>
-                              <span>3 year</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Salary:</label>
-                              <span>$500/-</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Submitted:</label>
-                              <span>20-12-2012</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Detailed:</label>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry. </p>
-                            </div>
-                            <span class="interview-tag used-tag">Pending Interview</span>
-                          </div>
-                        </div>
-                       </div>
-                       <div class="col-sm-12 col-md-6">
-                        <div class="job-box-info">
-                          <div class="box-head">
-                            <h4>This is test</h4>
-                            <label>Location:<span> Alexandria, New South Wales, Australia</span></label>
-                            <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
-                          </div>
-                          <div class="job-box-text clearfix">
-                             <div class="text-info-detail clearfix">
-                               <label>Job Type:</label>
-                               <span>Senior Designer</span>
-                             </div>
-                             <div class="text-info-detail clearfix">
-                              <label>Job Experience:</label>
-                              <span>3 year</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Salary:</label>
-                              <span>$500/-</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Submitted:</label>
-                              <span>20-12-2012</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Detailed:</label>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry. </p>
-                            </div>
-                            <span class="inreview-tag used-tag">In Review</span>
-                          </div>
-                        </div>
-                       </div>
-                       <div class="col-sm-12 col-md-6">
-                        <div class="job-box-info">
-                          <div class="box-head">
-                            <h4>This is test</h4>
-                            <label>Location:<span> Alexandria, New South Wales, Australia</span></label>
-                            <i data-toggle="modal" data-target="#myModal" class="close-box fa fa-times"></i>
-                          </div>
-                          <div class="job-box-text clearfix">
-                             <div class="text-info-detail clearfix">
-                               <label>Job Type:</label>
-                               <span>Senior Designer</span>
-                             </div>
-                             <div class="text-info-detail clearfix">
-                              <label>Job Experience:</label>
-                              <span>3 year</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Salary:</label>
-                              <span>$500/-</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Submitted:</label>
-                              <span>20-12-2012</span>
-                            </div>
-                            <div class="text-info-detail clearfix">
-                              <label>Job Detailed:</label>
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing and typesetting industry. and typesetting industry. </p>
-                            </div>
-                            <span class="interview-tag used-tag">Pending Interview</span>
-                          </div>
-                        </div>
-                       </div>
                      </div>
+                   </div>  
+                   <div class="col-sm-12 col-md-6">
+                    <div class="job-box-info interview-box clearfix">
+                      <div class="box-head">
+                        <h4>1: Interview from TalentTube Admin</h4>                          
+                      </div>
+                         <ul class="job-box-text clearfix">
+                            <li class="text-info-detail clearfix">
+                              <label>Select Status:</label>
+                              <span>
+                                  <select class="form-control" style="background: #fff !important;">
+                                    <option>Select Status</option>
+                                    <option>Select Status</option>
+                                    <option>Select Status</option>
+                                  </select>
+                              </span>
+                            </li>
+                            <li class="text-info-detail clearfix">
+                             <label>Template Name:</label>
+                             <span>Data Integrity Confirmation</span>
+                            </li>
+                           <li class="text-info-detail clearfix">
+                             <label>Interview Type:</label>
+                             <span>Correspondence</span>
+                           </li>
+                        </ul>
+                        <div class="dual-tags clearfix">
+                          <span class="interview-tag used-tag pull-left">Respond Interview</span>
+                          <span class="pendinginterview-tag used-tag pull-right">Pending Interview</span>
+                        </div>
+                   </div>
+                 </div>   
                   </div>
                 </div>
               </section>
 
              
             
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog delete-applications">
-                
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <i data-dismiss="modal" class="close-box fa fa-times"></i>                      
-                      <h1 class="modal-title"><i class="fa fa-trash trash-icon"></i>Delete Job Application</h1>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Are you sure you wish to continue?</strong>
-                    </div>
-                    <div class="dual-footer-btn">
-                      <button type="button" class="btn btn-default black_btn" data-dismiss="modal"><i class="fa fa-times"></i>Cancel</button>
-                      <button type="button" class="orange_btn"><i class="fa fa-check"></i>OK</button>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
+            
 
 
             </div>
