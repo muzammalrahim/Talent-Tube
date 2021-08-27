@@ -754,9 +754,10 @@ span.remove:before {
       padding: 30px 0;
   } 
   .job-box-info {
-    border: 1px solid #e6e6e6;
+    border: 2px solid #2672ab;
     margin-bottom: 20px;
     background: #f8f8f8;
+    border-radius: 5px;
 }
 .box-head {
     background: #2672AB;
@@ -900,6 +901,18 @@ span.remove:before {
 .interview-tag{
     background: #00820D;
 }
+.interview-btn .interview-tag {
+    color: #ffffff !important;
+    padding: 5px;
+    border: 1px solid #00820D;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.interview-btn .interview-tag:hover {
+    color: #00820D !important;
+    background: #ffffff;
+    transition: all 0.3s;
+}
 .fade:not(.show) {
     opacity: 1;
 }
@@ -947,6 +960,7 @@ span.remove:before {
 .concigerge li {
     display: inline-block;
     width: 49%;
+    vertical-align: text-top;
 }
 .slot-para {
     background: #f8f8f8;
@@ -958,6 +972,16 @@ span.remove:before {
     text-align: left;
     float: left;
     margin-left: 11px;
+    color: #ffffff !important;
+    border: 1px solid #F44336;
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.click-here-tag:hover {
+    color: #F44336 !important;
+    background: #ffffff;
+    transition: all 0.3s;
 }
 .concigerge-box {
     background: #f8f8f8;
@@ -1195,6 +1219,9 @@ span.remove:before {
 .b-card-btn .orange_btn{
     margin-right: 10px;
 }
+.orange_btn a {
+    cursor: pointer !important;
+}
 .bc-footer {
     background: #BFC9D1;
     padding: 15px 10px; 
@@ -1228,6 +1255,12 @@ span.remove:before {
     height: 40px !important;
     border: 1px solid #ced4da !important;
 }
+.b-card-btn .interview-tag.used-tag:hover {
+    color: #009d10 !important;
+    transition: all;
+    background-color: #ffffff !important;
+}
+
 
 
 /*-------------------------------checkboxes---------------------------- */
@@ -1440,6 +1473,63 @@ opacity: 1 !important;
 .question-radiobtn li {
     display: inline-block;
 }
+.employee-wraper {
+    background: #f8f8f8;
+    padding: 20px 15px;
+    border: 1px solid #e6e6e6;
+}
+.top-filter-row .input-employee {
+    margin: 0 0 30px;
+}
+/* =============testing ===================== */
+.testing-tag{
+    margin-bottom: 0;
+}
+.testing-tag .proceed-test{
+   background: #F48128 !important;
+   float: left;
+}
+.completed-tag{
+    background: #00820D;
+}
+
+/* ========================== start-test============== */
+.select-answer {
+    padding: 40px 0;
+}
+.test-img-wrap img{
+    width: 100%;
+}
+
+.test-img-wrap {
+    margin-bottom: 30px;
+}
+.select-answer label {
+    font-size: 18px;
+    color: #242424 !important;
+}
+.select-answer li {
+    margin-bottom: 10px;
+}
+.test-time h2 span{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1594,6 +1684,9 @@ opacity: 1 !important;
     }
     .row.b-filter-row .col-md-8 input {
         width: 73%;
+    }
+    .input-employee label {
+        width: 127px;
     }
 }
 @media (max-width: 991px){
@@ -1974,10 +2067,10 @@ opacity: 1 !important;
 /* ================================= end Browse job ============================= */
 /* ========================== employeee=============== */
 .input-employee input {
-    width: 68%;
+    width: 65%;
 }
 .row.b-filter-row .col-md-8 input {
-    width: 68%;
+    width: 65%;
 }
 .top-filter-row .input-employee {
     margin: 0 0 30px;
