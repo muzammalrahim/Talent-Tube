@@ -899,7 +899,19 @@ span.remove:before {
 }
 .interview-tag{
     background: #00820D;
+    border: 1px solid #00820D;
 }
+.interview-tag a{
+    color: #fff;
+}
+.interview-tag:hover{
+    background: #fff;
+    
+}
+.interview-tag:hover a{
+    color: #00820D;
+}
+
 .fade:not(.show) {
     opacity: 1;
 }
@@ -1118,6 +1130,13 @@ span.remove:before {
    margin: 10px 3px;
    border-radius: 5px;
 }
+.block-box .box-footer .block-btn:hover , .block-box .box-footer .unblock-btn:hover{
+    background-color:#fff ;
+    color: #E00f00;
+}
+.block-box .box-footer .block-btn:hover a , .block-box .box-footer .unblock-btn:hover a{
+    color: #E00f00;  
+}
 .block-box .box-footer .block-btn a{
   color: #fff;
   font-size: 14px;
@@ -1131,6 +1150,13 @@ span.remove:before {
    margin: 10px 13px 0 3px;
    border-radius: 5px;
 }
+.block-box .box-footer .unlike-btn:hover{
+    background-color: #fff;
+    color: #009d10;
+}
+.block-box .box-footer .unlike-btn:hover a{
+    color: #009d10;
+}
 .block-box .box-footer .Detail-btn{
     background-color:  #f48128;
     color: #fff;
@@ -1140,9 +1166,16 @@ span.remove:before {
    margin: 10px 3px 0 3px;
    border-radius: 5px;
 }
+.block-box .box-footer .Detail-btn:hover{
+    background-color:  #fff;
+    color: #fff;
+}
 .block-box .box-footer .Detail-btn a{
     color: #fff;
     font-size: 14px;
+  }
+  .block-box .box-footer .Detail-btn:hover a{
+    color: #f48128;
   }
 .block-box .box-footer .unlike-btn a{
   color: #fff;
