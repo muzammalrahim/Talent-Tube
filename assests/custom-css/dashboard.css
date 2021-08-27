@@ -1440,7 +1440,10 @@ opacity: 1 !important;
 .question-radiobtn li {
     display: inline-block;
 }
-
+.employee-page-footer ul li{
+    margin-left: 0px ;
+    margin-right: 5px;
+}
 
 
 
