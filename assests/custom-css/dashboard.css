@@ -792,12 +792,12 @@ span.remove:before {
 .text-info-detail label{
     float: left;
     width: 30%;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 .text-info-detail span{
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     width: 70%;
     color: #989797;
 }
@@ -1314,7 +1314,7 @@ span.remove:before {
     cursor: pointer;
 }
 .custom-checkbox input[type='checkbox']:after{
-    content: "\f00c";
+    content: "\2713";
     font-family: "fontawesome";
     display: none;
     width: 10px;
@@ -1447,6 +1447,12 @@ opacity: 1 !important;
 .gl-text{
     color: #ffffff;
 }
+.employer-main input {
+    background: #ffffff !important;
+}
+.b-filter-row input {
+    background: #ffffff !important;
+}
 /* -------------------location modal---------------------- */
 
 /* ================================= end Browse job ============================= */
@@ -1464,7 +1470,42 @@ opacity: 1 !important;
 }
 
 
-
+/* ===================== employee ====================== */
+.input-employee label {
+    width: 133px;
+    float: left;
+    font-size: 16px;
+    margin: 7px 0 0;
+}
+.input-employee input {
+    width: 52%;
+    float: right;
+}
+.employer-main .loc-icon img {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 15px;
+    height: 15px;
+}
+.input-employee {
+    position: relative;
+}
+.search-employee-icon {
+    position: absolute;
+    right: 7px;
+    color: #989797;
+    top: 14px;
+}
+.input-employee input {
+    padding-right: 37px;
+}
+.row.b-filter-row .col-md-8 input {
+    width: 78%;
+}
+.question-radiobtn li {
+    display: inline-block;
+}
 
 
 
@@ -1574,8 +1615,12 @@ opacity: 1 !important;
     }
     /* ============= head============= */
     .orange_btn {
+        font-size: 14px !important;
+        padding: 0 10px !important;
+    }
+    .blue_btn {
         font-size: 15px !important;
-        padding: 0 12px !important;
+        padding: 0 10px !important;
     }
     .additional-sidebar button span {
         width: 78%;
@@ -1608,6 +1653,13 @@ opacity: 1 !important;
         float: none !important;
         padding: 5px 0px !important;
         margin: 0px;
+    }
+    /* ========================== employee========== */
+    .input-employee input {
+        width: 43%;
+    }
+    .row.b-filter-row .col-md-8 input {
+        width: 73%;
     }
 }
 @media (max-width: 991px){
@@ -1681,6 +1733,14 @@ opacity: 1 !important;
      margin-bottom: 0;
  }
 /* ================================= end Browse job ============================= */
+
+/* =========================== employeee ===================== */
+.input-employee input {
+    width: 38%;
+}
+.input-employee input {
+    padding-right: 24px;
+}
 }
 @media (max-width:767px){
     .body-tab-btn {
@@ -1972,6 +2032,23 @@ opacity: 1 !important;
     padding-bottom: 15px;
 }
 /* ================================= end Browse job ============================= */
+/* ========================== employeee=============== */
+.input-employee input {
+    width: 68%;
+}
+.row.b-filter-row .col-md-8 input {
+    width: 68%;
+}
+.top-filter-row .input-employee {
+    margin: 0 0 30px;
+}
+.question-radiobtn {
+    margin-top: 20px;
+}
+
+
+
+
 }
 
 @media (max-width:479px){
@@ -2094,6 +2171,19 @@ opacity: 1 !important;
  }
 
 /* ================================= start Browse job ============================= */
+/* ========================== employeee=============== */
+.input-employee input {
+    width: 100%;
+}
+.row.b-filter-row .col-md-8 input {
+    width: 100%;
+}
+.search-employee-icon {
+    top: 46px;
+}
+.employer-main .loc-icon img {
+    top: 42px;
+}
 
 
 }
