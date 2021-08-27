@@ -965,8 +965,8 @@ span.remove:before {
 }
 /* ======================================Block user page css ===================== */
 .Block-user-wrapper {
-    margin: 0px;
-    padding: 10px 0px;
+    margin: 0;
+    padding: 10px 0;
     margin-right: 5px;
 }
 .user-images{
@@ -1013,7 +1013,7 @@ span.remove:before {
 .user-details .blocked-user-about{
     display: block;
     border-bottom: 1px solid gray;
-    padding:0px 5px 10px 0px;
+    padding:0 5px 10px 0;
 }
 .user-details .blocked-user-about h6{
   font-size: 16px;
@@ -1036,8 +1036,8 @@ span.remove:before {
   }
   .user-details .blocked-user-experience p{
     font-size: 16px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
   .block-box .box-footer{
         background:  #bfc9d1;
@@ -1060,7 +1060,7 @@ span.remove:before {
   }
   .block-progrees-ratio{
       display: block;
-      margin: auto 0px;
+      margin: auto 0;
       position: absolute;
       left: auto;
       top:24px ;
@@ -1076,7 +1076,7 @@ span.remove:before {
       line-height: 14.4px;
   }
   .block-progrees-ratio ul li span{
-      padding: 0px 4px;
+      padding: 0 4px;
   }
   .block-progrees-ratio ul li .Progress-ratio-icon1{
       width: 12px ;
@@ -1107,7 +1107,7 @@ span.remove:before {
     line-height: 14.4px;
 }
 .block2-progrees-ratio ul li span{
-    padding: 0px 4px;
+    padding: 0 4px;
 }
 .block-box .box-footer .block-btn{
     background-color:#E00f00 ;
@@ -1128,9 +1128,22 @@ span.remove:before {
     border: 1px solid #009d10;
    float: right;
    padding: 5px 12px;
-   margin: 10px 13px 0px 3px;
+   margin: 10px 13px 0 3px;
    border-radius: 5px;
 }
+.block-box .box-footer .Detail-btn{
+    background-color:  #f48128;
+    color: #fff;
+    border: 1px solid #f48128;
+   float: right;
+   padding: 5px 12px;
+   margin: 10px 3px 0 3px;
+   border-radius: 5px;
+}
+.block-box .box-footer .Detail-btn a{
+    color: #fff;
+    font-size: 14px;
+  }
 .block-box .box-footer .unlike-btn a{
   color: #fff;
   font-size: 14px;
@@ -1635,6 +1648,12 @@ opacity: 1 !important;
     font-size: 12px ;
     line-height: 14.4px;
 }
+.block-progrees-ratio ul li span{
+ padding: 0px ;
+}
+.block-box .box-footer .unlike-btn {
+    margin: 10px 0 0 3px;
+}
  /* =================================  start Browse job ============================= */
  .b-card-btn{
     display: grid;
@@ -1883,7 +1902,7 @@ opacity: 1 !important;
    .user-images{
     display: flex;
     flex-direction: row;
-    padding: 0px 0px;
+    padding: 0 0;
 }
 .block-user-img{
     border: 1px solid #FFD6B6;
@@ -1900,7 +1919,7 @@ opacity: 1 !important;
     height: 100%;
     overflow-y: hidden;
     display: block;
-    padding: 0px;
+    padding: 0;
    border-radius: 5px;
 }
 .block-user-progress{
@@ -1921,22 +1940,25 @@ opacity: 1 !important;
 .block-user-progress h6{
     font-weight: 500;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     font-size: 22px;
 }
 .block-progrees-ratio{
     display: block;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0 0 0;
     /* padding-bottom: 30px; */
     position: relative;  
 }
 .block-progrees-ratio ul li{
     float: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: start;
     line-height: 22.8px;
     text-align: center;
+}
+.block-box .box-footer .unlike-btn {
+    margin: 10px 13px 0 3px;
 }
 
  /* ================================= start Browse job ============================= */
@@ -2051,6 +2073,7 @@ opacity: 1 !important;
         position: relative;
         color: #ffffff;
         margin: 0px 20px;
+        display: block;
     }
     .unlike-btn-group{
         display: flex;
@@ -2060,7 +2083,7 @@ opacity: 1 !important;
     .block-box .box-footer .unblock-btn {
         margin: 10px 0px;
     }
-    .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn  {
+    .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn ,.block-box .box-footer .Detail-btn {
         margin: 5px 5px;
   }
 
