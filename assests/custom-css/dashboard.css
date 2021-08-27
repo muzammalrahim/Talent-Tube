@@ -259,7 +259,7 @@ span.remove:before {
   .field input {
     width: 200px;
     height: 200px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     font-size: 0;
     background: transparent !important;
     border: 1px dashed #f48128;
@@ -345,7 +345,7 @@ span.remove:before {
     text-overflow: ellipsis;
   }  
   .multiple-file-pdf .file-list li{
-    float: left;
+    /* float: left; */
     display: inline-block;
 }
 .multiple-file-pdf .file-list li a{
@@ -443,7 +443,7 @@ span.remove:before {
   .removal-button {
     display: inline-block;
     height: 100%;
-    float: right;
+    /* float: right; */
   }
   .file-chooser__input {
     margin: 0 auto;
@@ -1137,7 +1137,7 @@ span.remove:before {
 .block-box .box-footer .unlike-btn a{
   color: #fff;
   font-size: 14px;
-
+}
 
 /* ======================interview============ */
 .dual-tags .interview-tag {
