@@ -120,6 +120,7 @@ margin-right: 15px;
     position: absolute;
     height: 100px;
     display: block;
+    z-index: 9;
 }
 
 .header-section-nav{

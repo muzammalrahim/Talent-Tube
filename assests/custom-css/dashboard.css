@@ -1,6 +1,4 @@
-body{
-    overflow: hidden;
-}
+
 /* ----------------------body main-tab===================== */
 .top-nav-header {
     padding: 20px 15px;
@@ -259,7 +257,6 @@ span.remove:before {
   .field input {
     width: 200px;
     height: 200px;
-    vertical-align: middle;
     font-size: 0;
     background: transparent !important;
     border: 1px dashed #f48128;
@@ -345,7 +342,7 @@ span.remove:before {
     text-overflow: ellipsis;
   }  
   .multiple-file-pdf .file-list li{
-    float: left;
+    /* float: left; */
     display: inline-block;
 }
 .multiple-file-pdf .file-list li a{
@@ -443,7 +440,7 @@ span.remove:before {
   .removal-button {
     display: inline-block;
     height: 100%;
-    float: right;
+    /* float: right; */
   }
   .file-chooser__input {
     margin: 0 auto;
@@ -1016,29 +1013,29 @@ span.remove:before {
 .user-details .blocked-user-about{
     display: block;
     border-bottom: 1px solid gray;
-    padding:0px 5px 0px 0px;
+    padding:0px 5px 10px 0px;
 }
 .user-details .blocked-user-about h6{
-  font-size: 14px;
-  margin: 0px;
+  font-size: 16px;
+  margin: 0;
   padding-top: 5px;
 }
 .user-details .blocked-user-about p{
-    font-size: 12px;
-    margin: 0px;
-    padding: 0px;
+    font-size: 16px;
+    margin: 0;
+    padding:0;
 }
 .blocked-user-experience{
     display: block;
-    padding:0px 5px 0px 0px;
+    padding:0 5px 10px 0;
 }
 .user-details .blocked-user-experience h6{
-    font-size: 14px;
+    font-size: 16px;
     margin: 0px;
     padding-top: 5px;
   }
   .user-details .blocked-user-experience p{
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
   }
@@ -1054,7 +1051,7 @@ span.remove:before {
       border: 1px solid #E00f00;
      float: right;
      padding: 10px 18px;
-     margin: 10px 10px;
+     margin: 10px;
      border-radius: 5px;
   }
   .block-box .box-footer .unblock-btn a{
@@ -1137,7 +1134,7 @@ span.remove:before {
 .block-box .box-footer .unlike-btn a{
   color: #fff;
   font-size: 14px;
-
+}
 
 /* ======================interview============ */
 .dual-tags .interview-tag {
@@ -1154,6 +1151,304 @@ span.remove:before {
 
 }
 
+
+
+/* ================================= start Browse job ============================= */
+
+.bj-main{
+    padding-bottom: 20px;
+}
+.bj-tr-btn .used-tag{
+    float: unset;
+}
+.bj-tr-btn{
+    display: grid;
+    grid-template-columns: 8% 8%;
+    grid-gap: 10px;
+    padding: 20px 0;
+    justify-content: end;
+}
+.bj-tr-btn .used-tag {
+    padding: 7px 10px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.b-card-btn{
+    text-align: right;
+}
+.b-card-btn .orange_btn{
+    margin-right: 10px;
+}
+.bc-footer {
+    background: #BFC9D1;
+    padding: 15px 10px; 
+}
+.bc-footer h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.bc-footer span{
+    text-align: center;
+}
+.bc-footer .used-tag{
+    float: unset;
+    border: 1px solid #e6e6e6; 
+}
+.bc-footer .orange_btn{
+    padding: 6px 18px !important;
+    height: unset !important;
+    font-size: 16px;
+}
+.bc-footer .used-tag {
+    padding: 9px 27px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin: 0 !important;
+}
+
+/* -------------------------- Custom select filter----------------------- */
+.b-filter-row{
+    background: #f8f8ff;
+    padding: 10px 0;
+}
+.browse-heading{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.b-filter-row select{
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.b-filter-row .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .b-filter-row .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+ 
+  
+ /*style the arrow inside the select element:*/
+  .b-filter-row .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .b-filter-row .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .b-filter-row .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background: #ffffff;
+    
+  }
+  
+  /*style items (options):*/
+  .b-filter-row .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .b-filter-row .select-hide {
+    display: none;
+  }
+  
+  .b-filter-row .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+/* --------------------------Custom select filter----------------------- */
+
+/*-------------------------------checkboxes---------------------------- */
+.form-check{
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox input[type='checkbox']{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #ffffff !important;
+    border: 1px solid #F48128 !important;
+    cursor: pointer;
+}
+.custom-checkbox input[type='checkbox']:after{
+    content: "\f00c";
+    font-family: "fontawesome";
+    display: none;
+    width: 10px;
+    color: #fff;
+    font-size: 11px;
+}
+.custom-checkbox input[type='checkbox']:hover{
+    background: #000;
+}
+.custom-checkbox input[type='checkbox']:checked:after{
+    display: flex;
+    background: #F48128 !important;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.custom-checkbox label{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/*-------------------------------checkboxes---------------------------- */
+
+
+  .loc-icon img{
+      position: absolute;
+      right: 10px;
+      top: 12px;
+  }
+
+
+
+/* -----------------modal Job Filters--------------------- */
+.bj-modal .modal-header{
+    background: #2672AB;
+}
+.modal-title img{
+    position: relative;
+    top: 5px;
+}
+.bj-modal .modal-header{
+    padding: 0 0 0 15px !important;
+}
+.bj-modal .modal-header h4{
+    color: #ffffff;
+    font-size: 16px;
+}
+.bj-modal .close{
+    background: none !important;
+    border: none !important;
+}
+.bj-modal button:focus{
+    outline: none !important;
+}
+
+.modal-backdrop.fade{
+    opacity: 0.5 !important;
+}
+.bj-modal .modal.fade:not(.show) {
+opacity: 1 !important;
+}
+.bj-modal .modal-dialog{
+    top: 25% !important;
+} 
+.bj-modal .modal-footer .bs-btn{
+    background: #00326F;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    border-radius: 2px;
+}
+.fb-text{
+    padding-left: 5px;
+    color: #ffffff;
+}
+
+.bj-modal .modal-footer .bs-btn img{
+    width: 13px;
+}
+.bj-modal .modal-footer{
+    border-top: 0 !important;
+}
+/* -----------------modal Job Filters--------------------- */
+
+/* -------------------location modal---------------------- */
+.main-input::placeholder{
+    color: #B2B2B2;
+    font-size: 14px;
+}
+.bs-img{
+    position: relative;
+    right: 30px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+}
+.loc-modal iframe{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.location-filter-m input{
+    background: #f6f6f6;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+}
+.location-filter-m input::placeholder{
+    font-size: 14px;
+    color: #000000;
+    background: #f6f6f6;
+}
+.ls-m .select-selected{
+    font-size: 14px;
+    color: #000000;
+    background: #f6f6f6;
+}
+.loc-m-row{
+    padding-bottom: 20px;
+}
+.loc-modal .modal-dialog {
+    max-width: 760px !important;
+}
+.gl-btn{
+    background: #009D10;
+    border: none;
+}
+.gl-text{
+    color: #ffffff;
+}
+/* -------------------location modal---------------------- */
+
+/* ================================= end Browse job ============================= */
+
+/* --------------------media Quries--------------------------- */
+@media (max-width:1499px){
+    .bj-tr-btn {
+        grid-template-columns: 11% 11%;
+    }    
+}
+@media (max-width:1100px){
+    .bj-tr-btn {
+        grid-template-columns: 20% 20%;
+    }    
+}
 
 
 
@@ -1354,6 +1649,19 @@ span.remove:before {
     font-size: 12px ;
     line-height: 14.4px;
 }
+ /* =================================  start Browse job ============================= */
+ .b-card-btn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 15px;
+ }
+ .bj-tr-btn {
+     grid-template-columns: 50% 50%;
+ }
+ .bj-tr-btn button{
+     margin-bottom: 0;
+ }
+/* ================================= end Browse job ============================= */
 }
 @media (max-width:767px){
     .body-tab-btn {
@@ -1636,9 +1944,18 @@ span.remove:before {
     line-height: 22.8px;
     text-align: center;
 }
+
+ /* ================================= start Browse job ============================= */
+ .browse-mp{
+    padding-bottom: 15px;
+}
+/* ================================= end Browse job ============================= */
 }
 
 @media (max-width:479px){
+    body{
+        overflow:auto !important;
+    }
     .profile-section .nav-tabs {
         left: -27%;
     }
@@ -1738,6 +2055,22 @@ span.remove:before {
 .interview-box  .text-info-detail span {
     width: 100% !important;
 }
+ /* ================================= start Browse job ============================= */
+ .bj-modal .modal-header button{
+    width: unset !important;
+}
+.b-m-btn{
+    position: relative;
+    top: 13px;
+}
+.bj-modal .modal-footer .bs-btn {
+    justify-content: center;
+}
+.bc-footer .used-tag {
+    padding: 4px 27px;
+ }
+
+/* ================================= start Browse job ============================= */
 
 
 }
