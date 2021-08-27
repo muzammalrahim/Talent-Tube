@@ -174,6 +174,21 @@ margin-right: 15px;
    margin-top: 250px;
    padding-left: 50px;
 }
+.interview-button{
+    position: relative;
+}
+.interview_hover_icon{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 99;
+}
+.interview-button:hover .interview_hover_icon{
+ display: inline-block !important;
+}
+.interview-button:hover .interview_icon{
+    display: none;
+   }
 .btn-infomation {
     margin-top: 20px;
 }
