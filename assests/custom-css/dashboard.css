@@ -1210,82 +1210,12 @@ span.remove:before {
     font-size: 16px;
     margin: 0 !important;
 }
-
-/* -------------------------- Custom select filter----------------------- */
-.b-filter-row{
-    background: #f8f8ff;
-    padding: 10px 0;
-}
-.browse-heading{
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-}
-.b-filter-row select{
+.b-select{
     width: 100%;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+    height: 40px !important;
+    border: 1px solid #ced4da !important;
 }
-.b-filter-row .custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .b-filter-row .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
- 
-  
- /*style the arrow inside the select element:*/
-  .b-filter-row .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #000000 transparent transparent transparent;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .b-filter-row .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #000000 transparent;
-    top: 7px;
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .b-filter-row .select-items div,.select-selected {
-    color: #000000;
-    padding: 8px 16px;
-    cursor: pointer;
-    user-select: none;
-    height: 45px;
-    border-radius: 5px;
-    border: 1px solid #e6e6e6;
-    background: #ffffff;
-    
-  }
-  
-  /*style items (options):*/
-  .b-filter-row .select-items {
-    position: absolute;
-    background-color: #ffffff;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /*hide the items when the select box is closed:*/
-  .b-filter-row .select-hide {
-    display: none;
-  }
-  
-  .b-filter-row .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-/* --------------------------Custom select filter----------------------- */
+
 
 /*-------------------------------checkboxes---------------------------- */
 .form-check{
@@ -1345,7 +1275,7 @@ span.remove:before {
     top: 5px;
 }
 .bj-modal .modal-header{
-    padding: 0 0 0 15px !important;
+    padding: 9px 0 3px 15px !important
 }
 .bj-modal .modal-header h4{
     color: #ffffff;
@@ -1366,8 +1296,12 @@ span.remove:before {
 opacity: 1 !important;
 }
 .bj-modal .modal-dialog{
-    top: 25% !important;
+    top: 0 !important;
 } 
+.i-modal-checks {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 .bj-modal .modal-footer .bs-btn{
     background: #00326F;
     font-size: 16px;
@@ -2008,6 +1942,12 @@ opacity: 1 !important;
  /* ================================= start Browse job ============================= */
  .browse-mp{
     padding-bottom: 15px;
+}
+.i-modal-checks {
+    grid-template-columns: 100%;
+}
+.b-m-btn {
+    top: 0 !important;
 }
 /* ================================= end Browse job ============================= */
 /* ========================== employeee=============== */
