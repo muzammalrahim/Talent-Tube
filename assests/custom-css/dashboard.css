@@ -1279,6 +1279,13 @@ span.remove:before {
     .additional-sidebar .profile .nav-link {
         padding: 15px 5px;
     }
+    /* =======================================block page css================= */
+    .block-page-footer{
+        
+        position: absolute;
+        left: 10px !important;
+        top: 24px !important;
+    }
     /* ============================like user page css========================== */
     .block-progrees-ratio {
         display: block;
@@ -1288,6 +1295,7 @@ span.remove:before {
         left: auto;
         top: 4px;
     }
+    
     .user-page-footer ul li{
         float: none !important;
         padding: 5px 0px !important;
@@ -1583,10 +1591,12 @@ span.remove:before {
     border-radius: 5px;
     margin-right: 15px;
     height: 100%;
+    
 }
 .block-user-img img{
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
     display: block;
     padding: 0px;
    border-radius: 5px;
@@ -1598,7 +1608,7 @@ span.remove:before {
     height: 100%;
 }
 .block-user-progress .progress-img img{
-   width: 100%;
+  width: 100%;
     height: 100%;
     display: block;
 }
