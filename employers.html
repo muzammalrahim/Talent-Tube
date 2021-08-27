@@ -12,7 +12,6 @@
     <!-- =========== custome-file css =================================== -->
     <link rel="stylesheet" href="assests/custom-css/common.css">
     <link rel="stylesheet" href="assests/custom-css/dashboard.css">
-    <link rel="stylesheet" href="assests/custom-css/browse.css">
     <link rel="stylesheet" href="assests/custom-css/employers.css">
     
     <title>Talent Tube</title>
@@ -22,7 +21,7 @@
 
 <div class="main-body">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row sidebar-row">
         <div class=" col-lg-2 sidebar d-none d-lg-block d-xl-block ">
           <ul>
             <li class="logo-design"><a href="index.html"><img src="assests/images/frame1.png"  alt=""></a></li> 
@@ -122,48 +121,27 @@
                       
                       <!-- Top Filter Row -->
                       <div class="emp-t-row">
-                        <div class="row b-filter-row">
+                        <div class="row b-filter-row top-filter-row">
                           <div class="col-md-4 col-sm-12">
-                            <div class="e-inner">
-                              <h5 class="browse-heading">Keyword:</h5>
-                              <div class="input-group">
-                                <input 
-                                type="text" 
-                                class="form-control" 
-                                placeholder="" 
-                                aria-label="Recipient's username"
-                                >
+                            <div class="input-employee clearfix">
+                                <label>Keyword:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username">
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                            <div class="input-employee clearfix">
+                                <label>Filter by Industry:</label>
+                                <input type="text" class="form-control" placeholder="Sydney, New South Wales, Australia" aria-label="Recipient's username"> 
+                                <i class="search-employee-icon fas fa-search"></i>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                            <div class="input-employee clearfix">
+                                <label>Filter by Location:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username">
+                                <div class="loc-icon">
+                                  <img src="assests/images/location.png" alt="">
                               </div>
-                            </div>
-                          </div>
-    
-                          <div class="col-md-4 col-sm-12">
-                            <div class="e-inner">
-                              <h5 class="browse-heading">Filter by Industry:</h5>
-                              <form action="">
-                                <div class="input-group location-filter-m" style="position: relative;">
-                                  <input type="text" class="form-control" placeholder="Sydney, New South Wales, Australia">
-                                  <div class="loc-icon">
-                                      <img src="assests/images/l-search.png" alt="">
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-    
-                          <div class="col-md-4 col-sm-12">
-                            <div class="e-inner">
-                              <h5 class="browse-heading">Filter by Location:</h5>
-                              <form action="">
-                                <div class="form-group">
-                                  <div class="input-group location-filter" style="position: relative;">
-                                    <input type="text" class="form-control main-input" placeholder="Sydney, New South Wales, Australia">
-                                    <div class="loc-icon">
-                                        <img src="assests/images/location.png" alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </form>
                             </div>
                           </div>
                         </div>
@@ -171,38 +149,27 @@
                         <!-- row 2 -->
                         <div class="row b-filter-row">
                           <div class="col-md-8">
-                            <div class="e-inner">
-                              <h5 class="browse-heading">Questions:</h5>
-                              <form action="">
-                                <div class="form-group">
-                                  <div class="input-group location-filter" style="position: relative;">
-                                    <input 
-                                      type="text" 
-                                      class="form-control main-input" 
-                                      placeholder="Are you open to temporary and contract work?
-                                    ">
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
+                            <div class="input-employee clearfix">
+                              <label>Questions:</label>
+                              <input type="text" class="form-control" placeholder="Are you open to temporary and contract work?" aria-label="Recipient's username"> 
+                          </div>
                           </div>
     
-                          <div class="col-md-2">
+                         <ul class="question-radiobtn">
+                           <li>
+                               <div class="form-check emp-redio">
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">Yes</label>
+                              </div>
+                            
+                           </li>
+                           <li>
                             <div class="form-check emp-redio">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label r-label" for="flexRadioDefault1">
-                                Yes
-                              </label>
+                              <input type="radio" id="test2" name="radio-group">
+                               <label for="test2">No</label>
                             </div>
-                          </div>
-                          <div class="col-md-2">
-                            <div class="form-check emp-redio">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                              <label class="form-check-label r-label" for="flexRadioDefault2">
-                                No
-                              </label>
-                            </div>
-                          </div>
+                           </li>
+                         </ul>
                         </div>
                         <!-- row 2 -->
 
