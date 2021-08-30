@@ -131,7 +131,7 @@ ul, li{
 .blue_btn{
     font-size: 18px !important;
     background: #00326F !important;
-    height: 35px !important;
+    /* height: 35px !important; */
     border-radius: 5px !important;
     color: #ffffff !important;
     padding: 0 20px !important;
@@ -144,7 +144,7 @@ ul, li{
 .orange_btn{
     font-size: 18px !important;
     background: #F48128 !important;
-    height: 35px !important;
+    /* height: 35px !important; */
     border-radius: 5px !important;
     color: #ffffff !important;
     padding: 0 18px !important;
@@ -157,7 +157,7 @@ ul, li{
 .black_btn{
     font-size: 18px !important;
     background: #242424 !important;
-    height: 35px !important;
+    /* height: 35px !important; */
     border-radius: 5px !important;
     color: #ffffff !important;
     padding: 0 18px !important;
