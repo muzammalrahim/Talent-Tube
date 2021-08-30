@@ -812,8 +812,13 @@ span.remove:before {
     margin: 6px 0 0;
     height: 50px;
 }
+.pending-interview-tag{
+    background-color: #339900;
+    color: #fff;
+}
 .interview-tag {
     background: #339900;
+    border: 1px solid #339900 !important;
 }
 .pendinginterview-tag{
     background: #6F2B60;
