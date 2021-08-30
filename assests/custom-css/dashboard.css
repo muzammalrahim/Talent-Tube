@@ -1488,7 +1488,17 @@ opacity: 1 !important;
 .testing-tag .proceed-test{
    background: #F48128 !important;
    float: left;
+   color: #ffffff;
+   border: 1px solid #F48128;
+   transition: all 0.3s;
+   cursor: pointer;
+
 }
+.testing-tag .proceed-test:hover{
+   color: #F48128;
+   background: #ffffff !important;
+   transition: all 0.3s;
+ }
 .completed-tag{
     background: #00820D;
 }
@@ -1693,6 +1703,10 @@ opacity: 1 !important;
         height: auto !important;
         padding-bottom: 30px !important;
     }
+    .top-nav-header {
+      margin-bottom: 0;
+        border-bottom: none;
+    }
    
     .sign-btn i {
         padding-right: 1px;
@@ -1822,6 +1836,10 @@ opacity: 1 !important;
     }
     .top-nav-header {
         margin-bottom: 0;
+        border-bottom: none;
+    }
+    h2 {
+        font-size: 20px;
     }
     .body-tab-btn button i {
         margin: 0 10px 0 0;
@@ -2147,7 +2165,7 @@ opacity: 1 !important;
     }
     .body-tab-btn .orange_btn {
         margin-bottom: 7px;
-        width: 70px !important;
+        width: 69px !important;
         float: left;
     }
 
@@ -2212,6 +2230,10 @@ opacity: 1 !important;
 }
 .employer-main .loc-icon img {
     top: 42px;
+}
+.used-tag {
+    padding: 7px 5px;
+    height: 35px;
 }
 
 
