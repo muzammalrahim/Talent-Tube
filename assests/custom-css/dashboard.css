@@ -2354,16 +2354,74 @@ opacity: 1 !important;
 }
 .buttons-talentmaker ul li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 .buttons-talentmaker ul li button {
     font-size: 16px;
     color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 0 11px;
 }
-
-
-
-
+.view-profile-btn{
+    background: #2672AB;
+    border: 1px solid #2672AB !important;
+    transition: all 0.3s;
+}
+.view-profile-btn:hover{
+    color: #2672AB;
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+.cv-btn-view{
+    background: #009D10;
+    border: 1px solid #009D10 !important;
+    transition: all 0.3s;
+}
+.cv-btn-view:hover{
+    color: #009D10;
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+.call-btn{
+    background: #00326F;
+    border: 1px solid #00326F !important;
+    transition: all 0.3s;
+}
+.call-btn:hover{
+    color: #00326F;
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+.review-btn{
+    background: #F48128;
+    border: 1px solid #F48128 !important;
+    transition: all 0.3s;
+}
+.review-btn:hover{
+    color: #F48128;
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+.interview-btn{
+    background: #FCC600;
+    border: 1px solid #FCC600 !important;
+    transition: all 0.3s;
+}
+.interview-btn:hover{
+    color: #FCC600;
+    transition: all 0.3s;
+    background: #ffffff !important;
+}
+.successful-btn{
+    background: #F44336;
+    border: 1px solid #F44336 !important;
+    transition: all 0.3s;
+}
+.successful-btn:hover{
+    color: #F44336;
+    transition: all 0.3s;
+    background: #ffffff !important;
 }
 
 @media (max-width:479px){
