@@ -932,6 +932,10 @@ span.remove:before {
     opacity: 1;
 }
 .modal-dialog {
+    max-width: 500px;
+    margin: 150px auto;
+}
+.filter-industry-modal .modal-dialog {
     max-width: 650px;
     margin: 150px auto;
 }
@@ -1287,9 +1291,9 @@ button i{
 .b-card-btn .used-tag {
     color: #ffffff;
 }
-button{
+/* button{
     height: 40px !important;
-}
+} */
 
 /* ======================interview============ */
 .dual-tags .interview-tag {
@@ -1390,10 +1394,11 @@ button{
     font-size: 18px;
     margin: 0 !important;
 }
-.b-select{
+.b-select {
     width: 100%;
     height: 40px !important;
     border: 1px solid #ced4da !important;
+    background: #ffffff !important;
 }
 .b-card-btn .interview-tag.used-tag:hover {
     color: #009d10 !important;
@@ -1469,10 +1474,11 @@ button{
     padding: 9px 0 3px 15px !important;
     margin: 0 !important;
 }
-.bj-modal .modal-header h4{
+.bj-modal .modal-header h4 {
     color: #ffffff;
     font-size: 18px;
     text-align: center !important;
+    padding: 10px 0;
 }
 .bj-modal .close{
    
@@ -1542,6 +1548,7 @@ opacity: 1 !important;
 }
 .loc-modal iframe{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 450px;
 }
 .location-filter-m input{
     background: #f6f6f6;
@@ -1562,7 +1569,8 @@ opacity: 1 !important;
     padding-bottom: 20px;
 }
 .loc-modal .modal-dialog {
-    max-width: 70% ;
+    max-width: 60%;
+    margin: 100px auto 0;
 }
 .gl-btn{
     background: #009D10;
@@ -1718,7 +1726,7 @@ opacity: 1 !important;
     text-align: right;
 }
 
-/* =========================== talent makers ========================= */
+/* =========================== talent matchers ========================= */
 .collapse:not(.show) {
     display: none;
 }
@@ -1726,17 +1734,22 @@ opacity: 1 !important;
 .collapse.in:not(.show) {
     display: block;
 }
-.talent-maker-nav{
+.talent-maker-nav {
     float: right;
     display: block;
     width: 100%;
     text-align: right;
+    padding: 5px 0 0;
+    position: absolute;
+    right: 16px;
+    top: 65px;
 }
 .talent-maker-nav .navbar-nav li {
     text-align: left;
 }
 .talent-maker-nav .navbar-toggler {
     background: #00326F;
+    width: 45px !important;
 }
 .talent-maker-nav .navbar-toggler-icon {
     background-image: none;
@@ -1750,14 +1763,19 @@ opacity: 1 !important;
     color: #ffffff;
     font-size: 18px;
 }
-.navbar-collapse {
+.talent-matcher-modal {
+    width: 90%;
+    margin: 120px auto 0;
+}
+.talent-maker-nav .navbar-collapse {
     background: #00326f;
     padding: 15px;
     position: absolute;
-    width: 96%;
+    width: 95%;
     border-radius: 2px;
     top: 53px;
     z-index: 18;
+    left: 31px;
 }
 .talent-maker-nav .navbar-nav .nav-link i {
     font-size: 12px;
@@ -1880,6 +1898,22 @@ opacity: 1 !important;
    color: #242424;
     transition: all 0.3s;
 }
+.application-btn {
+    display: block;
+    width: 90% !important;
+    font-size: 18px;
+    background: #B93D9E;
+    color: #ffffff !important;
+    border: 1px solid #B93D9E;
+    border-radius: 2px;
+    transition: all 0.3s;
+    margin: 0 auto;
+}
+.application-btn:hover {
+   background: #ffffff;
+   color: #B93D9E;
+    transition: all 0.3s;
+}
 /* ==============================Interview Details page============= */
 .interview-details-page{
     background-color: transparent !important;
@@ -1916,6 +1950,33 @@ opacity: 1 !important;
 .talent-maker-information{
     display: none;
 }
+/* =========modal talent maker ========= */
+.talent-matcher-question {
+    background: #00326f;
+}
+.talent-matcher-question h4 {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+}
+.talent-matcher-modal .modal-dialog {
+    max-width: 90%;
+    margin: 150px auto;
+}
+.talent-matcher-modal .question-ans .accordionone {
+    padding: 15px 30px 15px 15px;
+}
+.talent-matcher-modal .accordionone:after {
+    right: 6px;
+    top: 16px;
+}
+.talent-header{
+    display: none;
+}
+.update-information, .premiun-accounts {
+    padding: 30px 20px;
+    width: 100%;
+}
 
 
 
@@ -1925,9 +1986,12 @@ opacity: 1 !important;
 
 /* ====================== media quries ========================= */
 @media (max-width:1200px){
+    .tag-tabactive .nav-pills .nav-link {
+        padding: 0 0 0 5px;
+    }
    
     .profile .nav-link {
-        padding: 15px;
+        padding: 15px 12px;
     }
     .profile-img-wrapper {
         width: 200px;
@@ -2092,7 +2156,11 @@ opacity: 1 !important;
     .block-progrees-ratio1 ul li{
         float: left;
         padding-left: 30px;
+  }
+  .loc-modal .modal-dialog {
+        max-width: 70%;
     }
+    
 }
 @media (max-width: 991px){
     body{
@@ -2111,7 +2179,7 @@ opacity: 1 !important;
         padding-right: 1px;
     }
     .profile .nav-link {
-        padding: 10px 12px;
+        padding: 10px ;
     }
     .top-nav-header .blue_btn {
         font-size: 16px !important;
@@ -2176,6 +2244,9 @@ opacity: 1 !important;
     }
     .input-employee input {
         padding-right: 24px;
+    }
+    .loc-modal .modal-dialog {
+        max-width: 80%;
     }
 }
 @media (max-width:767px){
@@ -2321,7 +2392,7 @@ opacity: 1 !important;
         display: block !important;
         background: #e6e6e6;
         position: absolute;
-        left: 0;
+        left: -5px;
         right: 0;
         margin: auto;
     }
@@ -2451,11 +2522,13 @@ opacity: 1 !important;
         padding: 10px 0;
         font-size: 22px;
     }
-    .block-progrees-ratio{
+    .block-progrees-ratio {
         display: block;
         margin: 10px 0 0 0;
         /* padding-bottom: 30px; */
-        position: relative;  
+        position: relative;
+        text-align: center;
+        width: 100%;
     }
     .block-progrees-ratio ul li{
         float: none;
@@ -2493,9 +2566,16 @@ opacity: 1 !important;
     .question-radiobtn {
         margin-top: 20px;
     }
+    .loc-modal .modal-dialog {
+        max-width:90%;
+    }
+    .loc-modal iframe {
+        height: 350px;
+    }
     /* ==============================talent maker============== */
-    .talent-maker-information{
+    .talent-maker-information {
         display: block;
+        margin: 86px 0 0;
     }
     .buttons-talentmaker {
         margin: 20px 0;
@@ -2572,6 +2652,10 @@ opacity: 1 !important;
         transition: all 0.3s;
         background: #ffffff !important;
     }
+    .talent-header{
+        display: block !important;
+    }
+    
 }
 
 @media (max-width:479px){
@@ -2770,6 +2854,12 @@ opacity: 1 !important;
     .used-tag {
         padding: 7px 5px;
         height: 35px;
+    }
+    .body-tab-btn {
+        z-index: 99;
+    }
+    .filter-industry-modal .modal-dialog {
+        width:90%;
     }
 
 }
