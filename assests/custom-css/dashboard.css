@@ -932,7 +932,7 @@ span.remove:before {
     opacity: 1;
 }
 .modal-dialog {
-    max-width: 500px;
+    max-width: 650px;
     margin: 150px auto;
 }
 .delete-applications .modal-header {
@@ -1362,6 +1362,7 @@ button{
     background: #ffffff !important;
     border: 1px solid #F48128 !important;
     cursor: pointer;
+    margin-top: 0px !important;
 }
 .custom-checkbox input[type='checkbox']:after{
     content: "\2713";
@@ -1400,6 +1401,10 @@ button{
 
 
 /* -----------------modal Job Filters--------------------- */
+.filter-modal-list li{
+    float: left !important;
+    width: 50%;
+}
 .bj-modal .modal-header{
     background: #2672AB;
 }
@@ -1417,17 +1422,18 @@ button{
     text-align: center !important;
 }
 .bj-modal .close{
-    background: #D11203 !important;
-    border: none !important;
-    border-radius: 50%;
+   
+   
+   
     opacity: 1;
     margin: 7px 7px !important;
     padding: 4px 5px !important;
     color: #fff;
 }
 .bj-modal .close span i{
-    width: 20px;
     color: #fff;
+    z-index: 20;
+    font-size: 16px;
 }
 .bj-modal button:focus{
     outline: none !important;
@@ -1442,10 +1448,10 @@ opacity: 1 !important;
 .bj-modal .modal-dialog{
     top: 0 !important;
 } 
-.i-modal-checks {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+/* .i-modal-checks { */
+    /* display: grid; */
+    /* grid-template-columns: 50% 50%; */
+/* } */
 .bj-modal .modal-footer .bs-btn{
     background: #00326F;
     font-size: 16px;
@@ -2611,6 +2617,9 @@ opacity: 1 !important;
     }
     .bc-footer .used-tag {
         padding: 4px 27px;
+    }
+    .filter-modal-list li {
+        width: 100%;
     }
     /* ================================= start Browse job ============================= */
     .Apply-modal{
