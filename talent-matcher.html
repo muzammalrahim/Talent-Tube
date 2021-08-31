@@ -20,12 +20,12 @@
 <div class="main-body">
   <div class="container-fluid">
     <div class="row sidebar-row">
-        <div class="main-content col-lg-10 col-md-12 col-sm-12">
+        <div class="main-content col-lg-12 col-md-12 col-sm-12">
            
     
          
 
-          <div class="row top-nav-header">
+          <div class="row top-nav-header talent-header">
             <div class="col-md-10 nav nav-tabs body-tab-btn clearfix" id="nav-tab" role="tablist">
               <button class="nav-link blue_btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" 
               role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i>Premium Account</button>
@@ -37,7 +37,7 @@
               type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-clipboard-list"></i> Update</button>
 
             </div>
-            <div class="col-md-2 sign-btn">
+            <div class="col-md-2 sign-btn pr-0">
               <button class="orange_btn signout" type="button"><i class="fas fa-sign-out-alt"></i>Sign Out</button>
             </div>
 
@@ -182,8 +182,8 @@
                           </li>
                           <li>
                             <div class="checkboxed">
-                              <div class="form-check custom-checkbox">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                              <div class="form-check custom-checkbox" >
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" data-toggle="modal" data-target="#myModal9">
                                 <label class="form-check-label" for="flexCheckChecked3">
                                   Filter by Question
                                 </label>
@@ -294,6 +294,7 @@
                       <li><button type="button" class="interview-btn"><i class="fas fa-mail-bulk"></i>Interview</button></li>
                       <li><button type="button" class="successful-btn"><i class="fas fa-exclamation-circle"></i>Unsuccessful</button></li>
                     </ul>
+                    <button type="button" class="application-btn form-control"><i class="fas fa-file-contract"></i>Application Question</button>
                   </div>
                     
                   
@@ -358,12 +359,47 @@
               </div>
             </div>
           </div>
-
-
-
-
-
            <!-- ============== top buttons end =========================== -->
+
+
+            <!-- ===================== filter by question start ================================ -->
+          <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog talent-matcher-modal" role="document">
+            <div class="modal-content ">
+              <div class="modal-header talent-matcher-question">
+                <h4>Filter By Questions</h4>
+                <i data-dismiss="modal" aria-label="Close" class="close-box fa fa-times"></i>
+              </div>
+              <div class="modal-body ">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="question-ans">
+                        <p class="accordionone text-light"><b>Question 1:</b>Can You survive in 55k per year in Sydney? </p>
+                        <div class="panel">
+                          <p><h1  data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-photo-video"></i></h1></p>
+                        </div>
+                      </div>
+                      <div class="question-ans">
+                        <p class="accordionone text-light"><b>Question 2:</b> Are You aware median house price in Sydney is over 1 million dollars? </p>
+                        <div class="panel">
+                            <p class="text-dark"><b>Your Response:</b> dsdofsdbkfjsfb </p>
+                        </div>
+                      </div>
+                     
+                      <div class="question-ans">
+                        <p class="accordionone text-light"><b>Question 3:</b> Are You aware this question is not timed? </p>
+                        <div class="panel">
+                            <p class="text-dark"><b>Your Response:</b> dsdofsdbkfjsfb </p>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =====================filter by question end============================= -->
 
       
 
@@ -381,6 +417,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assests/bootstrap/js/jquery.js"></script>
+  <script src="assests/bootstrap/js/bootstrap.js"></script>
+  <script src="assests/bootstrap/js/jquery.min.js"></script>
+  <script src="assests/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="assests/custom-js/custom.js"></script>
 

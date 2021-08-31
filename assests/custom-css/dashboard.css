@@ -1659,7 +1659,7 @@ opacity: 1 !important;
     text-align: right;
 }
 
-/* =========================== talent makers ========================= */
+/* =========================== talent matchers ========================= */
 .collapse:not(.show) {
     display: none;
 }
@@ -1667,17 +1667,22 @@ opacity: 1 !important;
 .collapse.in:not(.show) {
     display: block;
 }
-.talent-maker-nav{
+.talent-maker-nav {
     float: right;
     display: block;
     width: 100%;
     text-align: right;
+    padding: 5px 0 0;
+    position: absolute;
+    right: 16px;
+    top: 65px;
 }
 .talent-maker-nav .navbar-nav li {
     text-align: left;
 }
 .talent-maker-nav .navbar-toggler {
     background: #00326F;
+    width: 45px !important;
 }
 .talent-maker-nav .navbar-toggler-icon {
     background-image: none;
@@ -1691,14 +1696,19 @@ opacity: 1 !important;
     color: #ffffff;
     font-size: 18px;
 }
-.navbar-collapse {
+.talent-matcher-modal {
+    width: 90%;
+    margin: 120px auto 0;
+}
+.talent-maker-nav .navbar-collapse {
     background: #00326f;
     padding: 15px;
     position: absolute;
-    width: 96%;
+    width: 95%;
     border-radius: 2px;
     top: 53px;
     z-index: 18;
+    left: 31px;
 }
 .talent-maker-nav .navbar-nav .nav-link i {
     font-size: 12px;
@@ -1821,6 +1831,22 @@ opacity: 1 !important;
    color: #242424;
     transition: all 0.3s;
 }
+.application-btn {
+    display: block;
+    width: 90% !important;
+    font-size: 18px;
+    background: #B93D9E;
+    color: #ffffff !important;
+    border: 1px solid #B93D9E;
+    border-radius: 2px;
+    transition: all 0.3s;
+    margin: 0 auto;
+}
+.application-btn:hover {
+   background: #ffffff;
+   color: #B93D9E;
+    transition: all 0.3s;
+}
 /* ==============================Interview Details page============= */
 .interview-details-page{
     background-color: transparent !important;
@@ -1856,6 +1882,33 @@ opacity: 1 !important;
 }
 .talent-maker-information{
     display: none;
+}
+/* =========modal talent maker ========= */
+.talent-matcher-question {
+    background: #00326f;
+}
+.talent-matcher-question h4 {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+}
+.talent-matcher-modal .modal-dialog {
+    max-width: 90%;
+    margin: 150px auto;
+}
+.talent-matcher-modal .question-ans .accordionone {
+    padding: 15px 30px 15px 15px;
+}
+.talent-matcher-modal .accordionone:after {
+    right: 6px;
+    top: 16px;
+}
+.talent-header{
+    display: none;
+}
+.update-information, .premiun-accounts {
+    padding: 30px 20px;
+    width: 100%;
 }
 
 
@@ -2413,8 +2466,9 @@ opacity: 1 !important;
         margin-top: 20px;
     }
     /* ==============================talent maker============== */
-    .talent-maker-information{
+    .talent-maker-information {
         display: block;
+        margin: 86px 0 0;
     }
     .buttons-talentmaker {
         margin: 20px 0;
@@ -2491,6 +2545,10 @@ opacity: 1 !important;
         transition: all 0.3s;
         background: #ffffff !important;
     }
+    .talent-header{
+        display: block !important;
+    }
+    
 }
 
 @media (max-width:479px){
@@ -2673,6 +2731,9 @@ opacity: 1 !important;
     .used-tag {
         padding: 7px 5px;
         height: 35px;
+    }
+    .body-tab-btn {
+        z-index: 99;
     }
 
 }
