@@ -1,4 +1,6 @@
-
+body{
+    overflow-y: hidden;
+}
 /* ----------------------body main-tab===================== */
 .top-nav-header {
     padding: 20px 15px;
@@ -635,7 +637,7 @@ span.remove:before {
     font-size: 18px;
 }
 .tag-tabactive .nav-link {
-    padding: 15px 5px;
+    padding:5px;
 }
 .additional-content-area ul li a span{
     color: #eef4f8;
@@ -839,7 +841,7 @@ span.remove:before {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #B2B2B2;
+    background: #FF9400;
     border-radius: 20px;
   }
 
@@ -878,6 +880,10 @@ span.remove:before {
 }
 .update-information-area {
     margin-bottom: 40px;
+}
+.update-information label {
+    font-size: 18px;
+    font-weight: 600;
 }
 .delete-btn{
     font-size: 18px !important;
@@ -926,8 +932,8 @@ span.remove:before {
     opacity: 1;
 }
 .modal-dialog {
-    max-width: 70%;
-    margin: 100px auto;
+    max-width: 500px;
+    margin: 150px auto;
 }
 .delete-applications .modal-header {
     background: #2672AB;
@@ -1006,6 +1012,7 @@ span.remove:before {
    margin: 20px 0;
    padding: 15px 15px 10px 15px;
 }
+
 /* ===================== concigerge ================== */
 .concigerge li {
     display: inline-block;
@@ -1090,12 +1097,12 @@ span.remove:before {
     padding:0 5px 10px 0;
 }
 .user-details .blocked-user-about h6{
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   padding-top: 5px;
 }
 .user-details .blocked-user-about p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     padding:0;
 }
@@ -1104,12 +1111,12 @@ span.remove:before {
     padding:0 5px 10px 0;
 }
 .user-details .blocked-user-experience h6{
-    font-size: 16px;
+    font-size: 18px;
     margin: 0px;
     padding-top: 5px;
   }
   .user-details .blocked-user-experience p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
   }
@@ -1119,18 +1126,15 @@ span.remove:before {
         position: relative;
         color: #ffffff;
   }
-  .block-box .box-footer .unblock-btn{
+  .block-box .box-footer .unblock-btn {
       background-color:#E00f00 ;
       color: #fff;
       border: 1px solid #E00f00;
      float: right;
      padding: 10px 18px;
      margin: 10px;
+     font-size: 16px;
      border-radius: 5px;
-  }
-  .block-box .box-footer .unblock-btn a{
-    color: #fff;
-    font-size: 14px;
   }
   .block-progrees-ratio{
       display: block;
@@ -1143,17 +1147,15 @@ span.remove:before {
       list-style-type:none;
       color: #242424;
       float: left;
-      margin-right: 10px;
-      margin-left: 10px;
+      margin: 0 10px;
       text-align: center;
       padding-top: 20px;
-      font-size: 12px ;
-      line-height: 14.4px;
+      font-size: 14px;
   }
-  .block-progrees-ratio ul li span{
+  .block-progrees-ratio ul li span {
       padding: 0 4px;
   }
-  .block-progrees-ratio ul li .Progress-ratio-icon1{
+  .block-progrees-ratio ul li .Progress-ratio-icon1 {
       width: 12px ;
       height: 14px;
       border-radius: 2px;
@@ -1161,7 +1163,7 @@ span.remove:before {
       color: #00326F;
       padding: 1px 6px !important;
   }
-  .block-progrees-ratio ul li .Progress-ratio-icon2{
+  .block-progrees-ratio ul li .Progress-ratio-icon2 {
     width: 14px ;
     height: 14px;
     border-radius: 2px;
@@ -1171,7 +1173,7 @@ span.remove:before {
 }
 
 /* ===============================Like users page css starts here ====================*/
-.block2-progrees-ratio ul li{
+.block2-progrees-ratio ul li {
     list-style-type:none;
     color: #242424;
     float: left;
@@ -1182,46 +1184,38 @@ span.remove:before {
     font-size: 12px ;
     line-height: 14.4px;
 }
-.block2-progrees-ratio ul li span{
+.block2-progrees-ratio ul li span {
     padding: 0 4px;
 }
-.block-box .box-footer .block-btn{
+.block-box .box-footer .block-btn {
     background-color:#E00f00 ;
     color: #fff;
     border: 1px solid #E00f00;
    float: right;
    padding: 5px 10px;
    margin: 10px 3px;
+   font-size: 16px;
    border-radius: 5px;
 }
-.block-box .box-footer .block-btn:hover , .block-box .box-footer .unblock-btn:hover{
+.block-box .box-footer .block-btn:hover , .block-box .box-footer .unblock-btn:hover {
     background-color:#fff ;
     color: #E00f00;
 }
-.block-box .box-footer .block-btn:hover a , .block-box .box-footer .unblock-btn:hover a{
-    color: #E00f00;  
-}
-.block-box .box-footer .block-btn a{
-  color: #fff;
-  font-size: 14px;
-}
-.block-box .box-footer .unlike-btn{
+.block-box .box-footer .unlike-btn {
     background-color: #009d10;
     color: #fff;
     border: 1px solid #009d10;
-   float: right;
-   padding: 5px 12px;
-   margin: 10px 13px 0 3px;
-   border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    padding: 5px 12px;
+    margin: 10px 13px 0 3px;
+    border-radius: 5px;
 }
-.block-box .box-footer .unlike-btn:hover{
+.block-box .box-footer .unlike-btn:hover {
     background-color: #fff;
     color: #009d10;
 }
-.block-box .box-footer .unlike-btn:hover a{
-    color: #009d10;
-}
-.block-box .box-footer .Detail-btn{
+.block-box .box-footer .Detail-btn {
     background-color:  #f48128;
     color: #fff;
     border: 1px solid #f48128;
@@ -1230,20 +1224,18 @@ span.remove:before {
    margin: 10px 3px 0 3px;
    border-radius: 5px;
 }
-.block-box .box-footer .Detail-btn:hover{
+.block-box .box-footer .Detail-btn:hover {
     background-color:  #fff;
     color: #fff;
 }
-.block-box .box-footer .Detail-btn a{
-    color: #fff;
-    font-size: 14px;
-  }
-  .block-box .box-footer .Detail-btn:hover a{
-    color: #f48128;
-  }
-.block-box .box-footer .unlike-btn a{
-  color: #fff;
-  font-size: 14px;
+button i{
+    margin-right: 5px;
+}
+.b-card-btn .used-tag {
+    color: #ffffff;
+}
+button{
+    height: 40px !important;
 }
 
 /* ======================interview============ */
@@ -1264,6 +1256,16 @@ span.remove:before {
 
 
 /* ================================= start Browse job ============================= */
+.filter-section {
+    background: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 5px;
+}
+.browse-heading {
+    font-size: 16px;
+}
+
 
 .bj-main{
     padding-bottom: 20px;
@@ -1281,10 +1283,22 @@ span.remove:before {
 .bj-tr-btn .used-tag {
     padding: 7px 10px;
     border-radius: 4px;
-    position: relative;
-    bottom: 5px;
+    color: #ffffff;
     cursor: pointer;
     text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.bj-tr-btn .used-tag i {
+    margin-right: 5px;
+}
+.bj-tr-btn .used-tag:hover {
+    background: #ffffff;
+    border: 1px solid #00820D !important;
+    color: #00820D !important;
+}
+.bj-tr-btn .orange_btn {
+    padding: 0 14px !important;
 }
 .b-card-btn{
     text-align: right;
@@ -1301,8 +1315,9 @@ span.remove:before {
 }
 .bc-footer h4 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    padding: 8px 0 0;
 }
 .bc-footer span{
     text-align: center;
@@ -1313,14 +1328,13 @@ span.remove:before {
 }
 .bc-footer .orange_btn{
     padding: 6px 18px !important;
-    height: unset !important;
     font-size: 16px;
 }
 .bc-footer .used-tag {
     padding: 9px 27px;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 !important;
 }
 .b-select{
@@ -1388,7 +1402,6 @@ span.remove:before {
 /* -----------------modal Job Filters--------------------- */
 .bj-modal .modal-header{
     background: #2672AB;
-    align-items: center;
 }
 .modal-title img{
     position: relative;
@@ -1431,7 +1444,7 @@ opacity: 1 !important;
 } 
 .i-modal-checks {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
 }
 .bj-modal .modal-footer .bs-btn{
     background: #00326F;
@@ -1478,12 +1491,12 @@ opacity: 1 !important;
 }
 .location-filter-m input::placeholder{
     font-size: 14px;
-    color: #000000;
+    color: #242424;
     background: #f6f6f6;
 }
 .ls-m .select-selected{
     font-size: 14px;
-    color: #000000;
+    color: #242424;
     background: #f6f6f6;
 }
 .loc-m-row{
@@ -1504,6 +1517,14 @@ opacity: 1 !important;
 }
 .b-filter-row input {
     background: #ffffff !important;
+}
+.main-browser-bg {
+    background: #f8f8f8;
+    padding: 15px 10px 25px;
+    border: 1px solid #e6e6e6;
+}
+.main-browser-bg h5 {
+    font-size: 16px;
 }
 /* -------------------location modal---------------------- */
 
@@ -1553,7 +1574,7 @@ opacity: 1 !important;
     padding-right: 37px;
 }
 .row.b-filter-row .col-md-8 input {
-    width: 78%;
+    width: 77%;
 }
 .question-radiobtn li {
     display: inline-block;
@@ -1570,12 +1591,22 @@ opacity: 1 !important;
 .testing-tag{
     margin-bottom: 0;
 }
-.testing-tag .proceed-test{
-   background: #F48128 !important;
-   float: left;
+.testing-tag .proceed-test {
+    background: #F48128 !important;
+    float: left;
+    color: #ffffff;
+    border: 2px solid #f48128;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 2px;
 }
+.testing-tag .proceed-test:hover{
+   color: #F48128;
+   background: #ffffff !important;
+   transition: all 0.3s;
+ }
 .completed-tag{
-    background: #00820D;
+    background: #00326F;
 }
 
 /* ========================== start-test============== */
@@ -1599,25 +1630,234 @@ opacity: 1 !important;
 .test-time h2 span{
     float: right;
 }
+.hover-block{
+    display: none;
+}
+.unblock-btn:hover .hover-block {
+    display: inline-block !important;
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+}
+.unblock-btn:hover .icon-unblock {
+    display: none !important;
+}
+.employee-details-infomation .employer-main input {
+    background: transparent  !important;
+}
+.employee-tab-info .nav-link {
+    font-size: 18px !important;
+    padding: 5px 35px !important;
+    background: #ffffff00 !important;
+}
+.employee-tab-info .nav-link.active:focus {
+    border: 1px solid #FF9400 !important;
+    border-bottom: transparent !important;
+    color: #FF9400 !important;
+}
+.button-start {
+    text-align: right;
+}
 
+/* =========================== talent makers ========================= */
+.collapse:not(.show) {
+    display: none;
+}
 
+.collapse.in:not(.show) {
+    display: block;
+}
+.talent-maker-nav{
+    float: right;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.talent-maker-nav .navbar-nav li {
+    text-align: left;
+}
+.talent-maker-nav .navbar-toggler {
+    background: #00326F;
+}
+.talent-maker-nav .navbar-toggler-icon {
+    background-image: none;
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+.talent-maker-nav .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+}
+.navbar-collapse {
+    background: #00326f;
+    padding: 15px;
+    position: absolute;
+    width: 96%;
+    border-radius: 2px;
+    top: 53px;
+    z-index: 18;
+}
+.talent-maker-nav .navbar-nav .nav-link i {
+    font-size: 12px;
+    margin: 0 11px 0 0;
+    display: inline-block;
+}
+.video-slider .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .video-slider .carousel-inner {
+    position: relative;
+    width: 90%;
+    padding: 140px 0 0;
+    margin: auto;
+}
+.video-slider .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0px;
+    width: 35px;
+    color: #fff;
+    opacity: 1;
+    background: #f48128;
+    border-radius: 2px;
+    height: 35px;
+}
+.video-slider .carousel-control-prev {
+    left: 25px;
+}
+.video-slider .carousel-control-next {
+    right: 25px;
+}
+.video-slider .text-wrap-slider {
+    position: absolute;
+    top: -134px;
+    text-align: center;
+    width: 100%;
+}
+/****** Style Star Rating Widget *****/
+.rating-star .rate {
+    height: 46px;
+    padding: 0 10px;
+}
+.rating-star .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rating-star .rate:not(:checked) > label {
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rating-star .rate:not(:checked) > label:before {
+    content: '★';
+}
+.rating-star .rate > input:checked ~ label {
+    color: #F48128;    
+}
+.rating-star .rate:not(:checked) > label:hover,
+.rating-star .rate:not(:checked) > label:hover ~ label {
+    color: #F48128;  
+}
+.rating-star .rate > input:checked + label:hover,
+.rating-star .rate > input:checked + label:hover ~ label,
+.rating-star .rate > input:checked ~ label:hover,
+.rating-star .rate > input:checked ~ label:hover ~ label,
+.rating-star .rate > label:hover ~ input:checked ~ label {
+    color: #F48128;
+}
+.rating-star [type="radio"]:checked + label:before, .rating-star [type="radio"]:not(:checked) + label:before {
+    content: '★';
+    border: none;
+}
+.rating-star [type="radio"]:checked + label:after, .rating-star [type="radio"]:not(:checked) + label:after {
+    width: auto;
+}
 
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 
+.talent-question .panel {
+    position: absolute;
+    z-index: 16;
+    width: 95%;
+}
+.talent-question .accordionone:after {
+    right: 8px;
+    top: 14px;
+}
+.talent-question .accordionone i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.talent-question .accordionone {
+    font-size: 20px;
+}
+.talent-question .panel {
+    background: #ffffff;
+}
+.filter-boxed .form-check-label {
+    font-size: 18px;
+    font-weight: 600;
+}
 
-
-
-
-
-
-
-
-
-
+.rest-btn {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+    background: #242424;
+    color: #ffffff;
+    border: 1px solid #242424;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.rest-btn:hover {
+   background: #ffffff;
+   color: #242424;
+    transition: all 0.3s;
+}
 /* ==============================Interview Details page============= */
-
 .interview-details-page{
     background-color: transparent !important;
 }
+.orange_btn_btn {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+    background: #F48128;
+    color: #ffffff;
+    border: 1px solid #F48128;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.orange_btn_btn:hover {
+   background: #Ffffff;
+   color: #F48128;
+    transition: all 0.3s;
+}
+.filter-row-select {
+    margin: 0 0 30px;
+}
+.filter-row-select label {
+    font-size: 20px;
+}
+.filter-boxed li {
+    margin: 15px 0;
+}
+.video-slider iframe {
+    width: 100%;
+    height: 450px;
+}
+.talent-maker-information{
+    display: none;
+}
+
 
 
 
@@ -1781,6 +2021,10 @@ opacity: 1 !important;
         height: auto !important;
         padding-bottom: 30px !important;
     }
+    .top-nav-header {
+      margin-bottom: 0;
+        border-bottom: none;
+    }
    
     .sign-btn i {
         padding-right: 1px;
@@ -1815,43 +2059,43 @@ opacity: 1 !important;
     }
  /* =============================like user page css================================= */
 
- .block-progrees-ratio ul li{
-    list-style-type:none;
-    color: #242424;
-    float: left;
-    margin-right: 3px;
-    margin-left:0px;
-    text-align: center;
-    font-size: 12px ;
-    line-height: 14.4px;
-}
-.block-progrees-ratio ul li span{
- padding: 0px ;
-}
-.block-box .box-footer .unlike-btn {
-    margin: 10px 0 0 3px;
-}
- /* =================================  start Browse job ============================= */
- .b-card-btn{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-top: 15px;
- }
- .bj-tr-btn {
-     grid-template-columns: 50% 50%;
- }
- .bj-tr-btn button{
-     margin-bottom: 0;
- }
-/* ================================= end Browse job ============================= */
+    .block-progrees-ratio ul li{
+        list-style-type:none;
+        color: #242424;
+        float: left;
+        margin-right: 3px;
+        margin-left:0px;
+        text-align: center;
+        font-size: 12px ;
+        line-height: 14.4px;
+    }
+    .block-progrees-ratio ul li span{
+    padding: 0px ;
+    }
+    .block-box .box-footer .unlike-btn {
+        margin: 10px 0 0 3px;
+    }
+    /* =================================  start Browse job ============================= */
+    .b-card-btn{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 15px;
+    }
+    .bj-tr-btn {
+        grid-template-columns: 50% 50%;
+    }
+    .bj-tr-btn button{
+        margin-bottom: 0;
+    }
+    /* ================================= end Browse job ============================= */
 
-/* =========================== employeee ===================== */
-.input-employee input {
-    width: 38%;
-}
-.input-employee input {
-    padding-right: 24px;
-}
+    /* =========================== employeee ===================== */
+    .input-employee input {
+        width: 38%;
+    }
+    .input-employee input {
+        padding-right: 24px;
+    }
 }
 @media (max-width:767px){
     .body-tab-btn {
@@ -1910,6 +2154,10 @@ opacity: 1 !important;
     }
     .top-nav-header {
         margin-bottom: 0;
+        border-bottom: none;
+    }
+    h2 {
+        font-size: 20px;
     }
     .body-tab-btn button i {
         margin: 0 10px 0 0;
@@ -2070,102 +2318,179 @@ opacity: 1 !important;
         width: 70% !important;
     }
    /* =================================block user page css======================== */
-   .user-details .blocked-user-about {
-    padding: 10px 10px;
-}
-.user-details .blocked-user-experience {
-    padding: 10px 10px;
-}
-   .user-images{
-    display: flex;
-    flex-direction: row;
-    padding: 0 0;
-}
-.block-user-img{
-    border: 1px solid #FFD6B6;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
+    .user-details .blocked-user-about {
+        padding: 10px 10px;
+    }
+    .user-details .blocked-user-experience {
+        padding: 10px 10px;
+    }
+    .user-images{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+    }
+    .block-user-img {
+        border: 1px solid #FFD6B6;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: 15px;
+        height: auto;
+        width: 50% !important;
+        float: left;
+    }
+    .block-user-img img{
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        display: block;
+        padding: 0;
     border-radius: 5px;
-    margin-right: 15px;
-    height: 100%;
-    
-}
-.block-user-img img{
+    }
+    .block-user-progress {
+        border: 1px solid #FFD6B6;
+        padding: 5px;
+        border-radius: 5px;
+        /* height: 100%; */
+        width: 50%;
+    }
+    .block-user-progress .progress-img img{
     width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-    display: block;
-    padding: 0;
-   border-radius: 5px;
-}
-.block-user-progress{
-    border: 1px solid #FFD6B6;
-    padding: 5px;
-    border-radius: 5px;
-    height: 100%;
-}
-.block-user-progress .progress-img img{
-  width: 100%;
-    height: 100%;
-    display: block;
-}
-.block-user-progress .progress-img{
-    padding: 5px;
-    border-radius: 5px;
-}
-.block-user-progress h6{
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 22px;
-}
-.block-progrees-ratio{
-    display: block;
-    margin: 10px 0 0 0;
-    /* padding-bottom: 30px; */
-    position: relative;  
-}
-.block-progrees-ratio ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    line-height: 22.8px;
-    text-align: center;
-}
-.block-box .box-footer .unlike-btn {
-    margin: 10px 13px 0 3px;
-}
+        height: 100%;
+        display: block;
+    }
+    .block-user-progress .progress-img{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .block-user-progress h6{
+        font-weight: 500;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    .block-progrees-ratio{
+        display: block;
+        margin: 10px 0 0 0;
+        /* padding-bottom: 30px; */
+        position: relative;  
+    }
+    .block-progrees-ratio ul li{
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        line-height: 22.8px;
+        text-align: center;
+    }
+    .block-box .box-footer .unlike-btn {
+        margin: 10px 13px 0 3px;
+    }
 
- /* ================================= start Browse job ============================= */
- .browse-mp{
-    padding-bottom: 15px;
-}
-.i-modal-checks {
-    grid-template-columns: 33% 33% 33%;
-}
-.b-m-btn {
-    top: 0 !important;
-}
-/* ================================= end Browse job ============================= */
-/* ========================== employeee=============== */
-.input-employee input {
-    width: 65%;
-}
-.row.b-filter-row .col-md-8 input {
-    width: 65%;
-}
-.top-filter-row .input-employee {
-    margin: 0 0 30px;
-}
-.question-radiobtn {
-    margin-top: 20px;
-}
-
-
-
-
+    /* ================================= start Browse job ============================= */
+    .browse-mp{
+        padding-bottom: 15px;
+    }
+    .i-modal-checks {
+        grid-template-columns: 33% 33% 33%;
+    }
+    .b-m-btn {
+        top: 0 !important;
+    }
+    /* ================================= end Browse job ============================= */
+    /* ========================== employeee=============== */
+    .input-employee input {
+        width: 65%;
+    }
+    .row.b-filter-row .col-md-8 input {
+        width: 65%;
+    }
+    .top-filter-row .input-employee {
+        margin: 0 0 30px;
+    }
+    .question-radiobtn {
+        margin-top: 20px;
+    }
+    /* ==============================talent maker============== */
+    .talent-maker-information{
+        display: block;
+    }
+    .buttons-talentmaker {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .buttons-talentmaker ul li {
+        display: inline-block;
+        margin: 0 2px;
+    }
+    .buttons-talentmaker ul li button {
+        font-size: 16px;
+        color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 0 11px;
+    }
+    .view-profile-btn{
+        background: #2672AB;
+        border: 1px solid #2672AB !important;
+        transition: all 0.3s;
+    }
+    .view-profile-btn:hover{
+        color: #2672AB;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .cv-btn-view{
+        background: #009D10;
+        border: 1px solid #009D10 !important;
+        transition: all 0.3s;
+    }
+    .cv-btn-view:hover{
+        color: #009D10;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .call-btn{
+        background: #00326F;
+        border: 1px solid #00326F !important;
+        transition: all 0.3s;
+    }
+    .call-btn:hover{
+        color: #00326F;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .review-btn{
+        background: #F48128;
+        border: 1px solid #F48128 !important;
+        transition: all 0.3s;
+    }
+    .review-btn:hover{
+        color: #F48128;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .interview-btn{
+        background: #FCC600;
+        border: 1px solid #FCC600 !important;
+        transition: all 0.3s;
+    }
+    .interview-btn:hover{
+        color: #FCC600;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .successful-btn{
+        background: #F44336;
+        border: 1px solid #F44336 !important;
+        transition: all 0.3s;
+    }
+    .successful-btn:hover{
+        color: #F44336;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
 }
 
 @media (max-width:479px){
@@ -2235,7 +2560,7 @@ opacity: 1 !important;
     }
     .body-tab-btn .orange_btn {
         margin-bottom: 7px;
-        width: 70px !important;
+        width: 69px !important;
         float: left;
     }
 
@@ -2262,103 +2587,92 @@ opacity: 1 !important;
     }
     .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn ,.block-box .box-footer .Detail-btn {
         margin: 5px 5px;
-  }
-
-
+    }
     /* ======================interview============ */
-.interview-box .text-info-detail label {
-    width: 100% !important;
-}
-.interview-box  .text-info-detail span {
-    width: 100% !important;
-}
- /* ================================= start Browse job ============================= */
- .loc-modal .modal-dialog {
-    max-width: 90% ;
-}
- .bj-modal .modal-header button{
-    width: unset !important;
-}
-.b-m-btn{
-    position: relative;
-    top: 13px;
-}
-.bj-modal .modal-footer .bs-btn {
-    justify-content: center;
-}
-.bc-footer .used-tag {
-    padding: 4px 27px;
- }
- .i-modal-checks {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns:  80%;
-}
-.modal-dialog {
-    max-width: 90%;
-    margin: 100px auto;
-}
-/* ================================= start Browse job ============================= */
-.Apply-modal{
-    max-width: 90%;
-    margin: 69px auto;
-}
-.Apply-modal-header{
-    /* display: block !important; */
-    background-color: #00326F;
-    margin: 0;
-}
-
-.Apply-modal-title{
-    color:#fff ;
-    text-align: center !important;
-}
-.Apply-close-btn{
-    background-color:#D11203 !important ;
-    border-radius: 50%;
-    z-index: 20;
-    margin-right: 0 !important;
-    margin-top: 0 !important;
-    border: none !important;
-    padding: 5px !important;
-    opacity: 1 !important;
-    width: fit-content !important;
-}
-.Apply-close-btn span i{
-    color: #fff;
-    width: 25px;
-}
-.Apply-close-btn:checked{
-    border: transparent;
-}
-.Apply-modal-body{
-    display: block;
-    margin: 10px 0;
-}
-.Apply-modal-body .first-heading{
-    font-size: 20px;
-}
-.Apply-job-modal-form{
-   background-color: #f3f3f3; 
-   margin: 20px 0;
-   padding: 15px 15px 10px 15px;
-}
-/* ========================== employeee=============== */
-.input-employee input {
-    width: 100%;
-}
-.row.b-filter-row .col-md-8 input {
-    width: 100%;
-}
-.search-employee-icon {
-    top: 46px;
-}
-.employer-main .loc-icon img {
-    top: 42px;
-}
-
+    .interview-box .text-info-detail label {
+        width: 100% !important;
+    }
+    .interview-box  .text-info-detail span {
+        width: 100% !important;
+    }
+    /* ================================= start Browse job ============================= */
+    .loc-modal .modal-dialog {
+        max-width: 90% ;
+    }
+    .bj-modal .modal-header button{
+        width: unset !important;
+    }
+    .b-m-btn{
+        position: relative;
+        top: 13px;
+    }
+    .bj-modal .modal-footer .bs-btn {
+        justify-content: center;
+    }
+    .bc-footer .used-tag {
+        padding: 4px 27px;
+    }
+    /* ================================= start Browse job ============================= */
+    .Apply-modal{
+        max-width: 90%;
+        margin: 69px auto;
+    }
+    .Apply-modal-header{
+        /* display: block !important; */
+        background-color: #00326F;
+        margin: 0;
+    }
+    
+    .Apply-modal-title{
+        color:#fff ;
+        text-align: center !important;
+    }
+    .Apply-close-btn{
+        background-color:#D11203 !important ;
+        border-radius: 50%;
+        z-index: 20;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        border: none !important;
+        padding: 5px !important;
+        opacity: 1 !important;
+        width: fit-content !important;
+    }
+    .Apply-close-btn span i{
+        color: #fff;
+        width: 25px;
+    }
+    .Apply-close-btn:checked{
+        border: transparent;
+    }
+    .Apply-modal-body{
+        display: block;
+        margin: 10px 0;
+    }
+    .Apply-modal-body .first-heading{
+        font-size: 20px;
+    }
+    .Apply-job-modal-form{
+       background-color: #f3f3f3; 
+       margin: 20px 0;
+       padding: 15px 15px 10px 15px;
+    }
+    /* ========================== employeee=============== */
+    .input-employee input {
+        width: 100%;
+    }
+    .row.b-filter-row .col-md-8 input {
+        width: 100%;
+    }
+    .search-employee-icon {
+        top: 46px;
+    }
+    .employer-main .loc-icon img {
+        top: 42px;
+    }
+    .used-tag {
+        padding: 7px 5px;
+        height: 35px;
+    }
 
 }
-
-
