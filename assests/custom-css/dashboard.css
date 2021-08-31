@@ -2423,6 +2423,7 @@ opacity: 1 !important;
     transition: all 0.3s;
     background: #ffffff !important;
 }
+}
 
 @media (max-width:479px){
     body{
@@ -2562,7 +2563,4 @@ opacity: 1 !important;
     height: 35px;
 }
 
-
 }
-
-
