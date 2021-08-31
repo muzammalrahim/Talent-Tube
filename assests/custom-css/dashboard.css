@@ -932,6 +932,10 @@ span.remove:before {
     opacity: 1;
 }
 .modal-dialog {
+    max-width: 500px;
+    margin: 150px auto;
+}
+.filter-industry-modal .modal-dialog {
     max-width: 650px;
     margin: 150px auto;
 }
@@ -1234,9 +1238,9 @@ button i{
 .b-card-btn .used-tag {
     color: #ffffff;
 }
-button{
+/* button{
     height: 40px !important;
-}
+} */
 
 /* ======================interview============ */
 .dual-tags .interview-tag {
@@ -1337,10 +1341,11 @@ button{
     font-size: 18px;
     margin: 0 !important;
 }
-.b-select{
+.b-select {
     width: 100%;
     height: 40px !important;
     border: 1px solid #ced4da !important;
+    background: #ffffff !important;
 }
 .b-card-btn .interview-tag.used-tag:hover {
     color: #009d10 !important;
@@ -1416,10 +1421,11 @@ button{
     padding: 9px 0 3px 15px !important;
     margin: 0 !important;
 }
-.bj-modal .modal-header h4{
+.bj-modal .modal-header h4 {
     color: #ffffff;
     font-size: 18px;
     text-align: center !important;
+    padding: 10px 0;
 }
 .bj-modal .close{
    
@@ -1489,6 +1495,7 @@ opacity: 1 !important;
 }
 .loc-modal iframe{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 450px;
 }
 .location-filter-m input{
     background: #f6f6f6;
@@ -1509,7 +1516,8 @@ opacity: 1 !important;
     padding-bottom: 20px;
 }
 .loc-modal .modal-dialog {
-    max-width: 70% ;
+    max-width: 60%;
+    margin: 100px auto 0;
 }
 .gl-btn{
     background: #009D10;
@@ -1925,9 +1933,12 @@ opacity: 1 !important;
 
 /* ====================== media quries ========================= */
 @media (max-width:1200px){
+    .tag-tabactive .nav-pills .nav-link {
+        padding: 0 0 0 5px;
+    }
    
     .profile .nav-link {
-        padding: 15px;
+        padding: 15px 12px;
     }
     .profile-img-wrapper {
         width: 200px;
@@ -2071,6 +2082,9 @@ opacity: 1 !important;
     .input-employee label {
         width: 127px;
     }
+    .loc-modal .modal-dialog {
+        max-width: 70%;
+    }
 }
 @media (max-width: 991px){
     body{
@@ -2089,7 +2103,7 @@ opacity: 1 !important;
         padding-right: 1px;
     }
     .profile .nav-link {
-        padding: 10px 12px;
+        padding: 10px ;
     }
     .top-nav-header .blue_btn {
         font-size: 16px !important;
@@ -2154,6 +2168,9 @@ opacity: 1 !important;
     }
     .input-employee input {
         padding-right: 24px;
+    }
+    .loc-modal .modal-dialog {
+        max-width: 80%;
     }
 }
 @media (max-width:767px){
@@ -2299,7 +2316,7 @@ opacity: 1 !important;
         display: block !important;
         background: #e6e6e6;
         position: absolute;
-        left: 0;
+        left: -5px;
         right: 0;
         margin: auto;
     }
@@ -2429,11 +2446,13 @@ opacity: 1 !important;
         padding: 10px 0;
         font-size: 22px;
     }
-    .block-progrees-ratio{
+    .block-progrees-ratio {
         display: block;
         margin: 10px 0 0 0;
         /* padding-bottom: 30px; */
-        position: relative;  
+        position: relative;
+        text-align: center;
+        width: 100%;
     }
     .block-progrees-ratio ul li{
         float: none;
@@ -2470,6 +2489,12 @@ opacity: 1 !important;
     }
     .question-radiobtn {
         margin-top: 20px;
+    }
+    .loc-modal .modal-dialog {
+        max-width:90%;
+    }
+    .loc-modal iframe {
+        height: 350px;
     }
     /* ==============================talent maker============== */
     .talent-maker-information {
@@ -2743,6 +2768,9 @@ opacity: 1 !important;
     }
     .body-tab-btn {
         z-index: 99;
+    }
+    .filter-industry-modal .modal-dialog {
+        width:90%;
     }
 
 }
