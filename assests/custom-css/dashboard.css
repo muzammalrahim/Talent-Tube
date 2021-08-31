@@ -932,8 +932,8 @@ span.remove:before {
     opacity: 1;
 }
 .modal-dialog {
-    max-width: 70%;
-    margin: 100px auto;
+    max-width: 500px;
+    margin: 150px auto;
 }
 .delete-applications .modal-header {
     background: #2672AB;
@@ -1012,6 +1012,7 @@ span.remove:before {
    margin: 20px 0;
    padding: 15px 15px 10px 15px;
 }
+
 /* ===================== concigerge ================== */
 .concigerge li {
     display: inline-block;
@@ -1255,6 +1256,16 @@ button{
 
 
 /* ================================= start Browse job ============================= */
+.filter-section {
+    background: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 5px;
+}
+.browse-heading {
+    font-size: 16px;
+}
+
 
 .bj-main{
     padding-bottom: 20px;
@@ -1391,7 +1402,6 @@ button{
 /* -----------------modal Job Filters--------------------- */
 .bj-modal .modal-header{
     background: #2672AB;
-    align-items: center;
 }
 .modal-title img{
     position: relative;
@@ -1434,7 +1444,7 @@ opacity: 1 !important;
 } 
 .i-modal-checks {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
 }
 .bj-modal .modal-footer .bs-btn{
     background: #00326F;
@@ -1811,9 +1821,7 @@ opacity: 1 !important;
    color: #242424;
     transition: all 0.3s;
 }
-
 /* ==============================Interview Details page============= */
-
 .interview-details-page{
     background-color: transparent !important;
 }
@@ -1849,6 +1857,12 @@ opacity: 1 !important;
 .talent-maker-information{
     display: none;
 }
+
+
+
+
+
+
 
 /* ====================== media quries ========================= */
 @media (max-width:1200px){
@@ -2045,43 +2059,43 @@ opacity: 1 !important;
     }
  /* =============================like user page css================================= */
 
- .block-progrees-ratio ul li{
-    list-style-type:none;
-    color: #242424;
-    float: left;
-    margin-right: 3px;
-    margin-left:0px;
-    text-align: center;
-    font-size: 12px ;
-    line-height: 14.4px;
-}
-.block-progrees-ratio ul li span{
- padding: 0px ;
-}
-.block-box .box-footer .unlike-btn {
-    margin: 10px 0 0 3px;
-}
- /* =================================  start Browse job ============================= */
- .b-card-btn{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-top: 15px;
- }
- .bj-tr-btn {
-     grid-template-columns: 50% 50%;
- }
- .bj-tr-btn button{
-     margin-bottom: 0;
- }
-/* ================================= end Browse job ============================= */
+    .block-progrees-ratio ul li{
+        list-style-type:none;
+        color: #242424;
+        float: left;
+        margin-right: 3px;
+        margin-left:0px;
+        text-align: center;
+        font-size: 12px ;
+        line-height: 14.4px;
+    }
+    .block-progrees-ratio ul li span{
+    padding: 0px ;
+    }
+    .block-box .box-footer .unlike-btn {
+        margin: 10px 0 0 3px;
+    }
+    /* =================================  start Browse job ============================= */
+    .b-card-btn{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 15px;
+    }
+    .bj-tr-btn {
+        grid-template-columns: 50% 50%;
+    }
+    .bj-tr-btn button{
+        margin-bottom: 0;
+    }
+    /* ================================= end Browse job ============================= */
 
-/* =========================== employeee ===================== */
-.input-employee input {
-    width: 38%;
-}
-.input-employee input {
-    padding-right: 24px;
-}
+    /* =========================== employeee ===================== */
+    .input-employee input {
+        width: 38%;
+    }
+    .input-employee input {
+        padding-right: 24px;
+    }
 }
 @media (max-width:767px){
     .body-tab-btn {
@@ -2304,179 +2318,179 @@ opacity: 1 !important;
         width: 70% !important;
     }
    /* =================================block user page css======================== */
-   .user-details .blocked-user-about {
-    padding: 10px 10px;
-}
-.user-details .blocked-user-experience {
-    padding: 10px 10px;
-}
-   .user-images{
-    display: flex;
-    flex-direction: row;
-    padding: 0 0;
-}
-.block-user-img {
-    border: 1px solid #FFD6B6;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
+    .user-details .blocked-user-about {
+        padding: 10px 10px;
+    }
+    .user-details .blocked-user-experience {
+        padding: 10px 10px;
+    }
+    .user-images{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+    }
+    .block-user-img {
+        border: 1px solid #FFD6B6;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: 15px;
+        height: auto;
+        width: 50% !important;
+        float: left;
+    }
+    .block-user-img img{
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        display: block;
+        padding: 0;
     border-radius: 5px;
-    margin-right: 15px;
-    height: auto;
-    width: 50% !important;
-    float: left;
-}
-.block-user-img img{
+    }
+    .block-user-progress {
+        border: 1px solid #FFD6B6;
+        padding: 5px;
+        border-radius: 5px;
+        /* height: 100%; */
+        width: 50%;
+    }
+    .block-user-progress .progress-img img{
     width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-    display: block;
-    padding: 0;
-   border-radius: 5px;
-}
-.block-user-progress {
-    border: 1px solid #FFD6B6;
-    padding: 5px;
-    border-radius: 5px;
-    /* height: 100%; */
-    width: 50%;
-}
-.block-user-progress .progress-img img{
-  width: 100%;
-    height: 100%;
-    display: block;
-}
-.block-user-progress .progress-img{
-    padding: 5px;
-    border-radius: 5px;
-}
-.block-user-progress h6{
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 22px;
-}
-.block-progrees-ratio{
-    display: block;
-    margin: 10px 0 0 0;
-    /* padding-bottom: 30px; */
-    position: relative;  
-}
-.block-progrees-ratio ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    line-height: 22.8px;
-    text-align: center;
-}
-.block-box .box-footer .unlike-btn {
-    margin: 10px 13px 0 3px;
-}
+        height: 100%;
+        display: block;
+    }
+    .block-user-progress .progress-img{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .block-user-progress h6{
+        font-weight: 500;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    .block-progrees-ratio{
+        display: block;
+        margin: 10px 0 0 0;
+        /* padding-bottom: 30px; */
+        position: relative;  
+    }
+    .block-progrees-ratio ul li{
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        line-height: 22.8px;
+        text-align: center;
+    }
+    .block-box .box-footer .unlike-btn {
+        margin: 10px 13px 0 3px;
+    }
 
- /* ================================= start Browse job ============================= */
- .browse-mp{
-    padding-bottom: 15px;
-}
-.i-modal-checks {
-    grid-template-columns: 33% 33% 33%;
-}
-.b-m-btn {
-    top: 0 !important;
-}
-/* ================================= end Browse job ============================= */
-/* ========================== employeee=============== */
-.input-employee input {
-    width: 65%;
-}
-.row.b-filter-row .col-md-8 input {
-    width: 65%;
-}
-.top-filter-row .input-employee {
-    margin: 0 0 30px;
-}
-.question-radiobtn {
-    margin-top: 20px;
-}
-
-/* ==============================talent maker============== */
-.talent-maker-information{
-    display: block;
-}
-.buttons-talentmaker {
-    margin: 20px 0;
-    text-align: center;
-}
-.buttons-talentmaker ul li {
-    display: inline-block;
-    margin: 0 2px;
-}
-.buttons-talentmaker ul li button {
-    font-size: 16px;
-    color: #ffffff;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 0 11px;
-}
-.view-profile-btn{
-    background: #2672AB;
-    border: 1px solid #2672AB !important;
-    transition: all 0.3s;
-}
-.view-profile-btn:hover{
-    color: #2672AB;
-    transition: all 0.3s;
-    background: #ffffff !important;
-}
-.cv-btn-view{
-    background: #009D10;
-    border: 1px solid #009D10 !important;
-    transition: all 0.3s;
-}
-.cv-btn-view:hover{
-    color: #009D10;
-    transition: all 0.3s;
-    background: #ffffff !important;
-}
-.call-btn{
-    background: #00326F;
-    border: 1px solid #00326F !important;
-    transition: all 0.3s;
-}
-.call-btn:hover{
-    color: #00326F;
-    transition: all 0.3s;
-    background: #ffffff !important;
-}
-.review-btn{
-    background: #F48128;
-    border: 1px solid #F48128 !important;
-    transition: all 0.3s;
-}
-.review-btn:hover{
-    color: #F48128;
-    transition: all 0.3s;
-    background: #ffffff !important;
-}
-.interview-btn{
-    background: #FCC600;
-    border: 1px solid #FCC600 !important;
-    transition: all 0.3s;
-}
-.interview-btn:hover{
-    color: #FCC600;
-    transition: all 0.3s;
-    background: #ffffff !important;
-}
-.successful-btn{
-    background: #F44336;
-    border: 1px solid #F44336 !important;
-    transition: all 0.3s;
-}
-.successful-btn:hover{
-    color: #F44336;
-    transition: all 0.3s;
-    background: #ffffff !important;
+    /* ================================= start Browse job ============================= */
+    .browse-mp{
+        padding-bottom: 15px;
+    }
+    .i-modal-checks {
+        grid-template-columns: 33% 33% 33%;
+    }
+    .b-m-btn {
+        top: 0 !important;
+    }
+    /* ================================= end Browse job ============================= */
+    /* ========================== employeee=============== */
+    .input-employee input {
+        width: 65%;
+    }
+    .row.b-filter-row .col-md-8 input {
+        width: 65%;
+    }
+    .top-filter-row .input-employee {
+        margin: 0 0 30px;
+    }
+    .question-radiobtn {
+        margin-top: 20px;
+    }
+    /* ==============================talent maker============== */
+    .talent-maker-information{
+        display: block;
+    }
+    .buttons-talentmaker {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .buttons-talentmaker ul li {
+        display: inline-block;
+        margin: 0 2px;
+    }
+    .buttons-talentmaker ul li button {
+        font-size: 16px;
+        color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 0 11px;
+    }
+    .view-profile-btn{
+        background: #2672AB;
+        border: 1px solid #2672AB !important;
+        transition: all 0.3s;
+    }
+    .view-profile-btn:hover{
+        color: #2672AB;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .cv-btn-view{
+        background: #009D10;
+        border: 1px solid #009D10 !important;
+        transition: all 0.3s;
+    }
+    .cv-btn-view:hover{
+        color: #009D10;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .call-btn{
+        background: #00326F;
+        border: 1px solid #00326F !important;
+        transition: all 0.3s;
+    }
+    .call-btn:hover{
+        color: #00326F;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .review-btn{
+        background: #F48128;
+        border: 1px solid #F48128 !important;
+        transition: all 0.3s;
+    }
+    .review-btn:hover{
+        color: #F48128;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .interview-btn{
+        background: #FCC600;
+        border: 1px solid #FCC600 !important;
+        transition: all 0.3s;
+    }
+    .interview-btn:hover{
+        color: #FCC600;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
+    .successful-btn{
+        background: #F44336;
+        border: 1px solid #F44336 !important;
+        transition: all 0.3s;
+    }
+    .successful-btn:hover{
+        color: #F44336;
+        transition: all 0.3s;
+        background: #ffffff !important;
+    }
 }
 
 @media (max-width:479px){
@@ -2573,107 +2587,92 @@ opacity: 1 !important;
     }
     .block-box .box-footer .block-btn ,.block-box .box-footer .unlike-btn ,.block-box .box-footer .Detail-btn {
         margin: 5px 5px;
-  }
-
-
+    }
     /* ======================interview============ */
-.interview-box .text-info-detail label {
-    width: 100% !important;
-}
-.interview-box  .text-info-detail span {
-    width: 100% !important;
-}
- /* ================================= start Browse job ============================= */
- .loc-modal .modal-dialog {
-    max-width: 90% ;
-}
- .bj-modal .modal-header button{
-    width: unset !important;
-}
-.b-m-btn{
-    position: relative;
-    top: 13px;
-}
-.bj-modal .modal-footer .bs-btn {
-    justify-content: center;
-}
-.bc-footer .used-tag {
-    padding: 4px 27px;
- }
- .i-modal-checks {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns:  80%;
-}
-.modal-dialog {
-    max-width: 90%;
-    margin: 100px auto;
-}
-/* ================================= start Browse job ============================= */
-.Apply-modal{
-    max-width: 90%;
-    margin: 69px auto;
-}
-.Apply-modal-header{
-    /* display: block !important; */
-    background-color: #00326F;
-    margin: 0;
-}
-
-.Apply-modal-title{
-    color:#fff ;
-    text-align: center !important;
-}
-.Apply-close-btn{
-    background-color:#D11203 !important ;
-    border-radius: 50%;
-    z-index: 20;
-    margin-right: 0 !important;
-    margin-top: 0 !important;
-    border: none !important;
-    padding: 5px !important;
-    opacity: 1 !important;
-    width: fit-content !important;
-}
-.Apply-close-btn span i{
-    color: #fff;
-    width: 25px;
-}
-.Apply-close-btn:checked{
-    border: transparent;
-}
-.Apply-modal-body{
-    display: block;
-    margin: 10px 0;
-}
-.Apply-modal-body .first-heading{
-    font-size: 20px;
-}
-.Apply-job-modal-form{
-   background-color: #f3f3f3; 
-   margin: 20px 0;
-   padding: 15px 15px 10px 15px;
-}
-/* ========================== employeee=============== */
-.input-employee input {
-    width: 100%;
-}
-.row.b-filter-row .col-md-8 input {
-    width: 100%;
-}
-.search-employee-icon {
-    top: 46px;
-}
-.employer-main .loc-icon img {
-    top: 42px;
-}
-.used-tag {
-    padding: 7px 5px;
-    height: 35px;
-}
-
+    .interview-box .text-info-detail label {
+        width: 100% !important;
+    }
+    .interview-box  .text-info-detail span {
+        width: 100% !important;
+    }
+    /* ================================= start Browse job ============================= */
+    .loc-modal .modal-dialog {
+        max-width: 90% ;
+    }
+    .bj-modal .modal-header button{
+        width: unset !important;
+    }
+    .b-m-btn{
+        position: relative;
+        top: 13px;
+    }
+    .bj-modal .modal-footer .bs-btn {
+        justify-content: center;
+    }
+    .bc-footer .used-tag {
+        padding: 4px 27px;
+    }
+    /* ================================= start Browse job ============================= */
+    .Apply-modal{
+        max-width: 90%;
+        margin: 69px auto;
+    }
+    .Apply-modal-header{
+        /* display: block !important; */
+        background-color: #00326F;
+        margin: 0;
+    }
+    
+    .Apply-modal-title{
+        color:#fff ;
+        text-align: center !important;
+    }
+    .Apply-close-btn{
+        background-color:#D11203 !important ;
+        border-radius: 50%;
+        z-index: 20;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        border: none !important;
+        padding: 5px !important;
+        opacity: 1 !important;
+        width: fit-content !important;
+    }
+    .Apply-close-btn span i{
+        color: #fff;
+        width: 25px;
+    }
+    .Apply-close-btn:checked{
+        border: transparent;
+    }
+    .Apply-modal-body{
+        display: block;
+        margin: 10px 0;
+    }
+    .Apply-modal-body .first-heading{
+        font-size: 20px;
+    }
+    .Apply-job-modal-form{
+       background-color: #f3f3f3; 
+       margin: 20px 0;
+       padding: 15px 15px 10px 15px;
+    }
+    /* ========================== employeee=============== */
+    .input-employee input {
+        width: 100%;
+    }
+    .row.b-filter-row .col-md-8 input {
+        width: 100%;
+    }
+    .search-employee-icon {
+        top: 46px;
+    }
+    .employer-main .loc-icon img {
+        top: 42px;
+    }
+    .used-tag {
+        padding: 7px 5px;
+        height: 35px;
+    }
 
 }
-
-
