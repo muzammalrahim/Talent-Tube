@@ -46,6 +46,41 @@
     background-color: rgb(244 129 40) ;
     border-color: #fff !important;
 }
+/* =========================================checkbox================================= */
+.custom-checkbox input[type='checkbox']{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #ffffff !important;
+    border: 1px solid #F48128 !important;
+    cursor: pointer;
+    margin-top: 0px !important;
+}
+.custom-checkbox input[type='checkbox']:after{
+    content: "\2713" !important;
+    font-family: "fontawesome";
+    display: none;
+    width: 10px;
+    color: #fff;
+    font-size: 11px;
+}
+.custom-checkbox input[type='checkbox']:hover{
+    background: #000;
+}
+.custom-checkbox input[type='checkbox']:checked:after{
+    display: flex;
+    background: #F48128 !important;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.custom-checkbox label{
+    padding-left: 10px;
+    cursor: pointer;
+}
+/* ====================================checkbox end=============================== */
 /* ==================================================== */
 
 .submit button{
@@ -60,6 +95,7 @@
     transition: 0.3s all;
 }
 .optional{
+    margin-top:16px ;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -202,9 +238,23 @@
 
 .update-info-buttons .buttons-group .btn-first{
     background-color: #00326f;
+    border:1px solid #00326f;
+}
+.update-info-buttons .buttons-group .btn-first:hover {
+    background-color: #fff;
+}
+.update-info-buttons .buttons-group .btn-first:hover a{
+    color:#00326f ;
 }
 .update-info-buttons .buttons-group .btn-second{
     background-color: #f48128;
+    border: 1px solid #f48128;
+}
+.update-info-buttons .buttons-group .btn-second:hover {
+    background-color: #fff;
+}
+.update-info-buttons .buttons-group .btn-second:hover a{
+    color:#f48128 ;
 }
 .update-info-buttons .buttons-group .btn-first a , .update-info-buttons .buttons-group .btn-second a , .update-info-buttons .buttons-group .btn-third a ,.update-info-buttons .buttons-group .btn-four a{
     color: #fff;
@@ -214,7 +264,15 @@
 }
 .update-info-buttons .buttons-group .btn-third{
     background-color:#e20000;
+    border:1px solid #e20000 ;
 }
+.update-info-buttons .buttons-group .btn-third:hover {
+    background-color: #fff;
+}
+.update-info-buttons .buttons-group .btn-third:hover a{
+    color:#e20000 ;
+}
+
 /* =======================Employee Seeker form css starts here========================= */
 .Search-portion{
     position: relative;
@@ -239,6 +297,13 @@
 }
 .update-info-buttons .buttons-group .btn-four{
     background-color: #242424;
+    border: 1px solid #242424;
+}
+.update-info-buttons .buttons-group .btn-four:hover {
+    background-color: #fff;
+}
+.update-info-buttons .buttons-group .btn-four:hover a{
+    color:#242424 ;
 }
 /* ===================================job application form css============================= */
 .seeker-title{
