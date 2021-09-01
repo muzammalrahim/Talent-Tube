@@ -22,8 +22,8 @@ body{
 .sign-btn{
     text-align: right;  
 }
-.sign-btn i{
-    padding-right: 10px;
+.sign-btn i {
+    padding-right: 5px;
 }
 .main-content {
     background-color: #F7F7F8;
@@ -36,14 +36,14 @@ body{
     background-color: #ffffff;
     box-shadow: 4px 4px 8px #eee8e8;
     padding-top: 20px !important;
-    padding-bottom: 150px !important;
+    padding-bottom: 50px !important;
     overflow-y: auto;
     height: 90vh;
 }
 
 .profile-section .nav-tabs{
     border-bottom: 1px solid #00326F;
-    padding-top: 23px;
+    padding-top: 0;
 }
 .profile-section .nav-tabs .nav-item {
     padding-top: 0px;
@@ -54,7 +54,9 @@ body{
     border-bottom: transparent !important;
     color: #FF9400 !important;
 }
-
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #f48128 #f44336 #ffffff;
+}
   .recent{
     margin-top: 360px;
 
@@ -84,15 +86,15 @@ body{
 }
 .profile-information {
     position: relative;
-    margin-top: 150px;
-    padding: 170px 10px 50px;
+    margin-top: 120px;
+    padding: 100px 1px 20px;
     text-align: center;
-    box-shadow: 4px 4px 8px #eee8e8;
+    box-shadow: 4px 4px 8px #e8e8e8;
     background: #ffffff !important;
 }
 .profile-img-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #e6e6e6;
@@ -100,7 +102,7 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    top: -120px;
+    top: -110px;
 }
 .profile-img-wrapper img{
     width: 100%;
@@ -108,12 +110,10 @@ body{
 }
 .profile-detail h1 {
     color: #00326F;
+    margin-bottom: 0;
 }
 .profile-detail h2 {
     color: #00326f !important;
-    margin-bottom: 20px;
-}
-.recent-job{
     margin-bottom: 20px;
 }
 .recent-job label {
@@ -128,7 +128,7 @@ body{
 .profile-detail .edit-btn {
     width: 60%;
     height: 45px !important;
-    margin: 30px 0 0;
+    margin: 10px 0 0;
 }
 .profile-detail .edit-btn i{
     margin: 0 10px 0 0;
@@ -139,6 +139,8 @@ body{
 .profile .nav-link {
     font-size: 16px;
     padding: 15px 20px;
+    color: #00326f;
+    font-weight: 600;
 }
 .profile-text-wrap{
     padding: 30px 0;
@@ -165,12 +167,12 @@ body{
     border-radius: 5px;
 }
 .about-infomation .edited-text i {
-    
     font-size: 17px;
     color: #ffffff;
+    margin: 0;
 }
-.about-infomation .edited-text:hover, .about-infomation .edited-text i:hover {
-    color: #FF9400;
+.about-infomation .edited-text:hover, .about-infomation .edited-text i:hover , .about-infomation .edited-text:hover i {
+    color: #FF9400 !important;
     background: #Ffffff;
     transition: all 0.3s;
 }
@@ -787,15 +789,18 @@ span.remove:before {
 }
 .text-info-detail label{
     float: left;
-    width: 30%;
-    font-size: 16px;
+    width: 35%;
+    font-size: 14px;
     font-weight: 600;
 }
 .text-info-detail span{
     float: left;
-    font-size: 16px;
-    width: 70%;
+    font-size: 14px;
+    width: 65%;
     color: #989797;
+}
+.job-detail-label{
+    width: 100% !important;
 }
 .text-info-detail{
     margin-bottom: 10px;
@@ -881,7 +886,7 @@ span.remove:before {
 .delete-btn{
     font-size: 18px !important;
     background: #dc3545 !important;
-    height: 40px !important;
+    height: 35px !important;
     border-radius: 5px !important;
     color: #ffffff !important;
     padding: 0 20px !important;
@@ -1094,12 +1099,12 @@ span.remove:before {
     padding:0 5px 10px 0;
 }
 .user-details .blocked-user-about h6{
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding-top: 5px;
 }
 .user-details .blocked-user-about p{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding:0;
 }
@@ -1108,12 +1113,12 @@ span.remove:before {
     padding:0 5px 10px 0;
 }
 .user-details .blocked-user-experience h6{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
     padding-top: 5px;
   }
   .user-details .blocked-user-experience p{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
   }
@@ -1131,29 +1136,24 @@ span.remove:before {
     display: flex;
     align-items: center;
 }
-  .block-box .box-footer .unblock-btn  {
-      background-color:#E00f00 ;
-      color: #fff;
-      border: 1px solid #E00f00;
-     float: right;
-     padding: 10px 18px;
-     margin: 10px;
-     font-size: 16px;
-     border-radius: 5px;
-  }
+.block-box .box-footer .unblock-btn {
+    background-color: #E00f00;
+    color: #fff;
+    border: 1px solid #E00f00;
+    float: right;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 35px;
+}
   .block-progrees-ratio{
       display: block;
       margin: auto 0;
-      /* position: absolute; */
-      /* left: auto; */
-      /* top:24px ; */
   }
   .block-progrees-ratio1{
     margin: auto 0;
     width: 35% !important;
-    /* position: absolute; */
-    /* left: auto; */
-    /* top:24px ; */
 }
   .block-progrees-ratio ul li{
      
@@ -1328,14 +1328,14 @@ button i{
 }
 
 .bj-tr-btn .used-tag {
-    padding: 7px 10px;
+    padding: 4px 10px;
     border-radius: 4px;
     color: #ffffff;
     cursor: pointer;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
-    height: 40px;
+    height: 35px;
     font-weight: 500;
 }
 .bj-tr-btn .used-tag i {
@@ -1357,7 +1357,7 @@ button i{
 }
 .bc-footer {
     background: #BFC9D1;
-    padding: 15px 10px; 
+    padding: 10px; 
 }
 .bc-footer h4 {
     margin: 0;
@@ -1373,17 +1373,17 @@ button i{
     border: 1px solid #e6e6e6; 
 }
 .bc-footer .orange_btn{
-    padding: 6px 18px !important;
+    padding: 6px 10px !important;
     font-size: 16px;
     height: 40px;
 }
 .bc-footer .used-tag {
-    padding: 5px 27px;
+    padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 !important;
-    height: 40px;
+    height: 35px;
 }
 .b-select {
     width: 100%;
@@ -1436,6 +1436,11 @@ button i{
 .custom-checkbox label{
     padding-left: 10px;
     cursor: pointer;
+    font-size: 14px;
+}
+.filter-industry-modal {
+    max-width: 650px;
+    margin: 94px auto 0;
 }
 
 /*-------------------------------checkboxes---------------------------- */
@@ -2642,7 +2647,7 @@ opacity: 1 !important;
     }
     .done-btn-submit {
         display: block;
-        height: 40px;
+        height: 35px;
         width: 100%;
         background: #339900;
         color: #ffffff;
@@ -2657,7 +2662,7 @@ opacity: 1 !important;
         transition: all 0.3s;
     }
     .filter-talent-btn button {
-        height: 40px;
+        height: 35px;
     }
     
 }

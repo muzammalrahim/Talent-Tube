@@ -129,27 +129,27 @@ ul, li{
     list-style-type: none;
 }
 .blue_btn{
-    font-size: 18px !important;
+    font-size: 16px !important;
     background: #00326F !important;
-    height: 40px !important;
+    height: 35px !important;
     border-radius: 5px !important;
     color: #ffffff !important;
-    padding: 8px ​20px !important;
     font-weight: 500;
     border: 1px solid #00326F !important;
+    padding: 0 5px;
 }
 .blue_btn:hover{
     background: #ffffff !important;
     color: #00326F !important;
 }
 .orange_btn{
-    font-size: 18px !important;
+    font-size: 16px !important;
     background: #F48128 !important;
-    height: 40px !important;
+    height: 35px !important;
     border-radius: 5px !important;
     font-weight: 500;
     color: #ffffff !important;
-    padding: 0 10px;
+    padding: 0 5px;
     border: 1px solid #F48128 !important;
 }
 .orange_btn:hover{
@@ -157,13 +157,13 @@ ul, li{
     color: #F48128 !important;
 }
 .black_btn{
-    font-size: 18px !important;
+    font-size: 16px !important;
     background: #242424 !important;
-    height: 40px !important;
+    height: 35px !important;
     border-radius: 5px !important;
     font-weight: 500;
     color: #ffffff !important;
-    padding: 8px ​20px !important;
+    padding: 0 5px !important;
     border: 1px solid #242424 !important;
 }
 .black_btn:hover{
@@ -212,17 +212,16 @@ input, textarea, select{
     border-bottom: 1px solid gray;
 }
 .sidebar ul li a {
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     display: block;
     transition: all 0.3s;
     padding: 15px;
-    padding: 15px 12px;
+    font-weight: 500;
+    padding: 10px;
 }
 .sidebar ul li .sidebar-text-view:hover {
-    font-size: 16px;
     color: #ffffff;
-    display: block;
     transition: all 0.3s;
     background: #FF9400;
     text-decoration: none;
@@ -232,7 +231,8 @@ input, textarea, select{
 }
 .sidebar li a span {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .sidebar ul li a i{
     padding:0 10px;
@@ -244,8 +244,8 @@ input, textarea, select{
 }
 .logo-design {
     border-bottom: 1px solid #000000 !important;
-    margin-bottom: 20px;
-    padding: 20px 0 0;
+    margin-bottom: 4px;
+    padding: 15px 0 0;
 }
 /* =====================end ==================== */
 

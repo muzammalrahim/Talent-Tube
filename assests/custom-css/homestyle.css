@@ -90,11 +90,10 @@
 
 /* =================================Header css starts here============================= */
 .navigation-bar{
-    padding-top: 44px;
+    padding-top: 20px;
 }
-.navigation-bar .logo{
-    width:227px; 
-    padding-left: 5.4rem;
+.navigation-bar .logo {
+    width: 164px;
 }
 .header-content .img img{
     width: 380px;
@@ -122,6 +121,9 @@ margin-right: 15px;
     display: block;
     z-index: 9;
 }
+.account-have{
+    float: right;
+}
 
 .header-section-nav{
     display: block !important;
@@ -135,16 +137,18 @@ margin-right: 15px;
 /* ================================= Header css ends here================================ */
 /* ===========================Banner section starts here================================ */
 .banner-info-text h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 400;
+    margin-bottom: 10px !important;
 }
 .banner-info-text h2 {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 900;
     text-align: right;
 }
 .banner-info-text h2 span {
     display: block;
+    font-size: 34px;
 }
 .banner-info-text h2 strong {
     margin-left: 10px;
@@ -153,6 +157,9 @@ margin-right: 15px;
 .dual-button a {
     margin-right: 15px;
     display: inline-block;
+    height: auto !important;
+    padding: 10px 25px;
+    font-size: 18px !important;
 }
 
 .banner-icon-div{
@@ -160,6 +167,11 @@ margin-right: 15px;
     background-repeat: no-repeat;
     background-position: right top;
     background-size:  100%;
+}
+.btn-infomation .blue_btn {
+    height: auto !important;
+    padding: 9px 28px;
+    font-size: 18px !important;
 }
 .banner-icon {
     width: 40%;
@@ -171,7 +183,7 @@ margin-right: 15px;
     float: right;
 }
 .headings{
-   margin-top: 250px;
+   margin-top: 180px;
    padding-left: 50px;
 }
 .interview-button{
@@ -249,13 +261,13 @@ padding-top: 55px;
     float: left;
     width: 70%;
 }
-.feature-text-wrap h2{
-   font-weight: 500;
+.feature-text-wrap h2 {
+    font-weight: 500;
     padding-top: 8px;
     font-size: 18px;
     text-align: center;
     color: rgba(244, 129, 40, 1);
-    
+    margin: 0 0 10px;
 }
 .feature-text-wrap p{
     color: rgba(84, 84, 82, 1);
@@ -266,7 +278,7 @@ padding-top: 55px;
 
 /* =================================Main Section CSS starts here======================== */
 .first-section {
-    margin: 80px 0 0;
+    margin: 30px 0 0;
 }
 .feature-img-wrap img {
     width: 100%;
@@ -275,7 +287,7 @@ padding-top: 55px;
 }
 .first-section .article {
     width: 67%;
-    padding: 240px 0 0;
+    padding: 200px 0 0;
 }
 .second-article{
     float: right;
