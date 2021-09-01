@@ -1177,9 +1177,9 @@ span.remove:before {
     list-style-type:none;
     color: #242424;
     float: none;
-    margin: 0 10px;
+    margin: 0 0 0 10px;
     text-align: center;
-    padding-top: 20px;
+    padding: 10px 0 10px 10px;
     font-size: 14px;
 }
   .block-progrees-ratio ul li span {
@@ -1980,7 +1980,7 @@ opacity: 1 !important;
 /* ====================== media quries ========================= */
 @media (max-width:1200px){
     .tag-tabactive .nav-pills .nav-link {
-        padding: 0 0 0 5px;
+        padding: 15px 0 15px 5px;
     }
    
     .profile .nav-link {
@@ -2541,6 +2541,10 @@ opacity: 1 !important;
     }
     .loc-modal iframe {
         height: 350px;
+    }
+    .employe-btn-group{
+        width: 100% !important;
+        text-align: center;
     }
     /* ==============================talent maker============== */
     .talent-maker-information {
