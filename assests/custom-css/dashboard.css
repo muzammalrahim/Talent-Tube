@@ -721,7 +721,7 @@ span.remove:before {
      box-shadow:none;
 }
 .tag-tabactive {
-    display: block!important;
+    /* display: block!important; */
     padding: 0 13px;
     margin: 30px 0 0;
 }
@@ -1258,7 +1258,7 @@ span.remove:before {
     font-size: 16px;
     float: right;
     padding: 5px 12px;
-    margin: 10px 3px 0 3px;
+    margin: 10px 3px 10px 3px;
     border-radius: 5px;
 }
 .block-box .box-footer .unlike-btn:hover , .block-box .box-footer .like-btn:hover {
