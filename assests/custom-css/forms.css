@@ -21,22 +21,23 @@
     justify-content: center;
     align-items: center;
 }
-.Content .signin{
+.Content .signin {
     background-color: #fff;
-    width: 400px;
+    width: 500px;
     border-radius: 5px;
+    padding: 0 25px;
 }
-.Content .signin h2{
-    padding: 15px 0px;
+.Content .signin h2 {
+    padding: 25px 0px 0;
 }
 .input-group-text {
     color:  rgba(136, 136, 136, 1);
     
 }
-.password a{
- position: relative;
- margin-left: 240px;
- color: #2672ab;
+.password a {
+    position: relative;
+    color: #2672ab;
+    float: right;
 }
 .Content .signin .form-check-input{
     border: 1px solid rgb(244 129 40) !important;
@@ -53,7 +54,7 @@
     background: #ffffff !important;
     border: 1px solid #F48128 !important;
     cursor: pointer;
-    margin-top: 0px !important;
+    margin-top: 5px !important;
 }
 .custom-checkbox input[type='checkbox']:after{
     content: "\2713" !important;
@@ -76,17 +77,19 @@
     border-radius: 3px;
 }
 .custom-checkbox label{
-    padding-left: 10px;
     cursor: pointer;
 }
 /* ====================================checkbox end=============================== */
 /* ==================================================== */
-
-.submit button{
+.signin label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.submit button {
     width: 300px;
     display: block;
     margin: auto;
- 
+    font-size: 18px !important;
 }
 .submit button:hover{
     background-color: #fff;
@@ -107,14 +110,32 @@
     padding-bottom: 20px;
     color: #2672ab;
 }
-.registration-link a{
+.registration-link a {
     color: #2672ab;
+    font-size: 20px;
+    text-decoration: underline;
 }
 /* ======================Cross Refrance page css starts here=============================== */
-.Content .cross-refrance-wrapper{
-    width: 80%;
+.Content .cross-refrance-wrapper {
+    width: 70%;
     margin: auto;
-    background-color:  #ffffff;
+    background-color: #ffffff;
+    padding: 0;
+}
+.update-info label {
+    font-size: 16px;
+}
+.update-info {
+    margin: 0;
+}
+.seeker-title .form-check-inline {
+    padding: 0;
+}
+.custom-checkbox {
+    padding: 0;
+}
+.cross-refrance-2 {
+    margin: 0 0 10px !important;
 }
 .cross-refrance-form{
     padding: 5px 30px;
@@ -124,15 +145,23 @@
     font-weight: 600;
 }
 .Verification-portion {
-    margin: 0 0 10px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #989797;
-    padding: 30px 0px 0;
+    padding: 20px 0px 0;
 }
+.work-related-heading {
+    margin-bottom: 10px !important;
+}
+
 .Verification-portion label {
     font-weight: 500;
     padding: 0;
     margin: 0 0 5px;
-    font-size: 14px;
+    font-size: 16px;
+}
+.custom-checkbox label {
+    font-size: 16px;
+    margin-left: 20px;
 }
 .Verification-portion input{
     padding: 8px ;
@@ -148,15 +177,16 @@
     margin: 0px;
     padding: 0px;
 }
-.Work-related-question-portion{
-    margin:0px;
-    border-bottom: 1px solid #989797 ;
-    padding: 30px 0px;
+.Work-related-question-portion {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #989797;
+    padding: 0 0 20px;
 }
 .work-questions label {
     font-weight: 500;
-    padding: 0 0 0 18px;
-    margin-bottom: 10px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 16px;
 }
 .work-questions .col-md-6 {
     margin: 0 0 20px;
@@ -164,6 +194,7 @@
 .work-questions label{
     font-weight: 400;
     padding: 8px 10px;
+    font-size: 16px;
 }
 .work-input{
     padding-right: 5px;
@@ -190,8 +221,9 @@
     justify-content: center;
     align-items: center;
 }
-.Final-Question-portion label{
-    font-size: 14px;
+.Final-Question-portion label {
+    font-size: 16px;
+    font-weight: 500;
 }
 .Final-Question-portion .would-label {
     min-height: 61px;
@@ -239,8 +271,10 @@
     display: flex;
     justify-content:flex-end;
 }
-.update-info h4{
+.update-info h4 {
     padding-top: 25px;
+    font-weight: 600;
+    margin: 0 0 30px;
 }
 .update-info-buttons .buttons-group{
 
@@ -333,6 +367,27 @@
 .age-limit{
     color: #f48128;
 }
+.form-check {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px;
+}
+
+@media (max-width: 991px) {
+    .Content .cross-refrance-wrapper {
+        width: 95%;
+    }
+}
+@media (max-width: 767px) {
+  
+    .Content .signin {
+        background-color: #fff;
+        width: 80%;
+        margin: 40px auto;
+    }
+}
+
+
 @media screen and (max-width:479px){
     .Content .logo img{
         width: 150px;
@@ -343,21 +398,11 @@
         justify-content: center;
         align-items: center;
     }
-    
-    .Content .signin{
-        background-color: #fff;
-        width: 80%;
-        margin:40 auto;
+    .seeker-title .form-check {
+        width: 48%;
+        float: left;
+        margin: 0 0 10px;
     }
-    .password a{
-        padding: 0px;
-        margin: auto;
-        float: right;
-        font-size: 12px;
-       }
-       .form-check{
-           margin-top: 20px;
-       }
        /* ====================================== Cross Refrance page css starts here======= */
        .cross-refrance-form{
         padding: 0px;

@@ -939,7 +939,7 @@ span.remove:before {
 }
 .delete-applications .modal-header {
     background: #2672AB;
-    padding: 40px 130px;
+    padding: 25px 130px;
     text-align: center;
 }
 .delete-applications .modal-header .trash-icon{
@@ -1034,7 +1034,7 @@ span.remove:before {
     color: #ffffff !important;
     border: 1px solid #F44336;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 3px;
     transition: all 0.3s;
 }
 .click-here-tag:hover {
@@ -1172,7 +1172,7 @@ span.remove:before {
     float: none;
     margin: 0 0 0 10px;
     text-align: center;
-    padding: 10px 0 10px 10px;
+    padding: 0;
     font-size: 14px;
 }
   .block-progrees-ratio ul li span {
