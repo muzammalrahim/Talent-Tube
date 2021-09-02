@@ -2,8 +2,12 @@
 
 /* css for mobile portion sidebar */
 /* ======================================================================================= */
-
-
+/* .sidebarMenu4{ */
+    /* padding: 0px !important; */
+/* } */
+.mobile-sidebar{
+    padding-left: 0px !important;
+}
 #sidebarMenu{
     height: 100%;
     position: fixed;
@@ -11,13 +15,20 @@
     left: 0;
     top: 0;
     width: 250px;
-    background-color: #FFFFFF;
+    background: #FFFFFF !important;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
 }
 #opensidebarmenu{
     background-color: transparent;
     opacity: 0;
+}
+#sidebarMenu ul li {
+    border-bottom: transparent;
+}
+#sidebarMenu ul li a {
+    color: #545452;
+    font-size: 13px !important;
 }
 #opensidebarmenu:checked ~ #sidebarMenu{
     transform: translateX(0px);
@@ -29,15 +40,19 @@
     margin-bottom: 0px;
 }
 .menu2 {
+    background-color: #fff;
     list-style: none;
     padding: 10px 14px;
-    background-color: #14548f;
 }
 .menu2 ul li{
-    padding: 19px 14px  ;
+    padding: 11px 24px !important ;
 }
+.menu2 ul li a{
+    color: #545452 !important;
+    padding: 19px 14px  ;
+} 
 .menu li a{
-    color: #fff;
+    color: #fff !important;
     display: block;
     text-decoration: none;
     font-weight: 700;
@@ -58,8 +73,8 @@
     height: 32px;
     position:  absolute;
     z-index: 20;
-    top: 23px;
-    right: 55px;
+    top: 18px;
+    right: 20px;
     cursor: pointer;
 }
 .spinner{
@@ -121,6 +136,9 @@ margin-right: 15px;
     display: block;
     z-index: 9;
 }
+.header-signin-btn{
+    float: left;
+}
 .account-have{
     float: right;
 }
@@ -144,7 +162,7 @@ margin-right: 15px;
 .banner-info-text h2 {
     font-size: 42px;
     font-weight: 900;
-    text-align: right;
+    text-align: left;
 }
 .banner-info-text h2 span {
     display: block;
@@ -189,12 +207,7 @@ margin-right: 15px;
 .interview-button{
     position: relative;
 }
-/* .interview_hover_icon{
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    z-index: 99;
-} */
+
 .interview-button:hover .interview_hover_icon{
  display: inline-block !important;
 }
@@ -203,10 +216,11 @@ margin-right: 15px;
    }
 .interview-button:hover .interview_icon{
     display: none;
-   }
+}
 .btn-infomation {
     margin-top: 20px;
 }
+
 .btn-infomation li{
     display: inline-block;
     margin-right: 15px;
@@ -378,7 +392,7 @@ footer {
         padding-top:0;
     }
     .banner-info-text h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .banner-info-text h2 strong {
         margin-left: 10px;
@@ -395,6 +409,9 @@ footer {
     .banner-form {
     padding-top: 30px;
 }
+        .btn-infomation li {
+            margin-right: 4px;
+        }
     .banner-form .form-buttons select {
         padding: 7.5px 4px;
         font-size: 18px;
@@ -431,12 +448,14 @@ footer {
     .banner-info-text h1 {
         font-size: 40px;
     }
-    
    
 }
 /* ===============================media query for 990px starts here=================== */
 
 @media screen and (max-width: 991px){
+    .header img{
+        width: 130px;
+    }
     .headings {
         margin-top: 100px;
     }
@@ -474,7 +493,7 @@ footer {
         margin-top: 50px;
     }
     .banner-info-text h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
     .banner-info-text h2 strong {
         font-size: 45px;
@@ -496,13 +515,24 @@ footer {
         padding: 8px 10px;
         font-size: 14px !important;
     }
-
   
+  .dual-button .blue_btn{
+      font-size: 13px !important;
+  }
+  .dual-button .orange_btn{
+    font-size: 13px !important;
+}
 }
 @media screen and (max-width: 767px){
     .banner-icon-div{
         background-image: url(../images/bg-img.png);
         background-repeat: no-repeat;
+    }
+    .banner-info-text h2 {
+        font-size: 40px;
+    }
+    .header img{
+        width: 130px;
     }
     .banner-info-text {
         float: none;
@@ -517,6 +547,9 @@ footer {
     }
     .btn-infomation {
         text-align: center;
+    }
+    .heading-first {
+        font-size: 28px;
     }
     .fist-paragrah {
         width: 100%;
@@ -536,7 +569,7 @@ footer {
         width: 20%;
     }
     .banner-icon {
-        width: 70%;
+        width: 50%;
         padding-top: 0;
         height: auto;
     }
@@ -609,6 +642,9 @@ footer {
     .heading-first {
         font-size: 20px;
     }
+    .article h3{
+        color: #f48128;
+    }
     .fist-paragrah {
         width: 100%;
         padding-top: 12px;
@@ -646,9 +682,18 @@ footer {
     }
     .btn-infomation li .blue_btn {
         font-size: 14px !important;
-        padding: 0 10px !important;
+        padding: 6px 10px !important;
         width: 100%;
         font-size: 16px !important;
         text-align: center;
     }
+    .btn-infomation .form-buttons li .h-continue{
+        padding: 4px 10px !important;
+    }
+    .btn-infomation .blue_btn{
+        text-align-last:center;
+        padding-right: 29px !important;
+        direction:unset;
+    }
+    
 }
