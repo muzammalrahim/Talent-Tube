@@ -121,6 +121,9 @@ margin-right: 15px;
     display: block;
     z-index: 9;
 }
+.header-signin-btn{
+    float: left;
+}
 .account-have{
     float: right;
 }
@@ -144,7 +147,7 @@ margin-right: 15px;
 .banner-info-text h2 {
     font-size: 42px;
     font-weight: 900;
-    text-align: right;
+    text-align: left;
 }
 .banner-info-text h2 span {
     display: block;
@@ -189,12 +192,7 @@ margin-right: 15px;
 .interview-button{
     position: relative;
 }
-/* .interview_hover_icon{
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    z-index: 99;
-} */
+
 .interview-button:hover .interview_hover_icon{
  display: inline-block !important;
 }
@@ -210,6 +208,9 @@ margin-right: 15px;
 }
 .btn-infomation label {
     font-size: 20px;
+}
+.h-continue{
+    padding: 7px 28px !important;
 }
 
 /* ===========================Body Starts Here================================ */
@@ -383,6 +384,9 @@ footer {
     .banner-form {
     padding-top: 30px;
 }
+        .btn-infomation li {
+            margin-right: 4px;
+        }
     .banner-form .form-buttons select {
         padding: 7.5px 4px;
         font-size: 18px;
@@ -420,10 +424,10 @@ footer {
         font-size: 40px;
     }
     .dual-button .orange_btn {
-        padding: 0 10px !important;
+        padding: 5px 10px !important;
     }
     .dual-button .blue_btn {
-        padding: 0 10px !important;
+        padding: 5px 10px !important;
     }
    
 }
@@ -484,15 +488,32 @@ footer {
     }
     .blue_btn {
         font-size: 14px !important;
-        padding: 0 10px !important;
+        padding: 8px 10px !important;
     }
-
+    .h-continue{
+        padding: 7px 10px !important;
+    }
+    .btn-infomation li{
+        font-size: 13px !important;
+    }
+    .btn-infomation .blue_btn{
+        font-size: 13px !important;
+    }
   
+  .dual-button .blue_btn{
+      font-size: 13px !important;
+  }
+  .dual-button .orange_btn{
+    font-size: 13px !important;
+}
 }
 @media screen and (max-width: 767px){
     .banner-icon-div{
         background-image: url(../images/bg-img.png);
         background-repeat: no-repeat;
+    }
+    .header img{
+        width: 130px;
     }
     .banner-info-text {
         float: none;
@@ -507,6 +528,9 @@ footer {
     }
     .btn-infomation {
         text-align: center;
+    }
+    .heading-first {
+        font-size: 28px;
     }
     .fist-paragrah {
         width: 100%;
@@ -526,7 +550,7 @@ footer {
         width: 20%;
     }
     .banner-icon {
-        width: 70%;
+        width: 50%;
         padding-top: 0;
         height: auto;
     }
@@ -587,6 +611,9 @@ footer {
     .heading-first {
         font-size: 20px;
     }
+    .article h3{
+        color: #f48128;
+    }
     .fist-paragrah {
         width: 100%;
         padding-top: 12px;
@@ -624,9 +651,18 @@ footer {
     }
     .btn-infomation li .blue_btn {
         font-size: 14px !important;
-        padding: 0 10px !important;
+        padding: 6px 10px !important;
         width: 100%;
         font-size: 16px !important;
         text-align: center;
     }
+    .btn-infomation .form-buttons li .h-continue{
+        padding: 4px 10px !important;
+    }
+    .btn-infomation .blue_btn{
+        text-align-last:center;
+        padding-right: 29px !important;
+        direction:unset;
+    }
+    
 }
